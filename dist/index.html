@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin ETTPAD</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/icons-1.7.2/font/bootstrap-icons.css">
+
+    <!--App Css Layouting-->
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+    
+
+    <div id="app">
+
+        <div id="sidebar">
+            <div class="sidebarWrapper">
+                <div class="brandName">
+                    <img src="./assets/images/etwpadLogo_withTeks.png" alt="">
+                </div>
+
+                <div class="wrapperMenuSidebar">
+                    <ul class="listMenuSidebar">
+
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <img src="./assets/images/icon-sidebar/kprMenuIcon.svg" alt="">
+                                Dashboard Admin
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu haveSubmenu">
+                            <p class="linkMenu">
+                                <img src="./assets/images/icon-sidebar/ettpadMenuIcon.svg" alt="">
+                                E-TPP
+                            </p>
+                            <ul class="submenuWrapper">
+                                <li class="submenu">
+                                    <a href="#" class="linkMenu active">Dashboard</a>
+                                    <a href="#" class="linkMenu">Data RH</a>
+                                    <a href="#" class="linkMenu">Rekap</a>
+                                    <a href="#" class="linkMenu">Mutasi</a>
+                                    <a href="#" class="linkMenu">Monitoring</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebarMenu haveSubmenu">
+                            <p class="linkMenu">
+                                <img src="./assets/images/icon-sidebar/kprMenuIcon.svg" alt="">
+                                E-KPR
+                            </p>
+                            <ul class="submenuWrapper">
+                                <li class="submenu">
+                                    <a href="#" class="linkMenu active">Dashboard</a>
+                                    <a href="#" class="linkMenu">Data KPR</a>
+                                    <a href="#" class="linkMenu">Pengajuan</a>
+                                    <a href="#" class="linkMenu">Simulasi KPR</a>
+                                    <a href="#" class="linkMenu">Management Rumah</a>
+                                    <a href="#" class="linkMenu">Data Developer </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebarMenu haveSubmenu">
+                            <p class="linkMenu">
+                                <img src="./assets/images/icon-sidebar/baltabMenuIcon.svg" alt="">
+                                E-BALTAB
+                            </p>
+                            <ul class="submenuWrapper">
+                                <li class="submenu">
+                                    <a href="#" class="linkMenu active">Dashboard</a>
+                                    <a href="#" class="linkMenu">Data Pokok Prajurit</a>
+                                    <a href="#" class="linkMenu">Pembayaran</a>
+                                    <a href="#" class="linkMenu">Profiling Data</a>
+                                    <a href="#" class="linkMenu">SI Prajurit</a>
+                                    <a href="#" class="linkMenu">Pengajuan</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <img src="./assets/images/icon-sidebar/infoBTNMenuIcon.svg" alt="">
+                                Info BTN
+                            </a>
+                        </li>
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <img src="./assets/images/icon-sidebar/akuntingMenuIcon.svg" alt="">
+                                E-AKUNTING
+                            </a>
+                        </li>
+                        <li class="sidebarMenu haveSubmenu">
+                            <p class="linkMenu">
+                                <img src="./assets/images/icon-sidebar/masterMenuIcon.svg" alt="">
+                                Master
+                            </p>
+                            <ul class="submenuWrapper">
+                                <li class="submenu">
+                                    <a href="#" class="linkMenu active">Institut</a>
+                                    <a href="#" class="linkMenu">Kategori</a>
+                                    <a href="#" class="linkMenu">Kotama</a>
+                                    <a href="#" class="linkMenu">Satminkal</a>
+                                    <a href="#" class="linkMenu">Bunga</a>
+                                    <a href="#" class="linkMenu">Potongan</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <img src="./assets/images/icon-sidebar/kelolaUserMenuIcon.svg" alt="">
+                                Kelola User
+                            </a>
+                        </li>
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <img src="./assets/images/icon-sidebar/registerDeveloperMenuIcon.svg" alt="">
+                                Registrasi Developer
+                            </a>
+                        </li>
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <img src="./assets/images/icon-sidebar/pusatBantuanManagementMenuIcon.svg" alt="">
+                                Pusat Bantuan Management
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainContent">
+            <div class="headContent">
+                <div class="sidebarButton">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="headControl">
+                    <div class="control dropdown notification">
+                        <button class="notificationButton" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./assets/images/notificationIcon.svg" alt="">
+                          <div class="valueNotification">
+                              <p>9</p>
+                          </div>
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <h4 class="headText">Notifikasi</h4>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                  <div class="icon">
+                                      <img src="./assets/images/messageIcon.svg" alt="">
+                                  </div>
+                                  <div class="detailMassage">
+                                      <h5 class="labelMassage">Pengguna Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quos.</h5>
+                                      <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, optio.</p>
+                                      <p class="time">2 menit yang lalu</p>
+                                  </div>
+                              </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item read" href="#">
+                                    <div class="icon">
+                                        <img src="./assets/images/messageIcon.svg" alt="">
+                                    </div>
+                                    <div class="detailMassage">
+                                        <h5 class="labelMassage">Pengguna</h5>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem?</p>
+                                        <p class="time">2 menit yang lalu</p>
+                                    </div>
+                                </a>
+                              </li>
+                          
+                        </ul>
+
+                    </div>
+                    
+                    <div class="control setting">
+                        <a href="#">
+                            <img src="./assets/images/settingIcon.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="control profile">
+                        <a href="#">
+                            <img src="./assets/images/profileIcon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bodyContent">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel pariatur ad modi, facere vitae voluptate nisi sit dolores error molestiae! Officiis praesentium culpa iure doloribus ab quibusdam ut natus consequatur amet omnis ducimus, recusandae quis, voluptatum magnam ipsa veniam perspiciatis molestias. Officia doloribus eos exercitationem necessitatibus, suscipit delectus adipisci sed repellendus earum blanditiis pariatur omnis provident nulla consequuntur tempora porro ipsa illo enim eaque at? Magnam temporibus obcaecati quasi accusamus harum similique illum libero reiciendis, molestiae incidunt quod nisi, amet minus? Voluptatum perspiciatis natus earum assumenda exercitationem. Deleniti soluta autem officiis nesciunt iure aliquam fugiat, iste nulla, nisi quisquam dolore!
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!--Vendor-->
+        <!--Jquery-->
+        <script src="./assets/vendor/jquery/jquery.min.js"></script>
+        <!--Javascript Bootstrap-->
+        <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Submenu Active-->
+    <script>
+
+        //Sidebar Active 
+        $('.sidebarButton').click(function() {
+            $('.sidebarWrapper').toggleClass('sidebar-active');
+        })
+        $('.bodyContent').click(function() {
+            $('.sidebarWrapper').removeClass('sidebar-active');
+        })
+        
+        //active class menu
+        $('.sidebarMenu').on('click', function () {
+            $(this).addClass('active').siblings('.active').removeClass('active');
+        });
+
+        //Submenu sidebar
+        $(".linkMenu").click(function () {
+            $(".submenuWrapper").slideUp(500);
+            if ($(this).parent().hasClass("submenuActive")) {
+                $(".linkMenu").removeClass("submenuActive");
+                $(this).parent().removeClass("submenuActive");
+            } else {
+                $(".linkMenu").removeClass("submenuActive");
+                $(this).next(".submenuWrapper").slideDown(500);
+                $(this).parent().addClass("submenuActive").siblings('.submenuActive').removeClass('submenuActive');
+            }
+        });
+
+        //Limit Text message notification
+        var txt= $('.message').text();
+        if(txt.length > 10)
+            $('.message').text(txt.substring(0,100) + '...');
+
+        
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,363 @@
+/*Font Import from google font*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+*, ::before, ::after, p, h1, h2, h3, h4, h5, h6 {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  background-color: #F6F6F6;
+}
+
+/*Variable Color*/
+/*Sidebar Style*/
+#app #sidebar .sidebarWrapper {
+  background-color: #fff;
+  padding: 2rem 0;
+  transition: .7s ease;
+  border-right: 1px solid #D0D0D0;
+  z-index: 999999;
+}
+
+#app #sidebar .sidebarWrapper .brandName {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+#app #sidebar .sidebarWrapper .brandName img {
+  width: 100%;
+  max-width: 200px;
+  transition: .5s;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar {
+  list-style: none;
+  padding-left: 0;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu {
+  margin: 1rem 0;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu .linkMenu {
+  display: flex;
+  align-items: center;
+  padding: .5rem 1.5rem;
+  text-decoration: none;
+  position: relative;
+  color: rgba(27, 28, 49, 0.4);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu .linkMenu img {
+  margin-right: 1rem;
+  width: 100%;
+  max-width: 26px;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu.active .linkMenu {
+  background-color: #F5F5F5;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu.active .linkMenu::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 5px;
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  left: 0;
+  background-color: #74B257;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu.haveSubmenu .submenuWrapper {
+  display: none;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu.submenuActive .submenuWrapper {
+  display: block;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu .submenuWrapper {
+  list-style: none;
+  padding-left: 4.2rem;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu .submenuWrapper .submenu {
+  padding: 0;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu .submenuWrapper .submenu .linkMenu {
+  padding: .4rem 0;
+  background-color: #fff;
+  width: fit-content;
+  position: relative;
+  margin: 0;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu .submenuWrapper .submenu .linkMenu::before {
+  display: none;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu .submenuWrapper .submenu .linkMenu.active::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 3px;
+  background-color: #74B257;
+  bottom: 0px;
+  z-index: 3;
+  width: 100%;
+}
+
+/*Sidebar Style Responsive*/
+@media screen and (min-width: 1200px) {
+  #app #sidebar .sidebarWrapper {
+    width: 350px;
+    position: fixed;
+    left: 0;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  #app #sidebar .sidebarWrapper {
+    width: 350px;
+    position: absolute;
+    left: -350px;
+    height: 100%;
+  }
+  #app #sidebar .sidebar-active {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  #app #sidebar .sidebarWrapper .brandName img {
+    max-width: 160px;
+  }
+  #app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu .linkMenu {
+    font-size: 14px;
+  }
+}
+
+/*Content layouting*/
+#app #mainContent .headContent {
+  background: #fff;
+  padding: 1.7rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #D0D0D0;
+  transition: .5s;
+}
+
+#app #mainContent .headContent .sidebarButton {
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #74B257;
+  transition: .5s;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+#app #mainContent .headContent .sidebarButton:hover {
+  background-color: #74B257;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#app #mainContent .headContent .sidebarButton:hover i {
+  color: #fff;
+  transition: .3s;
+}
+
+#app #mainContent .headContent .sidebarButton i {
+  font-size: 24px;
+  transition: .3s;
+}
+
+#app #mainContent .headContent .headControl {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#app #mainContent .headContent .headControl .control {
+  margin: 0 .7rem;
+}
+
+#app #mainContent .headContent .headControl .notification .notificationButton {
+  background: transparent;
+  border: none;
+  position: relative;
+}
+
+#app #mainContent .headContent .headControl .notification .notificationButton .valueNotification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  top: -8px;
+  right: -2px;
+  color: #fff;
+  position: absolute;
+}
+
+#app #mainContent .headContent .headControl .notification .notificationButton .valueNotification p {
+  color: #FFF;
+  position: relative;
+  z-index: 2;
+}
+
+#app #mainContent .headContent .headControl .notification .notificationButton .valueNotification::before {
+  content: '';
+  display: block;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #74B257;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu {
+  border-radius: 10px !important;
+  padding: 1rem 0;
+  opacity: 0;
+  transition: .7s, transform .7s ease;
+  -moz-transition: .7s, transform .7s ease;
+  -webkit-transition: .7s, transform .7s ease;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu.show {
+  opacity: 1;
+  transition: .7s, transform .7s ease;
+  -moz-transition: .7s, transform .7s ease;
+  -webkit-transition: .7s, transform .7s ease;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu .headText {
+  padding: 1rem 1.5rem;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .icon img {
+  max-width: 26px;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .detailMassage {
+  padding-left: 1rem;
+  width: 100%;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .detailMassage .labelMassage {
+  font-size: 18px;
+  margin-bottom: .4rem;
+  color: #000;
+  font-weight: 600;
+  max-width: 350px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .detailMassage .message {
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: #000;
+  white-space: pre-wrap;
+  overflow: hidden;
+  max-width: 350px;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .detailMassage .time {
+  font-size: 14px;
+  color: #7A7A7A;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu li .read .icon img {
+  opacity: .7;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu li .read .detailMassage .labelMassage {
+  color: #7A7A7A;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu li .read .detailMassage .message {
+  color: #7A7A7A;
+}
+
+#app #mainContent .bodyContent {
+  padding: 1.5rem;
+}
+
+@media screen and (max-width: 570px) {
+  #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .icon img {
+    max-width: 20px;
+  }
+  #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .detailMassage .labelMassage {
+    font-size: 14px;
+  }
+  #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .detailMassage .message {
+    font-size: 12px;
+  }
+  #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .detailMassage .time {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .icon {
+    margin-bottom: 1rem;
+  }
+  #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .detailMassage {
+    padding-left: 0;
+  }
+  #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .detailMassage .labelMassage {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .detailMassage .message {
+    font-size: 12px;
+  }
+  #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .detailMassage .time {
+    font-size: 12px;
+  }
+}
+
+/*Responsive Content Layoting*/
+@media screen and (min-width: 1200px) {
+  #app #mainContent {
+    margin-left: 350px;
+    transition: .7s ease;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  #app #mainContent {
+    margin-left: 0px;
+    transition: .7s ease;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #app #mainContent .headContent .sidebarButton {
+    opacity: 0;
+  }
+}
