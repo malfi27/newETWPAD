@@ -27,6 +27,7 @@ $primary-color : #74B257;
             transition: .7s ease;
             border-right: 1px solid #D0D0D0;
             z-index: 999999;
+            overflow-y: scroll;
             .brandName {
                 display: flex;
                 justify-content: center;
@@ -154,6 +155,7 @@ $primary-color : #74B257;
     #app {
         #sidebar {
             .sidebarWrapper {
+                width: 300px;
                 .brandName {
                     img {
                         max-width: 160px;

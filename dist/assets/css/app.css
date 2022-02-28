@@ -20,6 +20,7 @@ body {
   transition: .7s ease;
   border-right: 1px solid #D0D0D0;
   z-index: 999999;
+  overflow-y: scroll;
 }
 
 #app #sidebar .sidebarWrapper .brandName {
@@ -138,6 +139,9 @@ body {
 }
 
 @media screen and (max-width: 475px) {
+  #app #sidebar .sidebarWrapper {
+    width: 300px;
+  }
   #app #sidebar .sidebarWrapper .brandName img {
     max-width: 160px;
   }
