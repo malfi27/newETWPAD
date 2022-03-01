@@ -12,6 +12,9 @@
 
     <!--App Css Layouting-->
     <link rel="stylesheet" href="./assets/css/app.css">
+
+    <!--Index Style-->
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
     
@@ -194,7 +197,77 @@
             </div>
 
             <div class="bodyContent">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel pariatur ad modi, facere vitae voluptate nisi sit dolores error molestiae! Officiis praesentium culpa iure doloribus ab quibusdam ut natus consequatur amet omnis ducimus, recusandae quis, voluptatum magnam ipsa veniam perspiciatis molestias. Officia doloribus eos exercitationem necessitatibus, suscipit delectus adipisci sed repellendus earum blanditiis pariatur omnis provident nulla consequuntur tempora porro ipsa illo enim eaque at? Magnam temporibus obcaecati quasi accusamus harum similique illum libero reiciendis, molestiae incidunt quod nisi, amet minus? Voluptatum perspiciatis natus earum assumenda exercitationem. Deleniti soluta autem officiis nesciunt iure aliquam fugiat, iste nulla, nisi quisquam dolore!
+                <div class="firstLine">
+                    <div class="personilData">
+                        <div class="personil aktifPersonil">
+                            <div class="icon">
+                                <img src="./assets/images/icon-index/index_peopleIcon_Green.svg" alt="">
+                            </div>
+                            <div class="infoPersonil">
+                                <p>Personil Aktif</p>
+                                <h4>400.000</h4>
+                            </div>
+                        </div>
+                        <div class="personil pensiunPersonil">
+                            <div class="icon">
+                                <img src="./assets/images/icon-index/index_peopleIcon_Red.svg" alt="">
+                            </div>
+                            <div class="infoPersonil">
+                                <p>Personil Pensiun</p>
+                                <h4>400.000</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chartRekapDataPertahun">
+                        <h4>Rekap Data Pertahun</h4>
+                        <div class="wrapperChart">
+                            <canvas id="rekapDataPertahun"></canvas>
+                        </div>
+                    </div>
+                    <div class="userDataWrapper">
+                        <div class="firstRow">
+                            <div class="userData purple">
+                                <div class="icon">
+                                    <img src="./assets/images/icon-index/groupIcon_purple.svg" alt="">
+                                </div>
+                                <div class="detailData">
+                                    <h5>User Baru</h5>
+                                    <p><span class="value">27</span> Orang</p>
+                                </div>
+                            </div>
+                            <div class="userData green">
+                                <div class="icon">
+                                    <img src="./assets/images/icon-index/groupIcon_green.svg" alt="">
+                                </div>
+                                <div class="detailData">
+                                    <h5>Total User</h5>
+                                    <p><span class="value">356678</span> Orang</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="secondRow">
+                            <div class="userData red">
+                                <div class="icon">
+                                    <img src="./assets/images/icon-index/groupIcon_red.svg" alt="">
+                                </div>
+                                <div class="detailData">
+                                    <h5>Total Pengelola</h5>
+                                    <p><span class="value">3</span> Orang</p>
+                                </div>
+                            </div>
+                            <div class="userData blue">
+                                <div class="icon">
+                                    <img src="./assets/images/icon-index/groupIcon_blue.svg" alt="">
+                                </div>
+                                <div class="detailData">
+                                    <h5>Total Admin</h5>
+                                    <p><span class="value">3</span> Orang</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -211,41 +284,119 @@
         <script src="./assets/vendor/jquery/jquery.min.js"></script>
         <!--Javascript Bootstrap-->
         <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!--Submenu Active-->
+        <!--Chart Js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--App JS-->
+    <script src="./assets/js/app.js"></script>
+
+
     <script>
+        const rand = () =>
+        Array.from({ length: 12 }, () => Math.floor(Math.random() * 100));
 
-        //Sidebar Active 
-        $('.sidebarButton').click(function() {
-            $('.sidebarWrapper').toggleClass('sidebar-active');
-        })
-        $('.bodyContent').click(function() {
-            $('.sidebarWrapper').removeClass('sidebar-active');
-        })
-        
-        //active class menu
-        $('.sidebarMenu').on('click', function () {
-            $(this).addClass('active').siblings('.active').removeClass('active');
+        let data = rand();
+
+        function addData(chart, data) {
+        chart.data.datasets.forEach(dataset => {
+            let data = dataset.data;
+            const first = data.shift();
+            data.push(first);
+            dataset.data = data;
         });
 
-        //Submenu sidebar
-        $(".linkMenu").click(function () {
-            $(".submenuWrapper").slideUp(500);
-            if ($(this).parent().hasClass("submenuActive")) {
-                $(".linkMenu").removeClass("submenuActive");
-                $(this).parent().removeClass("submenuActive");
-            } else {
-                $(".linkMenu").removeClass("submenuActive");
-                $(this).next(".submenuWrapper").slideDown(500);
-                $(this).parent().addClass("submenuActive").siblings('.submenuActive').removeClass('submenuActive');
+        chart.update();
+        }
+
+        var ctx = document.getElementById("rekapDataPertahun").getContext("2d");
+        var myChart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: ["Jan", "Feb", "Mar", "Aprl", "Mei", "Juni", "Juli", "Agust", "Sept", "Okt" ,"Nov" ,"Des"],
+            datasets: [
+            {
+                label: "Current month",
+                data: rand(),
+                backgroundColor: ["rgba(113, 88, 203, .15)"],
+                borderColor: ["#62A052"],
+                borderWidth: 3,
+                fill: false,
+                pointRadius: 0,
+            },
+            {
+                label: "Last month",
+                data: rand(),
+                backgroundColor: ["rgba(161, 201, 249, .15)"],
+                borderColor: ["#7F9EC0"],
+                borderWidth: 3,
+                fill: false,
+                pointRadius: 0,
             }
+            ]
+        },
+        options: {
+            animation: {
+            duration: 250
+            },
+            tooltips: {
+            intersect: false,
+            backgroundColor: "rgba(113, 88, 203, 1)",
+            titleFontSize: 16,
+            titleFontStyle: "400",
+            titleSpacing: 4,
+            titleMarginBottom: 8,
+            bodyFontSize:	12,
+            bodyFontStyle:	'400',
+            bodySpacing: 4,
+            xPadding: 8,
+            yPadding: 8,
+            cornerRadius: 4,
+            displayColors: false,
+            callbacks: {
+                title: function (t, d) {
+                const o = d.datasets.map((ds) => ds.data[t[0].index] + "%")
+                
+                return o.join(', ');
+                },
+                label: function (t, d) {
+                return d.labels[t.index];
+                }
+            }
+            },
+            title: {
+            text: "Public Bandwidth",
+            display: true
+            },
+            maintainAspectRatio: true,
+            spanGaps: false,
+            elements: {
+            line: {
+                tension: 0.3
+            }
+            },
+            plugins: {
+            filler: {
+                propagate: false
+            },
+            legend : {
+                display :false
+            }
+            },
+            scales: {
+            xAxes: [
+                {
+                ticks: {
+                    autoSkip: false,
+                    maxRotation: 0
+                }
+                }
+            ]
+            }
+        }
         });
 
-        //Limit Text message notification
-        var txt= $('.message').text();
-        if(txt.length > 10)
-            $('.message').text(txt.substring(0,100) + '...');
+setInterval(() => addData(myChart), 5000);
 
-        
     </script>
         
 </body>

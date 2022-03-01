@@ -1,0 +1,158 @@
+/*Font Import from google font*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*,::before,::after,p,h1,h2,h3,h4,h5,h6 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/*Variable Color*/
+$primary-color : #74B257;
+
+
+
+#app {
+    #mainContent {
+        .bodyContent {
+            .firstLine {
+                display: flex;
+                //Total Data Personil
+                .personilData {
+                    display: flex;
+                    flex-direction: column;
+                    .personil {
+                        border-radius: 20px;
+                        display: flex;
+                        align-items: center;
+
+                        &.aktifPersonil {
+                            background-color: #eaf0ee;
+                        }
+                        &.pensiunPersonil {
+                            background-color: #f5ebe9;
+                        }
+                        
+                        .icon {
+                            img {
+                                width: 100%;
+                                max-width: 26px;
+                            }
+                        }
+                        .infoPersonil {
+                            padding-left: 1rem;
+                            h4 {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                //Total User Section
+                .userDataWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    .firstRow,.secondRow {
+                        display: flex;
+                        .userData {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            text-align: center;
+                            width: 100%;
+                            border-radius: 12px;
+
+                            .icon {
+                                margin-bottom: .7rem;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .detailData {
+                                h5 {
+                                    font-weight: 500;
+                                }
+                                p {
+                                    color: rgba(184, 184, 184, 1);
+                                    font-weight: 600;
+                                }                                
+                            }
+
+                            &.purple {
+                                background-color: #eeedf2;
+                            }
+                            &.green {
+                                background-color: #eaf0ee;
+                            }
+                            &.red {
+                                background-color: #f5ecea;
+                            }
+                            &.blue {
+                                background-color: #eaeef4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*Responsive*/
+@media screen and (min-width : 0px) {
+    #app {
+        #mainContent {
+            .bodyContent {
+                .firstLine {
+                    flex-direction: column;
+                    .personilData {
+                        margin-bottom: 1.5rem;
+                        .personil {
+                            padding: 1rem 1.5rem;
+                            margin-bottom: .7rem;
+                        }
+                    }
+
+                    .chartRekapDataPertahun {
+                        margin-bottom: 1.5rem;
+                        h4 {
+                            font-size: 20px;
+                            margin-bottom: .7rem;
+                        }
+                        .wrapperChart {
+                            canvas {
+                                max-height: 300px;
+                            }
+                        }
+                    }
+
+                    .userDataWrapper {
+                        .firstRow,.secondRow {
+                            .userData {
+                                padding: 1.2rem 1rem;
+                                &:first-child {
+                                    margin-right: 1rem;
+                                }
+
+                                .detailData {
+                                    h5 {
+                                        font-size: 16px;
+                                    }
+                                    p {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        .firstRow {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

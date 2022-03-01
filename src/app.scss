@@ -63,7 +63,6 @@ $primary-color : #74B257;
                         &.active {
                             .linkMenu {
                                 background-color: #F5F5F5;
-
                                 &::before {
                                     content: '';
                                     display: block;
@@ -71,7 +70,7 @@ $primary-color : #74B257;
                                     width: 5px;
                                     border-radius: 0 5px 5px 0;
                                     position: absolute;
-                                    left: 0;
+                                    left: 0px;
                                     background-color: $primary-color;
                                 }
                             }
@@ -255,15 +254,9 @@ $primary-color : #74B257;
                         border-radius: 10px !important;
                         padding: 1rem 0;
                         opacity: 0;
-                        transition: .7s, transform .7s ease;
-                        -moz-transition: .7s, transform .7s ease;
-                        -webkit-transition: .7s, transform .7s ease;
 
                         &.show {
                             opacity: 1;
-                            transition: .7s, transform .7s ease;
-                            -moz-transition: .7s, transform .7s ease;
-                            -webkit-transition: .7s, transform .7s ease;
                         }
 
                         .headText {
@@ -274,6 +267,11 @@ $primary-color : #74B257;
                                 display: flex;
                                 align-items: center;
                                 padding: .5rem 1rem;
+                                background-color: #fff;
+
+                                &:hover {
+                                    background-color: #ededed;
+                                }
 
                                 .icon {
                                     img {
@@ -423,7 +421,7 @@ $primary-color : #74B257;
     }
 }
 
-//responsive respone button sidebar
+/*responsive respone button sidebar*/
 @media screen and (min-width :1200px) {
     #app {
         #mainContent {
@@ -433,5 +431,16 @@ $primary-color : #74B257;
                 }
             }
         }
+    }
+}
+
+
+//component class
+
+/*Chart*/
+.wrapperChart {
+    width: 100%;
+    canvas {
+        width: 100%;
     }
 }

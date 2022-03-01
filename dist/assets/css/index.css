@@ -1,0 +1,136 @@
+/*Font Import from google font*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+*, ::before, ::after, p, h1, h2, h3, h4, h5, h6 {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/*Variable Color*/
+#app #mainContent .bodyContent .firstLine {
+  display: flex;
+}
+
+#app #mainContent .bodyContent .firstLine .personilData {
+  display: flex;
+  flex-direction: column;
+}
+
+#app #mainContent .bodyContent .firstLine .personilData .personil {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#app #mainContent .bodyContent .firstLine .personilData .personil.aktifPersonil {
+  background-color: #eaf0ee;
+}
+
+#app #mainContent .bodyContent .firstLine .personilData .personil.pensiunPersonil {
+  background-color: #f5ebe9;
+}
+
+#app #mainContent .bodyContent .firstLine .personilData .personil .icon img {
+  width: 100%;
+  max-width: 26px;
+}
+
+#app #mainContent .bodyContent .firstLine .personilData .personil .infoPersonil {
+  padding-left: 1rem;
+}
+
+#app #mainContent .bodyContent .firstLine .personilData .personil .infoPersonil h4 {
+  font-weight: 600;
+}
+
+#app #mainContent .bodyContent .firstLine .userDataWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow {
+  display: flex;
+}
+
+#app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  border-radius: 12px;
+}
+
+#app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .icon, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .icon {
+  margin-bottom: .7rem;
+}
+
+#app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .icon img, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .icon img {
+  width: 100%;
+}
+
+#app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .detailData h5, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .detailData h5 {
+  font-weight: 500;
+}
+
+#app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .detailData p, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .detailData p {
+  color: #b8b8b8;
+  font-weight: 600;
+}
+
+#app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData.purple, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData.purple {
+  background-color: #eeedf2;
+}
+
+#app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData.green, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData.green {
+  background-color: #eaf0ee;
+}
+
+#app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData.red, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData.red {
+  background-color: #f5ecea;
+}
+
+#app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData.blue, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData.blue {
+  background-color: #eaeef4;
+}
+
+/*Responsive*/
+@media screen and (min-width: 0px) {
+  #app #mainContent .bodyContent .firstLine {
+    flex-direction: column;
+  }
+  #app #mainContent .bodyContent .firstLine .personilData {
+    margin-bottom: 1.5rem;
+  }
+  #app #mainContent .bodyContent .firstLine .personilData .personil {
+    padding: 1rem 1.5rem;
+    margin-bottom: .7rem;
+  }
+  #app #mainContent .bodyContent .firstLine .chartRekapDataPertahun {
+    margin-bottom: 1.5rem;
+  }
+  #app #mainContent .bodyContent .firstLine .chartRekapDataPertahun h4 {
+    font-size: 20px;
+    margin-bottom: .7rem;
+  }
+  #app #mainContent .bodyContent .firstLine .chartRekapDataPertahun .wrapperChart canvas {
+    max-height: 300px;
+  }
+  #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData {
+    padding: 1.2rem 1rem;
+  }
+  #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData:first-child, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData:first-child {
+    margin-right: 1rem;
+  }
+  #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .detailData h5, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .detailData h5 {
+    font-size: 16px;
+  }
+  #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .detailData p, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .detailData p {
+    font-size: 12px;
+  }
+  #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow {
+    margin-bottom: 1rem;
+  }
+}
