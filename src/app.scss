@@ -440,6 +440,7 @@ $primary-color : #74B257;
 /*Chart*/
 .wrapperChart {
     width: 100%;
+    position: relative;
     canvas {
         width: 100%;
     }

@@ -59,6 +59,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
   width: 100%;
   border-radius: 12px;
 }
@@ -73,6 +74,8 @@
 
 #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .detailData h5, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .detailData h5 {
   font-weight: 500;
+  margin-bottom: .1rem;
+  line-height: 18px;
 }
 
 #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .detailData p, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .detailData p {
@@ -105,8 +108,10 @@
     margin-bottom: 1.5rem;
   }
   #app #mainContent .bodyContent .firstLine .personilData .personil {
-    padding: 1rem 1.5rem;
-    margin-bottom: .7rem;
+    padding: 1.5rem;
+  }
+  #app #mainContent .bodyContent .firstLine .personilData .personil:first-child {
+    margin-bottom: 1rem;
   }
   #app #mainContent .bodyContent .firstLine .chartRekapDataPertahun {
     margin-bottom: 1.5rem;
@@ -116,7 +121,7 @@
     margin-bottom: .7rem;
   }
   #app #mainContent .bodyContent .firstLine .chartRekapDataPertahun .wrapperChart canvas {
-    max-height: 300px;
+    max-height: 310px;
   }
   #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData {
     padding: 1.2rem 1rem;
@@ -132,5 +137,73 @@
   }
   #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow {
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #app #mainContent .bodyContent .firstLine {
+    flex-direction: column;
+  }
+  #app #mainContent .bodyContent .firstLine .personilData {
+    flex-direction: row;
+  }
+  #app #mainContent .bodyContent .firstLine .personilData .personil {
+    width: 100%;
+    height: 100%;
+  }
+  #app #mainContent .bodyContent .firstLine .personilData .personil:first-child {
+    margin-right: 1rem;
+  }
+  #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .detailData h5, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .detailData h5 {
+    font-size: 18px;
+  }
+  #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .detailData p, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .detailData p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #app #mainContent .bodyContent .firstLine {
+    flex-direction: row;
+  }
+  #app #mainContent .bodyContent .firstLine .personilData {
+    width: 70%;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+  }
+  #app #mainContent .bodyContent .firstLine .personilData .personil {
+    padding: 1rem 1.5rem;
+    width: 100%;
+  }
+  #app #mainContent .bodyContent .firstLine .personilData .personil:first-child {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+  #app #mainContent .bodyContent .firstLine .personilData .personil .infoPersonil p {
+    font-size: 18px;
+  }
+  #app #mainContent .bodyContent .firstLine .personilData .personil .infoPersonil h4 {
+    font-size: 24px;
+  }
+  #app #mainContent .bodyContent .firstLine .chartRekapDataPertahun {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+    width: 130%;
+  }
+  #app #mainContent .bodyContent .firstLine .userDataWrapper {
+    width: 100%;
+  }
+  #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow {
+    height: 100%;
+  }
+  #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData {
+    height: 100%;
+  }
+  #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .detailData h5, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .detailData h5 {
+    font-size: 18px;
+  }
+  #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .detailData p, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .detailData p {
+    font-size: 16px;
   }
 }

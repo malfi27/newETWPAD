@@ -289,8 +289,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--App JS-->
     <script src="./assets/js/app.js"></script>
-
-
     <script>
         const rand = () =>
         Array.from({ length: 12 }, () => Math.floor(Math.random() * 100));
@@ -315,22 +313,20 @@
             labels: ["Jan", "Feb", "Mar", "Aprl", "Mei", "Juni", "Juli", "Agust", "Sept", "Okt" ,"Nov" ,"Des"],
             datasets: [
             {
-                label: "Current month",
+                label: "Total Bulan Ini",
                 data: rand(),
                 backgroundColor: ["rgba(113, 88, 203, .15)"],
                 borderColor: ["#62A052"],
                 borderWidth: 3,
                 fill: false,
-                pointRadius: 0,
             },
             {
-                label: "Last month",
+                label: "Total Bulan Ini",
                 data: rand(),
                 backgroundColor: ["rgba(161, 201, 249, .15)"],
                 borderColor: ["#7F9EC0"],
                 borderWidth: 3,
                 fill: false,
-                pointRadius: 0,
             }
             ]
         },
@@ -394,10 +390,8 @@
             }
         }
         });
-
-setInterval(() => addData(myChart), 5000);
-
+        setInterval(() => addData(myChart), 5000);
     </script>
-        
+
 </body>
 </html>
