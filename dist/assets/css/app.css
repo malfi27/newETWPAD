@@ -372,6 +372,13 @@ body {
   position: relative;
 }
 
+.wrapperChart.borderChart {
+  padding: .5rem;
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+}
+
 .wrapperChart canvas {
   width: 100%;
 }

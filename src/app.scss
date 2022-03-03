@@ -441,6 +441,12 @@ $primary-color : #74B257;
 .wrapperChart {
     width: 100%;
     position: relative;
+    &.borderChart {
+        padding: .5rem;
+        border-radius: 50%;
+        border-width: 5px;
+        border-style: solid;
+    }
     canvas {
         width: 100%;
     }

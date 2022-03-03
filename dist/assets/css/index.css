@@ -99,6 +99,121 @@
   background-color: #eaeef4;
 }
 
+#app #mainContent .bodyContent .secondLine .containerLine {
+  /*Baltab*/
+  /*KPR*/
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab {
+  display: flex;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData .icon {
+  margin-bottom: 1rem;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData .icon img {
+  width: 100%;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData h4 {
+  font-weight: 600;
+  color: #3E3C3C;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData p {
+  font-family: 400;
+  color: #3E3C3C;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData.orangeData {
+  background: #f5ebe9;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData.greenData {
+  background: #eaf0ee;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData.blueData {
+  background: #eaeef4;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR {
+  display: flex;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan {
+  display: flex;
+  align-items: center;
+  background: #f5ecea;
+  border-radius: 10px;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan {
+  color: #3E3C3C;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan h5 {
+  font-weight: 600;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur.debiturBTN {
+  background: #f0ecf6;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur.debiturBTN::before {
+  background: #7537FF;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur.debiturBRI {
+  background: #eceef0;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur.debiturBRI::before {
+  background: rgba(40, 78, 120, 0.8);
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur {
+  color: #3E3C3C;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur h5 {
+  font-weight: 600;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur p {
+  font-weight: 600;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur .month {
+  font-weight: 400;
+}
+
 /*Responsive*/
 @media screen and (min-width: 0px) {
   #app #mainContent .bodyContent .firstLine {
@@ -137,6 +252,95 @@
   }
   #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow {
     margin-bottom: 1rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine {
+    /*Baltab*/
+    /*KPR*/
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab {
+    flex-direction: column;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData {
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData .icon img {
+    max-width: 64px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData h4 {
+    font-size: 18px;
+    margin-bottom: .5rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData h4 .value {
+    padding: 0 .2rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine {
+    width: 100%;
+    height: 100%;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan {
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    height: 100%;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan:first-child {
+    border-radius: 10px 0 0 0;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan:last-child {
+    border-radius: 0 0 0 10px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .wrapperChart {
+    margin-bottom: 1rem;
+    max-width: 100px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan h5 {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan .value {
+    margin-bottom: 2px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan p {
+    font-size: 12px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine {
+    width: 100%;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur {
+    padding: 1.5rem 1rem;
+    flex-direction: column-reverse;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur:first-child {
+    border-radius: 0px 10px 0 0;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur:last-child {
+    border-radius: 0 0 10px 0;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur::before {
+    display: none;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .iconDebitur {
+    margin-bottom: 1rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur h5 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur .value {
+    margin-bottom: 2px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur p {
+    font-size: 12px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur .month {
+    margin-top: 2px;
   }
 }
 

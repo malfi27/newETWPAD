@@ -268,6 +268,90 @@
                         
                     </div>
                 </div>
+                <div class="secondLine">
+                    <div class="containerLine">
+                        <!--e BALTAB-->
+                        <div class="containerBaltab">
+                            <h4>E-BALTAB</h4>
+                            <div class="wrapperDataBaltab">
+                                <div class="baltabData orangeData">
+                                    <div class="icon">
+                                        <img src="./assets/images/icon-index/baltabIcon_orange.svg" alt="">
+                                    </div>
+                                    <h4><span class="value">323</span>Prajurit</h4>
+                                    <p>Jumlah Pengajuan</p>
+                                </div>
+                                <div class="baltabData blueData">
+                                    <div class="icon">
+                                        <img src="./assets/images/icon-index/baltabIcon_Blue.svg" alt="">
+                                    </div>
+                                    <h4>Rp<span class="value">711.000.000</span></h4>
+                                    <p>Data Alokasi Februari 2022</p>
+                                </div>
+                                <div class="baltabData greenData">
+                                    <div class="icon">
+                                        <img src="./assets/images/icon-index/baltabIcon_green.svg" alt="">
+                                    </div>
+                                    <h4>Rp<span class="value">711.000.000</span></h4>
+                                    <p>Data Penyaluran Februari 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerLine">
+                        <!--E-KPR-->
+                        <div class="containerKPR">
+                            <h4>E-KPR</h4>
+                            <div class="firstLineKPR">
+                                <div class="tunggakanLine">
+                                    <div class="tunggakan tunggakanBRI">
+                                        <div class="wrapperChart borderChart" style="border-color: #F17A5D;">
+                                            <canvas id="totalTunggakanBRI"></canvas>
+                                        </div>
+                                        <div class="infoTunggakan">
+                                            <h5>Total Tunggakan BRI</h5>
+                                            <p class="value">Rp <span class="valueTunggakan">308.000.000.000</span></p>
+                                            <p class="date">Februari 2022</p>
+                                        </div>
+                                    </div>
+                                    <div class="tunggakan tunggakanBTN">
+                                        <div class="wrapperChart borderChart" style="border-color: #F17A5D;">
+                                            <canvas id="totalTunggakanBTN"></canvas>
+                                        </div>
+                                        <div class="infoTunggakan">
+                                            <h5>Total Tunggakan BTN</h5>
+                                            <p class="value">Rp <span class="valueTunggakan">308.000.000.000</span></p>
+                                            <p class="date">Februari 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="debiturLine">
+                                    <div class="debitur debiturBTN">
+                                        <div class="infoDebitur">
+                                            <h5>Total Debitur BTN</h5>
+                                            <p><span class="value">2</span>Orang</p>
+                                            <p class="month">Agustus 2021</p>
+                                        </div>
+                                        <div class="iconDebitur">
+                                            <img src="./assets/images/icon-index/iconDebiturBTN.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="debitur debiturBRI">
+                                        <div class="infoDebitur">
+                                            <h5>Total Debitur BRI</h5>
+                                            <p><span class="value">2</span>Orang</p>
+                                            <p class="month">Agustus 2021</p>
+                                        </div>
+                                        <div class="iconDebitur">
+                                            <img src="./assets/images/icon-index/iconDebiturBRI.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -287,8 +371,10 @@
         <!--Chart Js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!--App JS-->
     <script src="./assets/js/app.js"></script>
+
     <script>
         const rand = () =>
         Array.from({ length: 12 }, () => Math.floor(Math.random() * 100));
@@ -391,6 +477,77 @@
         }
         });
         setInterval(() => addData(myChart), 5000);
+    </script>
+
+    <script>
+        /*Total Tunggakan BRI*/
+        var ctxTunggakanBRI = document.getElementById("totalTunggakanBRI");
+        var dataTotalTunggakanBRI = {
+            labels: [
+                "Total Pelunasa",
+                "Total Tunggakan",
+            ],
+            datasets: [
+                {
+                    data: [25, 75],
+                    backgroundColor: [
+                        "#ECECEC",
+                        "#F17A5D",
+                    ],
+                    hoverBackgroundColor: [
+                        "#F17A5D",
+                    ]
+                }]
+        };
+        var optionsTotalTunggakanBRI = { 
+            cutoutPercentage:40,
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: false
+                },
+            }
+        };
+        var tunggakanBRIDoughnutChart = new Chart(ctxTunggakanBRI, {
+            type: 'doughnut',
+            data: dataTotalTunggakanBRI,
+            options: optionsTotalTunggakanBRI
+        });
+
+
+        /*Total Tunggakan BTN*/
+        var ctxTunggakanBTN = document.getElementById("totalTunggakanBTN");
+        var dataTotalTunggakanBTN = {
+            labels: [
+                "Total Pelunasa",
+                "Total Tunggakan",
+            ],
+            datasets: [
+                {
+                    data: [25, 75],
+                    backgroundColor: [
+                        "#ECECEC",
+                        "#F17A5D",
+                    ],
+                    hoverBackgroundColor: [
+                        "#F17A5D",
+                    ]
+                }]
+        };
+        var optionsTotalTunggakanBTN = { 
+            cutoutPercentage:40,
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: false
+                },
+            }
+        };
+        var tunggakanBTNDoughnutChart = new Chart(ctxTunggakanBTN, {
+            type: 'doughnut',
+            data: dataTotalTunggakanBTN,
+            options: optionsTotalTunggakanBTN
+        });
     </script>
 
 </body>
