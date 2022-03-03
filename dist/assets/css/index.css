@@ -166,10 +166,18 @@
   font-weight: 600;
 }
 
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan p {
+  color: #3E3C3C;
+}
+
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur {
   display: flex;
   align-items: center;
   position: relative;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .iconDebitur img {
+  width: 100%;
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur::before {
@@ -208,6 +216,7 @@
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur p {
   font-weight: 600;
+  color: #3E3C3C;
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur .month {
@@ -281,6 +290,9 @@
     font-size: 14px;
     line-height: 16px;
   }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR {
+    height: 100%;
+  }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine {
     width: 100%;
     height: 100%;
@@ -306,6 +318,7 @@
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan .value {
     margin-bottom: 2px;
+    text-decoration: none;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan p {
     font-size: 12px;
@@ -315,6 +328,9 @@
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur {
     padding: 1.5rem 1rem;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
     flex-direction: column-reverse;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur:first-child {
@@ -331,16 +347,16 @@
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur h5 {
     font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur .value {
     margin-bottom: 2px;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur p {
-    font-size: 12px;
+    font-size: 14px;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur .month {
-    margin-top: 2px;
+    font-size: 12px;
   }
 }
 
