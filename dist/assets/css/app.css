@@ -129,7 +129,7 @@ body {
 @media screen and (max-width: 1199px) {
   #app #sidebar .sidebarWrapper {
     width: 350px;
-    position: absolute;
+    position: fixed;
     left: -350px;
     height: 100%;
   }
@@ -375,7 +375,7 @@ body {
 .wrapperChart.borderChart {
   padding: .5rem;
   border-radius: 50%;
-  border-width: 5px;
+  border-width: 3px;
   border-style: solid;
 }
 

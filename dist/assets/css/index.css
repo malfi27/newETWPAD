@@ -11,6 +11,7 @@
 /*Variable Color*/
 #app #mainContent .bodyContent .firstLine {
   display: flex;
+  margin-bottom: 1.7rem;
 }
 
 #app #mainContent .bodyContent .firstLine .personilData {
@@ -101,7 +102,17 @@
 
 #app #mainContent .bodyContent .secondLine .containerLine {
   /*Baltab*/
+  /*Akunting*/
   /*KPR*/
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerBaltab {
+  margin-bottom: 2rem;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerBaltab h4 {
+  margin-bottom: .7rem;
+  font-weight: 700;
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab {
@@ -147,6 +158,59 @@
   background: #eaeef4;
 }
 
+#app #mainContent .bodyContent .secondLine .containerLine .containerAkunting {
+  margin-bottom: 2rem;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerAkunting h4 {
+  margin-bottom: .7rem;
+  font-weight: 700;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerAkunting .wrapperContentAkunting .wrapperTable:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerAkunting .wrapperContentAkunting .wrapperTable .titleTable {
+  margin-bottom: .5rem;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerAkunting .wrapperContentAkunting .wrapperTable .tables {
+  background-color: #fff;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerAkunting .wrapperContentAkunting .wrapperTable .tables thead {
+  color: #fff;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerAkunting .wrapperContentAkunting .wrapperTable .tables thead tr th {
+  border-bottom: none !important;
+  padding: .8rem;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerAkunting .wrapperContentAkunting .wrapperTable .tables tbody tr td {
+  font-weight: 300;
+  vertical-align: middle;
+  padding: .8rem;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerAkunting .wrapperContentAkunting .wrapperTable .tables.saldoAkunTable thead {
+  background-color: #3F8CFF;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerAkunting .wrapperContentAkunting .wrapperTable .tables.hutangPerAkun thead {
+  background-color: #FF9379;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR {
+  margin-bottom: 2rem;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR h4 {
+  margin-bottom: .7rem;
+  font-weight: 700;
+}
+
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR {
   display: flex;
 }
@@ -170,6 +234,11 @@
   color: #3E3C3C;
 }
 
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan p .valueTunggakan {
+  text-decoration: none;
+  color: #3E3C3C;
+}
+
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur {
   display: flex;
   align-items: center;
@@ -185,9 +254,9 @@
   display: block;
   position: absolute;
   left: 0;
-  width: 8px;
+  width: 10px;
   height: 100%;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 10px 10px 0;
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur.debiturBTN {
@@ -219,8 +288,149 @@
   color: #3E3C3C;
 }
 
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur p .value {
+  padding: 0 4px;
+}
+
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur .month {
   font-weight: 400;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-radius: 0 10px 10px 0;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur .infoDebitur h5 {
+  margin-bottom: .7rem;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur .infoDebitur p {
+  font-weight: 600;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur .infoDebitur .month {
+  font-weight: 400;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur .iconDebitur img {
+  width: 100%;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur.debiturBaru {
+  background: #eaf0f6;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur.debiturBaru::before {
+  background: rgba(0, 122, 255, 0.8);
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur.debiturLunas {
+  background: #ecf3f1;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur.debiturLunas::before {
+  background: rgba(53, 194, 147, 0.8);
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur.outstanding, #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur.debiturMeninggal {
+  background: #f5ecea;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur.outstanding::before {
+  background: rgba(222, 53, 11, 0.8);
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur.debiturMeninggal::before {
+  background: rgba(255, 86, 44, 0.8);
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .chartDataRekapBulanan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .chartDataRekapBulanan h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .chartDataRekapBulanan .wrapperChart {
+  max-width: 350px;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard {
+  position: relative;
+  border-radius: 16px;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard h6 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard h5 {
+  font-weight: 600;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard::before {
+  content: '';
+  display: block;
+  position: absolute;
+  min-height: 100%;
+  width: 8px;
+  min-height: 60%;
+  top: 20%;
+  border-radius: 10px;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard.totalPokok {
+  background: #ecf3f1;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard.totalPokok::before {
+  background: #35C293;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard.totalBunga {
+  background: #f5ecea;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard.totalBunga::before {
+  background: #DE350B;
+}
+
+#app #mainContent .bodyContent .etwpLine h4 {
+  margin-bottom: .5rem;
+  font-weight: 700;
+}
+
+#app #mainContent .bodyContent .etwpLine h5 {
+  margin-bottom: 1.4rem;
+  color: rgba(27, 28, 49, 0.7);
+  font-weight: 700;
+}
+
+#app #mainContent .bodyContent .etwpLine .dateMonth {
+  color: #1B1C31;
+  font-weight: 500;
 }
 
 /*Responsive*/
@@ -292,6 +502,7 @@
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR {
     height: 100%;
+    margin-bottom: 1rem;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine {
     width: 100%;
@@ -358,6 +569,38 @@
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur .month {
     font-size: 12px;
   }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur {
+    margin-bottom: 1rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur .infoDebitur h5 {
+    margin-bottom: .7rem;
+    font-size: 16px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur .infoDebitur p {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: .2rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur .infoDebitur p .value {
+    margin: 0 .2rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur .infoDebitur .month {
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard {
+    padding: 1rem 1rem 1rem 1.2rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard::before {
+    left: 0;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard h6 {
+    font-size: 12px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard h5 {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -378,6 +621,100 @@
     font-size: 18px;
   }
   #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .detailData p, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .detailData p {
+    font-size: 14px;
+  }
+  #app #mainContent .bodyContent .secondLine {
+    display: flex;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine {
+    width: 100%;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine:first-child {
+    margin-right: 1rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab {
+    flex-direction: row;
+    margin: 0 -.5rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData {
+    padding: 1.2rem;
+    margin: 0 .5rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData:not(:last-child) {
+    margin-bottom: 0;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData .icon img {
+    max-width: 52px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData h4 {
+    font-size: 14px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData p {
+    font-size: 12px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR {
+    flex-direction: column;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan {
+    padding: 1.2rem;
+    flex-direction: row;
+    height: 100%;
+    border-radius: 10px !important;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan:first-child {
+    margin-bottom: 1rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .wrapperChart {
+    margin-bottom: 0rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan {
+    padding-left: 1rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan h5 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan .value {
+    margin-bottom: 2px;
+    text-decoration: none;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan p {
+    font-size: 14px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine {
+    width: 100%;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur {
+    padding: 1.2rem 1.6rem !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 10px !important;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur:first-child {
+    margin-bottom: 1rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur::before {
+    display: block;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .iconDebitur {
+    margin-bottom: 0rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur p {
+    font-size: 16px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur p .value {
+    padding: 0 2px 0 0;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur .month {
     font-size: 14px;
   }
 }
@@ -425,5 +762,86 @@
   }
   #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData .detailData p, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData .detailData p {
     font-size: 16px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData {
+    padding: 2rem 1.5rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData .icon img {
+    max-width: 72px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData h4 {
+    font-size: 18px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData p {
+    font-size: 14px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR {
+    flex-direction: row;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine {
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan {
+    padding: 1.2rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .wrapperChart {
+    width: 100%;
+    max-width: 90px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan {
+    width: 100%;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan h5 {
+    font-size: 18px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan p {
+    font-size: 14px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine {
+    width: 100%;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur {
+    padding: 1.6rem 1.5rem !important;
+    height: fit-content;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur h5 {
+    font-size: 18px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur p {
+    font-size: 16px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur .month {
+    font-size: 14px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur {
+    margin-bottom: 1rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur .infoDebitur h5 {
+    margin-bottom: .7rem;
+    font-size: 18px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur .infoDebitur p {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: .2rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur .infoDebitur .month {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard {
+    padding: 1.8rem;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard::before {
+    left: 10px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard h6 {
+    font-size: 14px;
+  }
+  #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard h5 {
+    font-size: 16px !important;
   }
 }

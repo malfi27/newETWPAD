@@ -19,6 +19,7 @@ $primary-color : #74B257;
         .bodyContent {
             .firstLine {
                 display: flex;
+                margin-bottom: 1.7rem;
                 //Total Data Personil
                 .personilData {
                     display: flex;
@@ -102,7 +103,10 @@ $primary-color : #74B257;
                 .containerLine {
                     /*Baltab*/
                     .containerBaltab {
+                        margin-bottom: 2rem;
                         h4 {
+                            margin-bottom: .7rem;
+                            font-weight: 700;
                         }
                         .wrapperDataBaltab {
                             display: flex;
@@ -141,11 +145,62 @@ $primary-color : #74B257;
                             }
                         }
                     }
+                    /*Akunting*/
+                    .containerAkunting {
+                        margin-bottom: 2rem;
+                        h4 {
+                            margin-bottom: .7rem;
+                            font-weight: 700;
+                        }
+                        .wrapperContentAkunting {
+                            .wrapperTable {
+                                &:not(:last-child) {
+                                    margin-bottom: 1rem;
+                                }
+                                .titleTable {
+                                    margin-bottom: .5rem;
+                                }
+                                .tables {
+                                    background-color: #fff;
+                                    thead {
+                                        color: #fff;
+                                        tr {
+                                            th {
+                                                border-bottom: none !important;
+                                                padding: .8rem;
+                                            }
+                                        }
+                                    }
+                                    tbody {
+                                        tr {
+                                            td {
+                                                font-weight: 300;
+                                                vertical-align: middle;
+                                                padding: .8rem;
 
+                                            }
+                                        }
+                                    }
+                                    &.saldoAkunTable {
+                                        thead {
+                                            background-color:#3F8CFF;
+                                        }
+                                    }
+                                    &.hutangPerAkun {
+                                        thead {
+                                            background-color: #FF9379;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                     /*KPR*/
                     .containerKPR {
+                        margin-bottom: 2rem;
                         h4{
-
+                            margin-bottom: .7rem;
+                            font-weight: 700;
                         }
                         .firstLineKPR {
                             display: flex;
@@ -162,6 +217,10 @@ $primary-color : #74B257;
                                         }
                                         p {
                                             color: #3E3C3C;
+                                            .valueTunggakan {
+                                                text-decoration: none;
+                                                color: #3E3C3C;
+                                            }
                                         }
                                     }
                                 }
@@ -182,9 +241,9 @@ $primary-color : #74B257;
                                         display: block;
                                         position: absolute;
                                         left: 0;
-                                        width: 8px;
+                                        width: 10px;
                                         height: 100%;
-                                        border-radius: 0 5px 5px 0;
+                                        border-radius: 0 10px 10px 0;
                                     }
 
                                     &.debiturBTN {
@@ -208,6 +267,9 @@ $primary-color : #74B257;
                                         p {
                                             font-weight: 600;
                                             color: #3E3C3C;
+                                            .value {
+                                                padding: 0 4px;
+                                            }
                                         }
                                         .month {
                                             font-weight: 400;
@@ -216,7 +278,140 @@ $primary-color : #74B257;
                                 }
                             }
                         }
+                        .secondLineKpr {
+                            .debiturDataLine {
+                                .debitur {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    position: relative;
+                                    padding: 1rem 1rem 1rem 1.5rem;
+                                    border-radius: 0 10px 10px 0;
+
+                                    .infoDebitur {
+                                        h5 {
+                                            margin-bottom: .7rem;
+                                        }
+                                        p {
+                                            font-weight: 600;
+                                        }
+                                        .month {
+                                            font-weight: 400;
+                                        }
+                                    }
+                                    .iconDebitur {
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    &::before {
+                                        content: '';
+                                        display: block;
+                                        position: absolute;
+                                        left: 0;
+                                        top:0 ;
+                                        width: 10px;
+                                        height: 100%;
+                                        border-radius: 0 10px 10px 0;
+                                    }
+
+                                    &.debiturBaru {
+                                        background: #eaf0f6;
+
+                                        &::before {
+                                            background: rgba(0, 122, 255, 0.8);
+                                        }
+                                    }
+                                    &.debiturLunas {
+                                        background: #ecf3f1;
+                                        &::before {
+                                            background: rgba(53, 194, 147, 0.8);
+                                        }
+                                    }
+                                    &.outstanding,&.debiturMeninggal {
+                                        background: #f5ecea;
+                                    }
+                                    &.outstanding {
+                                        &::before {
+                                            background: rgba(222, 53, 11, 0.8);
+                                        }
+                                    }
+                                    &.debiturMeninggal {
+                                        &::before {
+                                            background: rgba(255, 86, 44, 0.8);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .thirdline {
+                            .chartDataRekapBulanan {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                margin-bottom: 1.4rem;
+                                h4 {
+                                    font-weight: 600;
+                                    margin-bottom: 1rem;
+                                }
+                                .wrapperChart {
+                                    max-width: 350px;
+                                }
+                            }
+                            .valueCard {
+                                position: relative;
+                                border-radius: 16px;
+                                h6 {
+                                    margin-bottom: .5rem;
+                                    font-weight: 500;
+                                }
+                                h5 {
+                                    font-weight: 600;
+                                }
+
+                                &::before {
+                                    content: '';
+                                    display: block;
+                                    position: absolute;
+                                    min-height: 100%;
+                                    width: 8px;
+                                    min-height: 60%;
+                                    top: 20%;
+                                    border-radius: 10px;
+                                }
+
+                                &.totalPokok {
+                                    background: #ecf3f1;
+
+                                    &::before {
+                                        background: #35C293;
+                                    }
+                                }
+                                &.totalBunga {
+                                    background: #f5ecea;
+                                    &::before {
+                                        background: #DE350B;
+                                    }
+                                }
+                            }
+                        }
                     }
+                }
+            }
+            .etwpLine {
+                h4 {
+                    margin-bottom: .5rem;
+                    font-weight: 700;
+                }
+                h5 {
+                    margin-bottom: 1.4rem;
+                    color: rgba($color: #1B1C31, $alpha: .7);
+                    font-weight: 700;
+                }
+                .dateMonth {
+                    color: #1B1C31;
+                    font-weight: 500;
                 }
             }
         }
@@ -319,6 +514,7 @@ $primary-color : #74B257;
                             }
                             .firstLineKPR {
                                 height: 100%;
+                                margin-bottom: 1rem;
                                 .tunggakanLine {
                                     width: 100%;
                                     height: 100%;
@@ -389,6 +585,46 @@ $primary-color : #74B257;
                                     }
                                 }
                             }
+                            .secondLineKpr {
+                                .debiturDataLine {
+                                    .debitur {
+                                        margin-bottom: 1rem;
+                                        .infoDebitur {
+                                            h5 {
+                                                margin-bottom: .7rem;
+                                                font-size: 16px;
+                                            }
+                                            p {
+                                                font-weight: 600;
+                                                font-size: 14px;
+                                                margin-bottom: .2rem;
+                                                .value {
+                                                    margin: 0 .2rem;
+                                                }
+                                            }
+                                            .month {
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                margin-bottom: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .thirdline {
+                                .valueCard {
+                                    padding: 1rem 1rem 1rem 1.2rem;
+                                    &::before {
+                                        left: 0;
+                                    }
+                                    h6 {
+                                        font-size: 12px;
+                                    }
+                                    h5 {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -422,6 +658,113 @@ $primary-color : #74B257;
                                     }
                                     p {
                                         font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .secondLine {
+                    display: flex;
+                    .containerLine {
+                        width: 100%;
+                        &:first-child {
+                            margin-right: 1rem;
+                        }
+                        .containerBaltab {
+                            h4 {
+                            }
+                            .wrapperDataBaltab {
+                                flex-direction: row;
+                                margin: 0 -.5rem;
+                                .baltabData {
+                                    padding: 1.2rem;
+                                    margin: 0 .5rem;
+                                    &:not(:last-child) {
+                                        margin-bottom: 0;
+                                    }
+                                    .icon {
+                                        img {
+                                            max-width: 52px;
+                                        }
+                                    }
+                                    h4 {
+                                        font-size: 14px;
+                                    }
+                                    p {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        .containerKPR {
+                            h4{
+
+                            }
+                            .firstLineKPR {
+                                flex-direction: column;
+                                .tunggakanLine {
+                                    width: 100%;
+                                    margin-bottom: 1rem;
+                                    .tunggakan {
+                                        padding: 1.2rem;
+                                        flex-direction: row;
+                                        height: 100%;
+                                        border-radius: 10px !important;
+                                        &:first-child {
+                                            margin-bottom: 1rem;
+                                        }
+                                        .wrapperChart {
+                                            margin-bottom: 0rem;
+                                        }
+                                        .infoTunggakan {
+                                            padding-left: 1rem;
+                                            h5 {
+                                                font-size: 18px;
+                                                margin-bottom: 12px;
+                                            }
+                                            .value {
+                                                margin-bottom: 2px;
+                                                text-decoration: none;
+                                            }
+                                            p {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .debiturLine {
+                                    width: 100%;
+                                    .debitur {
+                                        padding: 1.2rem 1.6rem !important;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        flex-direction: row;
+                                        border-radius: 10px !important;
+                                        &:first-child {
+                                            margin-bottom: 1rem;
+                                        }
+                                        &::before {
+                                            display: block;
+                                        }
+                                        .iconDebitur {
+                                            margin-bottom: 0rem;
+                                        }
+                                        .infoDebitur {
+                                            h5 {
+                                                font-size: 18px;
+                                                margin-bottom: 10px;
+                                            }
+                                            p {
+                                                font-size: 16px;
+                                                .value {
+                                                    padding: 0 2px 0 0;
+                                                }
+                                            }
+                                            .month {
+                                                font-size: 14px;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -482,6 +825,114 @@ $primary-color : #74B257;
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+                .secondLine {
+                    .containerLine {
+                        .containerBaltab {
+                            h4 {
+                            }
+                            .wrapperDataBaltab {
+                                .baltabData {
+                                    padding: 2rem 1.5rem;
+                                    .icon {
+                                        img {
+                                            max-width: 72px;
+                                        }
+                                    }
+                                    h4 {
+                                        font-size: 18px;
+                                    }
+                                    p {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        .containerKPR {
+                            h4{
+
+                            }
+                            .firstLineKPR {
+                                flex-direction: row;
+                                .tunggakanLine {
+                                    width: 100%;
+                                    margin-bottom: 0;
+                                    margin-right: 1rem;
+                                    .tunggakan {
+                                        padding: 1.2rem;
+                                        .wrapperChart {
+                                            width: 100%;
+                                            max-width: 90px;
+                                        }
+                                        .infoTunggakan {
+                                            width: 100%;
+                                            h5 {
+                                                font-size: 18px;
+                                            }
+                                            p {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .debiturLine {
+                                    width: 100%;
+                                    .debitur {
+                                        padding: 1.6rem 1.5rem !important;
+                                        height: fit-content;
+                                        .infoDebitur {
+                                            h5 {
+                                                font-size: 18px;
+                                            }
+                                            p {
+                                                font-size: 16px;
+                                            }
+                                            .month {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .secondLineKpr {
+                                .debiturDataLine {
+                                    .debitur {
+                                        margin-bottom: 1rem;
+                                        .infoDebitur {
+                                            h5 {
+                                                margin-bottom: .7rem;
+                                                font-size: 18px;
+                                            }
+                                            p {
+                                                font-weight: 600;
+                                                font-size: 14px;
+                                                margin-bottom: .2rem;
+                                            }
+                                            .month {
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                margin-bottom: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .thirdline {
+                                .valueCard {
+                                    padding: 1.8rem;
+                                    &::before {
+                                        left: 10px;
+                                    }
+                                    h6 {
+                                        font-size: 14px;
+                                    }
+                                    h5 {
+                                        font-size: 16px !important;
+                                    }
+                                }
+                            }                            
                         }
                     }
                 }
