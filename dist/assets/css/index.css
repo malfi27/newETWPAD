@@ -235,8 +235,9 @@
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan .infoTunggakan p .valueTunggakan {
-  text-decoration: none;
-  color: #3E3C3C;
+  text-decoration: none !important;
+  color: #3E3C3C !important;
+  outline: none;
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur {
@@ -388,6 +389,12 @@
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard h5 {
   font-weight: 600;
+  color: #1B1C31;
+}
+
+#app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard h5 .value {
+  color: #1B1C31;
+  text-decoration: none;
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard::before {
@@ -601,6 +608,12 @@
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .valueCard h5 {
     font-size: 12px;
   }
+  #app #mainContent .bodyContent .etwpLine h5 {
+    font-size: 14px;
+  }
+  #app #mainContent .bodyContent .etwpLine .dateMonth {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -716,6 +729,12 @@
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur .month {
     font-size: 14px;
+  }
+  #app #mainContent .bodyContent .etwpLine h5 {
+    font-size: 18px;
+  }
+  #app #mainContent .bodyContent .etwpLine .dateMonth {
+    font-size: 18px;
   }
 }
 

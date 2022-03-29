@@ -218,8 +218,9 @@ $primary-color : #74B257;
                                         p {
                                             color: #3E3C3C;
                                             .valueTunggakan {
-                                                text-decoration: none;
-                                                color: #3E3C3C;
+                                                text-decoration: none !important;
+                                                color: #3E3C3C !important;
+                                                outline: none;
                                             }
                                         }
                                     }
@@ -368,6 +369,11 @@ $primary-color : #74B257;
                                 }
                                 h5 {
                                     font-weight: 600;
+                                    color: #1B1C31;
+                                    .value {
+                                        color: #1B1C31;
+                                        text-decoration: none;
+                                    }
                                 }
 
                                 &::before {
@@ -628,6 +634,14 @@ $primary-color : #74B257;
                         }
                     }
                 }
+                .etwpLine {
+                    h5 {
+                        font-size: 14px;
+                    }
+                    .dateMonth {
+                        font-size: 14px;
+                    }
+                }
             }
         }
     }
@@ -769,6 +783,14 @@ $primary-color : #74B257;
                                 }
                             }
                         }
+                    }
+                }
+                .etwpLine {
+                    h5 {
+                        font-size: 18px;
+                    }
+                    .dateMonth {
+                        font-size: 18px;
                     }
                 }
             }

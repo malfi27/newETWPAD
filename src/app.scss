@@ -12,7 +12,6 @@ body {
     background-color: #F6F6F6;
 }
   
-
 /*Variable Color*/
 $primary-color : #74B257;
 
@@ -173,7 +172,6 @@ $primary-color : #74B257;
         }
     }
 }
-
 /*Content layouting*/
 #app {
     #mainContent {
@@ -327,6 +325,12 @@ $primary-color : #74B257;
         }
         .bodyContent {
             padding: 1.5rem;
+
+            .titlePage {
+                color: #000;
+                margin-bottom: 1.4rem;
+                font-weight: 600;
+            }
         }
     }
 }
@@ -449,5 +453,124 @@ $primary-color : #74B257;
     }
     canvas {
         width: 100%;
+    }
+}
+/*Table*/
+.wrapperTable {
+    padding: 4rem 0;
+    .pagination {
+        margin-top: 20rem;
+        .paginate_button {
+            &.active {
+                .page-link {
+                    background: $primary-color !important;
+                    color: #fff;
+                    border-radius: 6px;
+                }
+            }
+            .page-link {
+                border: none;
+                background: transparent !important;
+                color: #000;
+                padding: .2rem .8rem;
+                font-weight: 300;
+            }
+        }
+    }
+    .tables {
+        border-spacing: 0 10px !important;
+        width: 100%;
+        max-width: 100%;
+        thead {
+            tr {
+                box-shadow: 0px 36px 80px rgba(0, 0, 0, 0.02), 0px 4.50776px 10.0172px rgba(0, 0, 0, 0.04);
+                th {
+                    color: #000;
+                    font-weight: 500;
+                    vertical-align: middle;
+                    padding: .8rem;
+                    background-color: #fff;
+
+                    &:first-child {
+                        -moz-border-radius: 10px 0px 0px 10px !important;
+                        -webkit-border-radius: 10px 0px 0px 10px !important;
+
+                    }
+                    &:last-child {
+                        -webkit-border-radius: 0px 10px 10px 0px !important;
+                        -moz-border-radius: 0px 10px 10px 0px !important;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                &:last-child {
+                    box-shadow: 0px 36px 80px rgba(0, 0, 0, 0.02), 0px 4.50776px 10.0172px rgba(0, 0, 0, 0.04);
+                }
+                td {
+                    color: #000;
+                    font-weight: 400;
+                    vertical-align: middle;
+                    height: 100%;
+                    padding: .8rem;
+                    background-color: #fff;
+                    font-size: 16px;
+
+                    &:first-child {
+                        -moz-border-radius: 10px 0px 0px 10px !important;
+                        -webkit-border-radius: 10px 0px 0px 10px !important;
+
+                    }
+                    &:last-child {
+                        -webkit-border-radius: 0px 10px 10px 0px !important;
+                        -moz-border-radius: 0px 10px 10px 0px !important;
+                    }
+
+                    .btnUpdate {
+                        text-decoration: none;
+                        color: $primary-color;
+                        &:hover {
+                            font-weight: 500;
+                        }
+                    }
+                    .detailUser {
+                        text-decoration: none;
+                        .name {
+                            font-weight: 500;
+                            color: #000;
+                        }
+                        .nomorNRP {
+                            background: $primary-color;
+                            padding: .2rem .4rem;
+                            border-radius: 5px;
+                            margin: .2rem 0;
+                            color: #fff;
+                            width: fit-content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*Tabs*/
+.tabsMenu {
+    display: flex;
+    flex-wrap: wrap;
+    .tabsButton {
+        padding: .7rem 1.4rem;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #3E3E3E;
+        width: 100%;
+        max-width: fit-content;
+        font-weight: 500;
+        margin: .2rem 0;
+        display: block;
+        &.tabsActive {
+            background-color: $primary-color;
+            color: #fff;
+        }
     }
 }

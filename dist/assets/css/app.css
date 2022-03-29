@@ -306,6 +306,12 @@ body {
   padding: 1.5rem;
 }
 
+#app #mainContent .bodyContent .titlePage {
+  color: #000;
+  margin-bottom: 1.4rem;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 570px) {
   #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .icon img {
     max-width: 20px;
@@ -381,4 +387,129 @@ body {
 
 .wrapperChart canvas {
   width: 100%;
+}
+
+/*Table*/
+.wrapperTable {
+  padding: 4rem 0;
+}
+
+.wrapperTable .pagination {
+  margin-top: 20rem;
+}
+
+.wrapperTable .pagination .paginate_button.active .page-link {
+  background: #74B257 !important;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.wrapperTable .pagination .paginate_button .page-link {
+  border: none;
+  background: transparent !important;
+  color: #000;
+  padding: .2rem .8rem;
+  font-weight: 300;
+}
+
+.wrapperTable .tables {
+  border-spacing: 0 10px !important;
+  width: 100%;
+  max-width: 100%;
+}
+
+.wrapperTable .tables thead tr {
+  box-shadow: 0px 36px 80px rgba(0, 0, 0, 0.02), 0px 4.50776px 10.0172px rgba(0, 0, 0, 0.04);
+}
+
+.wrapperTable .tables thead tr th {
+  color: #000;
+  font-weight: 500;
+  vertical-align: middle;
+  padding: .8rem;
+  background-color: #fff;
+}
+
+.wrapperTable .tables thead tr th:first-child {
+  -moz-border-radius: 10px 0px 0px 10px !important;
+  -webkit-border-radius: 10px 0px 0px 10px !important;
+}
+
+.wrapperTable .tables thead tr th:last-child {
+  -webkit-border-radius: 0px 10px 10px 0px !important;
+  -moz-border-radius: 0px 10px 10px 0px !important;
+}
+
+.wrapperTable .tables tbody tr:last-child {
+  box-shadow: 0px 36px 80px rgba(0, 0, 0, 0.02), 0px 4.50776px 10.0172px rgba(0, 0, 0, 0.04);
+}
+
+.wrapperTable .tables tbody tr td {
+  color: #000;
+  font-weight: 400;
+  vertical-align: middle;
+  height: 100%;
+  padding: .8rem;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.wrapperTable .tables tbody tr td:first-child {
+  -moz-border-radius: 10px 0px 0px 10px !important;
+  -webkit-border-radius: 10px 0px 0px 10px !important;
+}
+
+.wrapperTable .tables tbody tr td:last-child {
+  -webkit-border-radius: 0px 10px 10px 0px !important;
+  -moz-border-radius: 0px 10px 10px 0px !important;
+}
+
+.wrapperTable .tables tbody tr td .btnUpdate {
+  text-decoration: none;
+  color: #74B257;
+}
+
+.wrapperTable .tables tbody tr td .btnUpdate:hover {
+  font-weight: 500;
+}
+
+.wrapperTable .tables tbody tr td .detailUser {
+  text-decoration: none;
+}
+
+.wrapperTable .tables tbody tr td .detailUser .name {
+  font-weight: 500;
+  color: #000;
+}
+
+.wrapperTable .tables tbody tr td .detailUser .nomorNRP {
+  background: #74B257;
+  padding: .2rem .4rem;
+  border-radius: 5px;
+  margin: .2rem 0;
+  color: #fff;
+  width: fit-content;
+}
+
+/*Tabs*/
+.tabsMenu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabsMenu .tabsButton {
+  padding: .7rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #3E3E3E;
+  width: 100%;
+  max-width: fit-content;
+  font-weight: 500;
+  margin: .2rem 0;
+  display: block;
+}
+
+.tabsMenu .tabsButton.tabsActive {
+  background-color: #74B257;
+  color: #fff;
 }
