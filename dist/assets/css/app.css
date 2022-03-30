@@ -513,3 +513,22 @@ body {
   background-color: #74B257;
   color: #fff;
 }
+
+/*Nav Tabs Menu*/
+nav .nav-tabs {
+  border: none;
+}
+
+nav .nav-tabs .nav-link {
+  color: #ABABAB;
+  font-weight: 700;
+  border: none;
+  padding: .7rem 1.4rem;
+  border-radius: 30px;
+}
+
+nav .nav-tabs .nav-link.active {
+  background-color: #74B257;
+  color: #fff;
+  border: none;
+}
