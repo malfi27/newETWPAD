@@ -201,186 +201,77 @@
             </div>
 
             <div class="bodyContent">
-                <h1 class="titlePage">Data Debitur</h1>
+                <h1 class="titlePage">Data Bulanan</h1>
 
                 <div class="tabsMenu">
                     <a href="#" class="tabsButton">Masdebet BRI</a>
                     <a href="#" class="tabsButton">Data Manual</a>
                     <a href="#" class="tabsButton">Masdebet BTN</a>
-                    <a href="#" class="tabsButton tabsActive">Data Debitur</a>
+                    <a href="#" class="tabsButton">Data Debitur</a>
                     <a href="#" class="tabsButton">Outstanding</a>
                     <a href="#" class="tabsButton">Penerimaan</a>
-                    <a href="#" class="tabsButton">Rekap Bulanan</a>
+                    <a href="#" class="tabsButton tabsActive">Rekap Bulanan</a>
                     <a href="#" class="tabsButton">Tunggakan</a>
                     <a href="#" class="tabsButton">Piutang</a>
                     <a href="#" class="tabsButton">Report Global</a>
                 </div>
 
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button 
-                            class="nav-link active" 
-                            id="nav-dataDebitur-tab" 
-                            data-bs-toggle="tab" 
-                            data-bs-target="#nav-dataDebitur" 
-                            type="button" 
-                            role="tab" 
-                            aria-controls="nav-dataDebitur" 
-                            aria-selected="true">Data Debitur
-                        </button>
-                        <button 
-                            class="nav-link" 
-                            id="nav-debiturBaru-tab" 
-                            data-bs-toggle="tab" 
-                            data-bs-target="#nav-debiturBaru" 
-                            type="button" 
-                            role="tab" 
-                            aria-controls="nav-debiturBaru" 
-                            aria-selected="false">Debitur Baru
-                        </button>
-                        <button 
-                            class="nav-link" 
-                            id="nav-debiturLunas-tab" 
-                            data-bs-toggle="tab" 
-                            data-bs-target="#nav-debiturLunas" 
-                            type="button" 
-                            role="tab" 
-                            aria-controls="nav-debiturLunas" 
-                            aria-selected="false">Debitur Lunas
-                        </button>
-                        <button 
-                            class="nav-link" 
-                            id="nav-debiturMeninggal-tab" 
-                            data-bs-toggle="tab" 
-                            data-bs-target="#nav-debiturMeninggal" 
-                            type="button" 
-                            role="tab" 
-                            aria-controls="nav-debiturMeninggal" 
-                            aria-selected="false">Debitur Meninggal
-                        </button>
-                    </div>
-                  </nav>
-                  <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-dataDebitur" role="tabpanel" aria-labelledby="nav-dataDebitur-tab">
-                        <div class="wrapperTable">
-                            <div class="exportSection">
-                                <p>Klik tombol di samping kanan agar tabel di export menjadi format Excel</p>
-                                <a href="" class="btnExport excel">
-                                    <img src="../assets/images/excelIcon.png" alt="">
-                                </a>
-                            </div>
-                            <table id="dataDebitur" class="tables" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th class="table-text">No</th>
-                                        <th class="table-text">Update</th>
-                                        <th class="table-text">Nama/NRP</th>
-                                        <th class="table-text">NRP</th>
-                                        <th class="table-text">Pangkat</th>
-                                        <th class="table-text">Kesatuan</th>
-                                        <th class="table-text">Tahap</th>
-                                        <th class="table-text">Pinjaman</th>
-                                        <th class="table-text">Jangka Waktu </th>
-                                        <th class="table-text">TMT Angsuran</th>
-                                        <th class="table-text">Jumlah Angsuran</th>
-                                        <th class="table-text">Angsuran Ke</th>
-                                        <th class="table-text">Angsuran Masuk</th>
-                                        <th class="table-text">Tunggakan</th>
-                                        <th class="table-text">Jml Tunggakan</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1.</td>
-                                        <td>
-                                            <a href="#" class="btnUpdate">Update</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" class="detailUser">
-                                                <p class="name">ANTONIUS DWI WARDANA</p>
-                                                <div class="nomorNRP">2920064750672</div>
-                                            </a>
-                                        </td>
-                                        <td>KU KOREM 101/ANTASARI DAM VI/MLW</td>
-                                        <td>KUDAM VI/MLW</td>
-                                        <td>1</td>
-                                        <td>IDR. 64.350.000</td>
-                                        <td>180</td>
-                                        <td>2010-11-01</td>
-                                        <td>Rp. 553.000</td>
-                                        <td>129</td>
-                                        <td>129</td>
-                                        <td>129</td>
-                                        <td>Rp. 553.000</td>
-                                        <td>TM 1 BLN X ( Juni 2021)</td>
-                                    </tr>
-                                    
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-debiturBaru" role="tabpanel" aria-labelledby="nav-debiturBaru-tab">
-                        <div class="wrapperTable">
-                            <table id="debiturBaru" class="tables" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th class="table-text">No</th>
-                                        <th class="table-text">Update</th>
-                                        <th class="table-text">Nama/NRP</th>
-                                        <th class="table-text">NRP</th>
-                                        <th class="table-text">Pangkat</th>
-                                        <th class="table-text">Kesatuan</th>
-                                        <th class="table-text">Tahap</th>
-                                        <th class="table-text">Pinjaman</th>
-                                        <th class="table-text">Jangka Waktu </th>
-                                        <th class="table-text">TMT Angsuran</th>
-                                        <th class="table-text">Jumlah Angsuran</th>
-                                        <th class="table-text">Angsuran Ke</th>
-                                        <th class="table-text">Angsuran Masuk</th>
-                                        <th class="table-text">Tunggakan</th>
-                                        <th class="table-text">Jml Tunggakan</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1.</td>
-                                        <td>
-                                            <a href="#" class="btnUpdate">Update</a>
-                                        </td>
-                                        <td>
-                                            <a href="#" class="detailUser">
-                                                <p class="name">ANTONIUS DWI WARDANA</p>
-                                                <div class="nomorNRP">2920064750672</div>
-                                            </a>
-                                        </td>
-                                        <td>KU KOREM 101/ANTASARI DAM VI/MLW</td>
-                                        <td>KUDAM VI/MLW</td>
-                                        <td>1</td>
-                                        <td>IDR. 64.350.000</td>
-                                        <td>180</td>
-                                        <td>2010-11-01</td>
-                                        <td>Rp. 553.000</td>
-                                        <td>129</td>
-                                        <td>129</td>
-                                        <td>129</td>
-                                        <td>Rp. 553.000</td>
-                                        <td>TM 1 BLN X ( Juni 2021)</td>
-                                    </tr>
-                                    
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-debiturLunas" role="tabpanel" aria-labelledby="nav-debiturLunas-tab">
+                <div class="card">
+                    <form action="">
                         
-                    </div>
-                    <div class="tab-pane fade" id="nav-debiturMeninggal" role="tabpanel" aria-labelledby="nav-debiturMeninggal-tab">
-                        
-                    </div>
-                  </div>
-                  
+                    </form>
+                </div>
 
-                
+                <div class="wrapperTable">
+                    <table id="rekapBulanan" class="tables" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th class="table-text">No</th>
+                                <th class="table-text">Update</th>
+                                <th class="table-text">Nama/NRP</th>
+                                <th class="table-text">NRP</th>
+                                <th class="table-text">Pangkat</th>
+                                <th class="table-text">Kesatuan</th>
+                                <th class="table-text">Tahap</th>
+                                <th class="table-text">Pinjaman</th>
+                                <th class="table-text">Jangka Waktu </th>
+                                <th class="table-text">TMT Angsuran</th>
+                                <th class="table-text">Jumlah Angsuran</th>
+                                <th class="table-text">Angsuran Ke</th>
+                                <th class="table-text">Angsuran Masuk</th>
+                                <th class="table-text">Tunggakan</th>
+                                <th class="table-text">Jml Tunggakan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>
+                                    <a href="#" class="btnUpdate">Update</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="detailUser">
+                                        <p class="name">ANTONIUS DWI WARDANA</p>
+                                        <div class="nomorNRP">2920064750672</div>
+                                    </a>
+                                </td>
+                                <td>KU KOREM 101/ANTASARI DAM VI/MLW</td>
+                                <td>KUDAM VI/MLW</td>
+                                <td>1</td>
+                                <td>IDR. 64.350.000</td>
+                                <td>180</td>
+                                <td>2010-11-01</td>
+                                <td>Rp. 553.000</td>
+                                <td>129</td>
+                                <td>129</td>
+                                <td>129</td>
+                                <td>Rp. 553.000</td>
+                                <td>TM 1 BLN X ( Juni 2021)</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -411,31 +302,11 @@
 
     <script>
         $(document).ready(function() {
-            $('#dataDebitur').DataTable( {
+            $('#rekapBulanan').DataTable( {
                 "scrollX": true,
+                
             });
         } );
-        $(document).ready(function() {
-            $('#debiturBaru').DataTable( {
-                "scrollX": true,
-            });
-        } );
-
-
-        //Fixed header datatable in  Nav Tabs Respons
-        function resize () {
-            $.fn.dataTable.tables( {visible: true, api: true} )
-                .columns.adjust()
-                .fixedHeader.adjust();
-            }
-            let observer = new MutationObserver(function(mutations) {
-            resize();s
-            });
-                document.querySelectorAll('div.wrapperTable').forEach( function (el) {
-                observer.observe(el, { attributes: true });
-            });
-
-            $('button[data-bs-toggle="tab"]').on( 'shown.bs.tab', resize );
     </script>
 
 </body>

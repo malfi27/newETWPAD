@@ -491,6 +491,46 @@ body {
   width: fit-content;
 }
 
+.wrapperTable .exportSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.wrapperTable .exportSection p {
+  color: #7b7b7b;
+  font-weight: 500;
+}
+
+.wrapperTable .exportSection .btnExport {
+  padding: .5rem;
+  background-color: #fff;
+  border: 3px solid #74B257;
+  border-radius: 10px;
+}
+
+.wrapperTable .exportSection .btnExport img {
+  width: 100%;
+  max-width: 38px;
+  transition: transform .3s ease;
+}
+
+.wrapperTable .exportSection .btnExport:hover img {
+  transform: translateY(-5px);
+  transition: transform .3s ease;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapperTable .exportSection {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .wrapperTable .exportSection p {
+    margin-bottom: 1rem;
+  }
+}
+
 /*Tabs*/
 .tabsMenu {
   display: flex;
@@ -532,3 +572,5 @@ nav .nav-tabs .nav-link.active {
   color: #fff;
   border: none;
 }
+
+/*Card Background*/

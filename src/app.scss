@@ -553,6 +553,45 @@ $primary-color : #74B257;
             }
         }
     }
+    .exportSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        p {
+            color: #7b7b7b;
+            font-weight: 500;
+        }
+        .btnExport {
+            padding: .5rem;
+            background-color: #fff;
+            border: 3px solid $primary-color;
+            border-radius: 10px;
+            img {
+                width: 100%;
+                max-width: 38px;
+                transition: transform .3s ease;
+
+            }
+            &:hover {
+                img {
+                    transform: translateY(-5px);
+                    transition: transform .3s ease;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width :576px) {
+    .wrapperTable {
+        .exportSection {
+            flex-direction: column;
+            align-items: flex-end;
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
 /*Tabs*/
 .tabsMenu {
@@ -593,3 +632,5 @@ nav {
         }
     }
 }
+
+/*Card Background*/
