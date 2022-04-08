@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin ETTPAD</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/icons-1.7.2/font/bootstrap-icons.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
+
+    <!--App Css Layouting-->
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!--Data KPR Style-->
+    <link rel="stylesheet" href="../assets/css/developer-dashboard.css">
+</head>
+<body>
+    
+
+    <div id="app">
+
+        <div id="sidebar">
+            <div class="sidebarWrapper">
+                <div class="brandName">
+                    <img src="../assets/images/etwpadLogo_withTeks.png" alt="">
+                </div>
+
+                <div class="wrapperMenuSidebar">
+                    <ul class="listMenuSidebar">
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <img src="../assets/images/icon-sidebar/kprMenuIcon.svg" alt="">
+                                Dashboard Developer
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu active">
+                            <p class="linkMenu">
+                                <img src="../assets/images/icon-sidebar/management-rumah-icon.svg" alt="">
+                                Management Rumah
+                            </p>    
+                        </li>
+
+                        <li class="sidebarMenu">
+                            <p class="linkMenu">
+                                <img src="../assets/images/icon-sidebar/akun-developer-icon.svg" alt="">
+                                Akun Developer
+                            </p>
+                        </li>
+
+                        <li class="sidebarMenu">
+                            <p class="linkMenu">
+                                <img src="../assets/images/icon-sidebar/simulasi-kpr-icon.svg" alt="">
+                                Simulasi KPR
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainContent">
+            <div class="headContent">
+                <div class="sidebarButton">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="headControl">
+                    <div class="control dropdown notification">
+                        <button class="notificationButton" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/notificationIcon.svg" alt="">
+                          <div class="valueNotification">
+                              <p>9</p>
+                          </div>
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <h4 class="headText">Notifikasi</h4>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                  <div class="icon">
+                                      <img src="../assets/images/messageIcon.svg" alt="">
+                                  </div>
+                                  <div class="detailMassage">
+                                      <h5 class="labelMassage">Pengguna Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quos.</h5>
+                                      <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, optio.</p>
+                                      <p class="time">2 menit yang lalu</p>
+                                  </div>
+                              </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item read" href="#">
+                                    <div class="icon">
+                                        <img src="../assets/images/messageIcon.svg" alt="">
+                                    </div>
+                                    <div class="detailMassage">
+                                        <h5 class="labelMassage">Pengguna</h5>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem?</p>
+                                        <p class="time">2 menit yang lalu</p>
+                                    </div>
+                                </a>
+                              </li>
+                          
+                        </ul>
+
+                    </div>
+                    
+                    <div class="control setting">
+                        <a href="#">
+                            <img src="../assets/images/settingIcon.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="control profile">
+                        <a href="#">
+                            <img src="../assets/images/profileIcon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bodyContent">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active aria-current="page"">Management Rumah</li>
+                    </ol>
+                </nav>
+
+                <div class="card">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="wrapperTable">
+                                <div class="head-table">
+                                    <h5>Data Property</h5>
+                                    <button type="button" class="button button-primary button-group " data-bs-toggle="modal" data-bs-target="#buatProperty">
+                                        <img src="../assets/images/plus_icon.svg" alt="">
+                                        Buat Property
+                                    </button>
+                                    
+                                    <div class="modal fade" id="buatProperty" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="buatPropertyLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="buatPropertyLabel">Buat Property</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              <form action="">
+                                                  <div class="row">
+                                                      <div class="col-12">
+                                                          <div class="form-input">
+                                                                <label for="namaProperty" class="form-label">Nama Property</label>
+                                                                <input type="text" class="form-control" id="namaProperty" placeholder="Masukan nama property">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-6">
+                                                        <div class="form-input">
+                                                            <label for="hargaTerendah" class="form-label">Harga Terendah</label>
+                                                            <div class="input-group">
+                                                                <label class="input-group-text">Rp</label>
+                                                                <input type="number" class="form-control" placeholder="Masukkan harga terendah">
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-6">
+                                                        <div class="form-input">
+                                                            <label for="hargaTertinggi" class="form-label">Harga Tertinggi</label>
+                                                            <div class="input-group">
+                                                                <label class="input-group-text">Rp</label>
+                                                                <input type="number" class="form-control" placeholder="Masukkan harga tertinggi">
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <div class="form-input">
+                                                            <label for="fasilitas" class="form-label">Fasilitas</label>
+                                                            <textarea name="fasilitas" id="fasilitas" cols="30" rows="5" placeholder="Masukkan semua fasilitas property"></textarea>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <div class="form-input">
+                                                            <label for="nomorFax" class="form-label">Gambar</label>
+                                                            <input type="file" class="form-control" id="nomorFax" placeholder="Masukan nomor fax">
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <div class="form-input">
+                                                            <label for="deskripsi" class="form-label">Deskripsi</label>
+                                                            <textarea name="deskripsi" id="deskripsi" cols="30" rows="5" placeholder="Masukkan semua deskripsi property"></textarea>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <div class="form-input">
+                                                              <label for="nomorTelepon" class="form-label">Nomor Telepon</label>
+                                                              <input type="number" class="form-control" id="nomorTelepon" placeholder="Masukan nomor telepon">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-input">
+                                                            <label for="alamat" class="form-label">Alamat</label>
+                                                            <textarea name="alamat" id="alamat" cols="30" rows="5" placeholder="Masukkan alamat"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-input">
+                                                            <label for="provinsi" class="form-label">Provinsi</label>
+                                                            <select class="form-select" id="provinsi" aria-label="Default select example">
+                                                                <option selected>Pilih Provinsi</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-input">
+                                                            <label for="kota" class="form-label">Kota</label>
+                                                            <select class="form-select" id="kota" aria-label="Default select example">
+                                                                <option selected>Pilih kota</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-input">
+                                                            <label for="kecamatan" class="form-label">Kecamatan</label>
+                                                            <select class="form-select" id="kecamatan" aria-label="Default select example">
+                                                                <option selected>Pilih kecamatan</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-input">
+                                                            <label for="kelurahan" class="form-label">Kelurahan</label>
+                                                            <select class="form-select" id="kelurahan" aria-label="Default select example">
+                                                                <option selected>Pilih kelurahan</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-input">
+                                                              <label for="kodepos" class="form-label">Kode Pos</label>
+                                                              <input type="number" class="form-control" id="kodepos" placeholder="Masukan kode pos">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-input">
+                                                              <label for="Latitude" class="form-label">Latitude</label>
+                                                              <input type="number" class="form-control" id="Latitude" placeholder="Masukan Latitude">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-input">
+                                                              <label for="Longitude" class="form-label">Longitude</label>
+                                                              <input type="number" class="form-control" id="Longitude" placeholder="Masukan Longitude">
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                              </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="button button-outline-primary" data-bs-dismiss="modal">Batal</button>
+                                                <button type="button" class="button button-primary">Simpan</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table id="dataProperty" class="tables" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-text">Nama Property</th>
+                                            <th class="table-text">Harga Mulai</th>
+                                            <th class="table-text">Harga Sampai</th>
+                                            <th class="table-text">Deskripsi</th>
+                                            <th class="table-text">No Telepon</th>
+                                            <th class="table-text">Alamat</th>
+                                            <th class="table-text">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#" class="text-primary">Mawar Indah</a>
+                                            </td>
+                                            <td>Rp.120.000.000</td>
+                                            <td>Rp.300.000.000</td>
+                                            <td class="text-limit">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error molestias possimus sint repellat maxime exercitationem, magnam dolore eveniet itaque quo nemo quibusdam veritatis laboriosam dolorum a, vero aliquam voluptatum recusandae nihil cumque officiis fugit! Nobis dicta reprehenderit delectus laudantium natus blanditiis soluta dolorem iure, et ratione. Non illo delectus suscipit modi corporis, a dolor necessitatibus voluptatem consequuntur quibusdam, et voluptas, beatae eum laboriosam. Ratione, quibusdam id? Minus saepe officia deserunt, recusandae, facilis distinctio laborum quidem mollitia iusto blanditiis numquam eius enim architecto debitis placeat sint dolor magnam quos, aut magni accusamus unde! Expedita, doloremque ad! Eligendi dolor nostrum culpa sapiente.</td>
+                                            <td>+6281122334455</td>
+                                            <td class="text-limit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro magnam odio voluptatem nostrum qui doloremque. Dolor libero minus error doloremque iste inventore ab dolore. Ullam illum, pariatur hic vitae eligendi maxime impedit, vel laudantium dolores architecto, repellat ex modi debitis delectus quo enim. Earum architecto facere ipsum dolore consequuntur veniam natus adipisci dicta, fugiat nihil voluptatibus dolores quas similique itaque quisquam numquam sit, cumque, aut mollitia. Est modi quam unde neque necessitatibus cupiditate molestiae reprehenderit sed. Eaque obcaecati dolor, possimus omnis harum quae iste alias officia. Rerum nobis placeat laborum dolores molestiae aliquid unde provident laudantium obcaecati sed, beatae illo.</td>
+                                            <td>action</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--Vendor-->
+        <!--Jquery-->
+        <script src="../assets/vendor/jquery/jquery.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+        <!--Javascript Bootstrap-->
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--Data table-->
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+        <!--Chart Js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--App JS-->
+    <script src="../assets/js/app.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#dataProperty').DataTable( {
+                "scrollX": true,
+            });
+        } );
+    </script>
+
+
+</body>
+</html>

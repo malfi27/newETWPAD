@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin ETTPAD</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/icons-1.7.2/font/bootstrap-icons.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
+
+    <!--App Css Layouting-->
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!--Data KPR Style-->
+    <link rel="stylesheet" href="../assets/css/developer-dashboard.css">
+</head>
+<body>
+    
+
+    <div id="app">
+
+        <div id="sidebar">
+            <div class="sidebarWrapper">
+                <div class="brandName">
+                    <img src="../assets/images/etwpadLogo_withTeks.png" alt="">
+                </div>
+
+                <div class="wrapperMenuSidebar">
+                    <ul class="listMenuSidebar">
+
+                        <li class="sidebarMenu active">
+                            <a href="#" class="linkMenu">
+                                <img src="../assets/images/icon-sidebar/kprMenuIcon.svg" alt="">
+                                Dashboard Developer
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu">
+                            <p class="linkMenu">
+                                <img src="../assets/images/icon-sidebar/management-rumah-icon.svg" alt="">
+                                Management Rumah
+                            </p>    
+                        </li>
+
+                        <li class="sidebarMenu">
+                            <p class="linkMenu">
+                                <img src="../assets/images/icon-sidebar/akun-developer-icon.svg" alt="">
+                                Akun Developer
+                            </p>
+                        </li>
+
+                        <li class="sidebarMenu">
+                            <p class="linkMenu">
+                                <img src="../assets/images/icon-sidebar/simulasi-kpr-icon.svg" alt="">
+                                Simulasi KPR
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainContent">
+            <div class="headContent">
+                <div class="sidebarButton">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="headControl">
+                    <div class="control dropdown notification">
+                        <button class="notificationButton" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/notificationIcon.svg" alt="">
+                          <div class="valueNotification">
+                              <p>9</p>
+                          </div>
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <h4 class="headText">Notifikasi</h4>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                  <div class="icon">
+                                      <img src="../assets/images/messageIcon.svg" alt="">
+                                  </div>
+                                  <div class="detailMassage">
+                                      <h5 class="labelMassage">Pengguna Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quos.</h5>
+                                      <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, optio.</p>
+                                      <p class="time">2 menit yang lalu</p>
+                                  </div>
+                              </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item read" href="#">
+                                    <div class="icon">
+                                        <img src="../assets/images/messageIcon.svg" alt="">
+                                    </div>
+                                    <div class="detailMassage">
+                                        <h5 class="labelMassage">Pengguna</h5>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem?</p>
+                                        <p class="time">2 menit yang lalu</p>
+                                    </div>
+                                </a>
+                              </li>
+                          
+                        </ul>
+
+                    </div>
+                    
+                    <div class="control setting">
+                        <a href="#">
+                            <img src="../assets/images/settingIcon.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="control profile">
+                        <a href="#">
+                            <img src="../assets/images/profileIcon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bodyContent">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active aria-current="page"">Dashboard</li>
+                    </ol>
+                </nav>
+
+                <!-- <div class="dashboard-data mb-4">
+                    <div class="row">
+                        <div class="col-12 col-xl-4 mb-3 mb-xl-0">
+                            <div class="card">
+                                <h5 class="title-card">Semua Property</h5>
+                                <div class="content-card">
+                                    <div class="icon">
+                                        <img src="../assets/images/developer/blue-icon-dashboard-developer.png" alt="">
+                                    </div>
+                                    <div class="info-card">
+                                        <h4>100</h4>
+                                        <p>Property Tersedia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-4 mb-3 mb-xl-0">
+                            <div class="card">
+                                <h5 class="title-card">Semua Tipe Rumah</h5>
+                                <div class="content-card">
+                                    <div class="icon">
+                                        <img src="../assets/images/developer/green-icon-dashboard-developer.png" alt="">
+                                    </div>
+                                    <div class="info-card">
+                                        <h4>100</h4>
+                                        <p>Tipe Rumah Tersedia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-4">
+                            <div class="card">
+                                <h5 class="title-card">Kavling Tersedia</h5>
+                                <div class="content-card">
+                                    <div class="icon">
+                                        <img src="../assets/images/developer/orange-icon-dashboard-developer.png" alt="">
+                                    </div>
+                                    <div class="info-card">
+                                        <h4>100</h4>
+                                        <p>Kavling Tersedia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="chart-developer">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="wrapperChart">
+                                    <canvas id="linechart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="before-adding-data">
+                    <div class="card">
+                        <p>Lakukan pengisian data developer dengan klik tombol isi data dibawah ini</p>
+                        <div class="register-modal">
+                            <button type="button" class="button button-primary" data-bs-toggle="modal" data-bs-target="#isiDataDeveloper">
+                                Isi Data
+                            </button>
+                            
+                            <div class="modal fade" id="isiDataDeveloper" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="isiDataDeveloperLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="isiDataDeveloperLabel">Isi Data Developer</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form action="">
+                                          <div class="row">
+                                              <div class="col-12">
+                                                  <div class="form-input">
+                                                        <label for="namaPerusahaan" class="form-label">Nama Perusahaan</label>
+                                                        <input type="text" class="form-control" id="namaPerusahaan" placeholder="Masukan Nama Perusahaan">
+                                                  </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="form-input">
+                                                    <label for="logo" class="form-label">Logo</label>
+                                                    <input type="file" class="form-control" id="logo">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="form-input">
+                                                    <label for="email" class="form-label">Email</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="Masukan email perusahaan">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="form-input">
+                                                    <label for="nomorTelepon" class="form-label">Nomor Telepon</label>
+                                                    <input type="number" class="form-control" id="nomorTelepon" placeholder="Masukan nomor telepon">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="form-input">
+                                                    <label for="nomorFax" class="form-label">Nomor Fax</label>
+                                                    <input type="number" class="form-control" id="nomorFax" placeholder="Masukan nomor fax">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="form-input">
+                                                    <label for="website" class="form-label">Masukan Website</label>
+                                                    <input type="text" class="form-control" id="website" placeholder="Masukan website">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="form-input">
+                                                    <label for="alamat" class="form-label">Masukan Alamat</label>
+                                                    <textarea name="alamat" id="alamat" cols="30" rows="5" placeholder="Masukan alamat"></textarea>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="button button-primary">Register</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!--Vendor-->
+        <!--Jquery-->
+        <script src="../assets/vendor/jquery/jquery.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+        <!--Javascript Bootstrap-->
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--Data table-->
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+        <!--Chart Js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--App JS-->
+    <script src="../assets/js/app.js"></script>
+
+
+    <script>
+        var ctx = document.getElementById('linechart');
+        var chart = new Chart(ctx, {
+
+            // The type of chart we want to create
+            type: 'line',
+            
+            // The data for our dataset
+            data: {
+                labels: ["2021", "2022", "2023", "2024", "2025", "2026", "2027","2028","2029","2030","2031","2032"],
+                datasets: [
+                {
+                label: "",
+                backgroundColor: 'transparent',
+                borderColor: 'rgba(85, 143, 77, 1)',
+                data: [2000, 11000, 10000, 14000, 11000, 17000, 14500,18000,12000,23000,17000,23000],
+                lineTension: 0.3,
+                pointRadius: 5,
+                pointBackgroundColor: 'rgba(85, 143, 77, 1)',
+                pointHoverBackgroundColor: 'rgba(85, 143, 77, 1)',
+                pointHoverRadius: 10,
+                pointHitRadius: 30,
+                pointBorderWidth: 2,
+                pointStyle: 'rectRounded'
+                }
+            ]
+            },
+            // Configuration option
+            options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                gridLines: {
+                    display:false
+                }
+                }],
+                yAxes: [{
+                gridLines: {
+                    display:true
+                },
+            ticks: {
+                    callback: function(value) {
+                    var ranges = [
+                        { divider: 1e6, suffix: 'M' },
+                        { divider: 1e3, suffix: 'k' }
+                    ];
+                    function formatNumber(n) {
+                        for (var i = 0; i < ranges.length; i++) {
+                        if (n >= ranges[i].divider) {
+                            return (n / ranges[i].divider).toString() + ranges[i].suffix;
+                        }
+                        }
+                        return n;
+                    }
+                    return '$' + formatNumber(value);
+                    }
+                },
+            }]
+            },
+            tooltips: {
+            callbacks: {
+                title: function(tooltipItem, data) {
+                console.log(data);
+                console.log(tooltipItem);
+                return data['labels'][tooltipItem[0]['index']];
+                },
+                label: function(tooltipItem, data) {
+                return  '$' + data['datasets'][0]['data'][tooltipItem['index']];
+                },
+            },
+            backgroundColor: '#606060',
+            titleFontSize: 14,
+            titleFontColor: '#ffffff',
+            bodyFontColor: '#ffffff',
+            bodyFontSize: 18,
+            displayColors: false
+            }
+        }
+        });
+    </script>
+
+</body>
+</html>
