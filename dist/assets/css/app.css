@@ -423,7 +423,6 @@ body {
 
 .wrapperTable .tables {
   width: 100%;
-  max-width: 100%;
 }
 
 .wrapperTable .tables thead tr th {
@@ -471,6 +470,22 @@ body {
   width: fit-content;
 }
 
+.wrapperTable .tables tbody tr td .action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapperTable .tables tbody tr td .action button {
+  background: transparent;
+  border: none;
+}
+
+.wrapperTable .tables tbody tr td .action .action-menu li .action-item {
+  font-size: 14px;
+  color: #42494D;
+}
+
 .wrapperTable .exportSection {
   display: flex;
   align-items: center;
@@ -505,6 +520,8 @@ body {
   border: 2px solid #b3b6b8;
   border-radius: 8px;
   padding: 6px 12px;
+  background-image: none;
+  text-align: center;
 }
 
 .wrapperTable .dataTables_length label .form-select:focus {
@@ -516,7 +533,7 @@ body {
   padding: 6px 12px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .wrapperTable .head-table h5 {
     font-size: 14px;
   }
@@ -542,11 +559,20 @@ body {
   .wrapperTable .dataTables_filter label {
     font-size: 12px;
   }
+  .wrapperTable .dataTables_filter label .form-control {
+    max-width: 188px;
+  }
   .wrapperTable .dataTables_info {
     font-size: 12px !important;
   }
   .wrapperTable .pagination .paginate_button .page-link {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapperTable .dataTables_length {
+    margin-bottom: .5rem !important;
   }
 }
 

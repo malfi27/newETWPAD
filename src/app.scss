@@ -489,7 +489,6 @@ $text-color :#42494D;
     }
     .tables {
         width: 100%;
-        max-width: 100%;
         thead {
             tr {
                 th {
@@ -534,6 +533,24 @@ $text-color :#42494D;
                             width: fit-content;
                         }
                     }
+
+                    .action {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        button {
+                            background: transparent;
+                            border: none;
+                        }
+                        .action-menu {
+                            li {
+                                .action-item {
+                                    font-size: 14px;
+                                    color: $text-color;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -572,6 +589,8 @@ $text-color :#42494D;
                 border: 2px solid rgba(179, 182, 184, 1);
                 border-radius: 8px;
                 padding: 6px 12px;
+                background-image: none;
+                text-align: center;
                 &:focus {
                     border: 2px solid $primary-color;
                     box-shadow: none !important; 
@@ -587,7 +606,7 @@ $text-color :#42494D;
         }
     }
 }
-@media screen and (max-width :576px) {
+@media screen and (max-width :992px) {
     .wrapperTable {
         .head-table {
             h5 {
@@ -629,6 +648,9 @@ $text-color :#42494D;
         .dataTables_filter {
             label {
                 font-size: 12px;
+                .form-control {
+                    max-width: 188px;
+                }
             }
         }
         .dataTables_info {
@@ -640,6 +662,13 @@ $text-color :#42494D;
                     font-size: 12px;
                 }
             }
+        }
+    }
+}
+@media screen and (max-width :768px) {
+    .wrapperTable {
+        .dataTables_length {
+            margin-bottom: .5rem !important;
         }
     }
 }
@@ -663,7 +692,6 @@ $text-color :#42494D;
         }
     }
 }
-
 /*Nav Tabs Menu*/
 nav {
     .nav-tabs {
