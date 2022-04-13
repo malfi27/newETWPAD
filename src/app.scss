@@ -625,6 +625,15 @@ $text-color :#42494D;
                 tr {
                     td {
                         font-size: 12px;
+                        .action {
+                            .action-menu {
+                                li {
+                                    .action-item {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -873,7 +882,7 @@ nav {
 
 //Focus Input
 .form-input {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     .input-group {
         .input-group-text {
             background-color: transparent;
@@ -912,6 +921,8 @@ nav {
     }
     &:focus {
         transition: border .2s ease;
+        box-shadow: none;
+        border: 2px solid $primary-color;
     }
 }
 .form-select {
@@ -930,6 +941,7 @@ nav {
     }
     option {
         color: $text-color;
+        color: #B3B6B8;
     }
 }
 textarea:focus,
@@ -953,7 +965,6 @@ input[type="checkbox"]:focus,
   box-shadow: none;
   outline: 1 none;
   border: 2px solid $primary-color;
-
 }
 input[type="checkbox"]:checked{
   border: 1px solid $primary-color;
@@ -966,6 +977,7 @@ input[type="checkbox"]:checked{
         
     }
     .form-input {
+        margin-bottom: 14px;
         .input-group {
             .input-group-text {
                 font-size: 12px ;
@@ -973,6 +985,9 @@ input[type="checkbox"]:checked{
         }
     }
     .form-label {
+        font-size: 12px;
+    }
+    .form-select {
         font-size: 12px;
     }
 }

@@ -543,6 +543,9 @@ body {
   .wrapperTable .tables tbody tr td {
     font-size: 12px;
   }
+  .wrapperTable .tables tbody tr td .action .action-menu li .action-item {
+    font-size: 12px;
+  }
   .wrapperTable .exportSection {
     flex-direction: column;
     align-items: flex-end;
@@ -793,7 +796,7 @@ nav .nav-tabs .nav-link.active {
 }
 
 .form-input {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .form-input .input-group .input-group-text {
@@ -838,6 +841,8 @@ nav .nav-tabs .nav-link.active {
 
 .form-control:focus, textarea:focus {
   transition: border .2s ease;
+  box-shadow: none;
+  border: 2px solid #558F4D;
 }
 
 .form-select {
@@ -859,6 +864,7 @@ nav .nav-tabs .nav-link.active {
 
 .form-select option {
   color: #42494D;
+  color: #B3B6B8;
 }
 
 textarea:focus,
@@ -894,10 +900,16 @@ input[type="checkbox"]:checked {
     font-size: 12px;
     padding: 8px 12px;
   }
+  .form-input {
+    margin-bottom: 14px;
+  }
   .form-input .input-group .input-group-text {
     font-size: 12px;
   }
   .form-label {
+    font-size: 12px;
+  }
+  .form-select {
     font-size: 12px;
   }
 }
