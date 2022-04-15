@@ -287,10 +287,67 @@
                                                         <img src="../assets/images/action-icon.svg" alt="">
                                                     </button>
                                                     <ul class="dropdown-menu action-menu" aria-labelledby="actionButtonMenu">
-                                                        <li><a class="dropdown-item action-item" href="#">Action</a></li>
-                                                        <li><a class="dropdown-item action-item" href="#">Another action</a></li>
-                                                        <li><a class="dropdown-item action-item" href="#">Something else here</a></li>
+                                                        <li><button type="button" class="dropdown-item action-item" href="#" data-bs-toggle="modal" data-bs-target="#uploadProgresRetensi">Upload Progres</button></li>
+                                                        <li><a class="dropdown-item action-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item action-item" href="#">Delete</a></li>
                                                     </ul>
+                                                </div>
+
+                                                <div class="modal fade" id="uploadProgresRetensi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="uploadProgresRetensiLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="uploadProgresRetensiLabel">Upload Progres</h5>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          <form action="">
+                                                              <div class="row">
+                                                                  <div class="col-12">
+                                                                    <div class="form-input">
+                                                                        <label for="sertifikat" class="form-label">Sertifikat</label>
+                                                                        <input type="file" class="form-control" id="sertifikat">
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-12">
+                                                                    <div class="form-input">
+                                                                        <label for="bhtb" class="form-label">BHTB</label>
+                                                                        <input type="file" class="form-control" id="bhtb">
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-12">
+                                                                    <div class="form-input">
+                                                                        <label for="imb" class="form-label">IMB</label>
+                                                                        <input type="file" class="form-control" id="imb">
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-12">
+                                                                    <div class="form-input">
+                                                                        <label for="linkVideo" class="form-label">Link Video</label>
+                                                                        <input type="text" class="form-control" id="linkVideo" placeholder="Masukan link video">
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-12">
+                                                                    <div class="form-input">
+                                                                        <label for="gambarPembangunan" class="form-label">Gambar Pembangunan</label>
+                                                                        <input type="file" class="form-control" id="gambarPembangunan">
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-12">
+                                                                    <div class="form-input">
+                                                                        <label for="pbb" class="form-label">PBB</label>
+                                                                        <input type="file" class="form-control" id="pbb">
+                                                                    </div>
+                                                                  </div>
+                                                              </div>
+                                                          </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="button button-outline-primary" data-bs-dismiss="modal">Batal</button>
+                                                          <button type="button" class="button button-primary">Simpan</button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
                                                 </div>
                                             </td>
                                         </tr>
