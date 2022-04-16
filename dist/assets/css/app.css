@@ -935,3 +935,57 @@ input[type="checkbox"]:checked {
   -webkit-line-clamp: 1;
   /* number of lines to show */
 }
+
+#multiple-images-wrapper .form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+#multiple-images-wrapper .form-input .form-control {
+  display: none;
+}
+
+#multiple-images-wrapper .form-input .wrapper-images-preview {
+  display: flex;
+}
+
+#multiple-images-wrapper .form-input .wrapper-images-preview #image-preview {
+  border-radius: 8px;
+  display: flex;
+}
+
+#multiple-images-wrapper .form-input .wrapper-images-preview #image-preview img {
+  width: 100%;
+  max-width: 74px;
+  max-height: 74px;
+  margin-right: 5px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+#multiple-images-wrapper .form-input .wrapper-images-preview .add-images-button {
+  border: 2px solid #eceded;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 74px;
+  width: 74px;
+  border-radius: 10px;
+  transition: .2s ease;
+  cursor: pointer;
+}
+
+#multiple-images-wrapper .form-input .wrapper-images-preview .add-images-button:hover {
+  border-color: #558F4D;
+}
+
+#multiple-images-wrapper .form-input .wrapper-images-preview .add-images-button:hover ion-icon {
+  color: #558F4D;
+  transition: .2s ease;
+}
+
+#multiple-images-wrapper .form-input .wrapper-images-preview .add-images-button ion-icon {
+  font-size: 22px;
+  color: #B3B6B8;
+  transition: .2s ease;
+}

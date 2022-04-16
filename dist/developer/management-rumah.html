@@ -184,15 +184,23 @@
                                                       </div>
                                                       <div class="col-12">
                                                         <div class="form-input">
-                                                            <label for="nomorFax" class="form-label">Gambar</label>
-                                                            <input type="file" class="form-control" id="nomorFax" placeholder="Masukan nomor fax">
-                                                        </div>
-                                                      </div>
-                                                      <div class="col-12">
-                                                        <div class="form-input">
                                                             <label for="deskripsi" class="form-label">Deskripsi</label>
                                                             <textarea name="deskripsi" id="deskripsi" cols="30" rows="5" placeholder="Masukkan semua deskripsi property"></textarea>
                                                         </div>
+                                                      </div>
+                                                      <div class="col-12">
+                                                          <div id="multiple-images-wrapper">
+                                                            <div class="form-input">
+                                                                <label for="file-image-upload" class="form-label">Foto Property</label>
+                                                                <input type="file" class="form-control" id="file-image-upload" multiple>
+                                                                <div class="wrapper-images-preview">
+                                                                    <div id="image-preview"></div>
+                                                                    <label for="file-image-upload" class="add-images-button">
+                                                                        <ion-icon name="add-outline"></ion-icon>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                          </div>
                                                       </div>
                                                       <div class="col-12">
                                                         <div class="form-input">
@@ -333,9 +341,12 @@
         <!--Chart Js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+        <!--Ion Icon-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--App JS-->
     <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/multiple-images-upload.js"></script>
 
 
     <script>
