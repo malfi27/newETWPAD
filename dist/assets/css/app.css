@@ -947,6 +947,9 @@ input[type="checkbox"]:checked {
 
 #multiple-images-wrapper .form-input .wrapper-images-preview {
   display: flex;
+  border: 2px solid #b3b6b8;
+  border-radius: 8px;
+  padding: .5rem;
 }
 
 #multiple-images-wrapper .form-input .wrapper-images-preview #image-preview {
@@ -988,4 +991,10 @@ input[type="checkbox"]:checked {
   font-size: 22px;
   color: #B3B6B8;
   transition: .2s ease;
+}
+
+#multiple-images-wrapper .form-input .info {
+  font-size: 12px;
+  color: #B3B6B8;
+  margin-top: 4px;
 }

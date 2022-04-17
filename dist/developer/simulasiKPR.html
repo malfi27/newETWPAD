@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin ETTPAD</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/icons-1.7.2/font/bootstrap-icons.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
+
+    <!--App Css Layouting-->
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+</head>
+<body>
+    
+
+    <div id="app">
+
+        <div id="sidebar">
+            <div class="sidebarWrapper">
+                <div class="brandName">
+                    <img src="../assets/images/etwpadLogo_withTeks.png" alt="">
+                </div>
+
+                <div class="wrapperMenuSidebar">
+                    <ul class="listMenuSidebar">
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <img src="../assets/images/icon-sidebar/kprMenuIcon.svg" alt="">
+                                Dashboard Developer
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <p class="linkMenu">
+                                <img src="../assets/images/icon-sidebar/management-rumah-icon.svg" alt="">
+                                Management Rumah
+                            </p>    
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <p class="linkMenu">
+                                <img src="../assets/images/icon-sidebar/akun-developer-icon.svg" alt="">
+                                Akun Developer
+                            </p>
+                        </li>
+
+                        <li class="sidebarMenu active">
+                            <p class="linkMenu">
+                                <img src="../assets/images/icon-sidebar/simulasi-kpr-icon.svg" alt="">
+                                Simulasi KPR
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainContent">
+            <div class="headContent">
+                <div class="sidebarButton">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="headControl">
+                    <div class="control dropdown notification">
+                        <button class="notificationButton" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/notificationIcon.svg" alt="">
+                          <div class="valueNotification">
+                              <p>9</p>
+                          </div>
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <h4 class="headText">Notifikasi</h4>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                  <div class="icon">
+                                      <img src="../assets/images/messageIcon.svg" alt="">
+                                  </div>
+                                  <div class="detailMassage">
+                                      <h5 class="labelMassage">Pengguna Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quos.</h5>
+                                      <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, optio.</p>
+                                      <p class="time">2 menit yang lalu</p>
+                                  </div>
+                              </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item read" href="#">
+                                    <div class="icon">
+                                        <img src="../assets/images/messageIcon.svg" alt="">
+                                    </div>
+                                    <div class="detailMassage">
+                                        <h5 class="labelMassage">Pengguna</h5>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem?</p>
+                                        <p class="time">2 menit yang lalu</p>
+                                    </div>
+                                </a>
+                              </li>
+                          
+                        </ul>
+
+                    </div>
+                    
+                    <div class="control setting">
+                        <a href="#">
+                            <img src="../assets/images/settingIcon.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="control profile">
+                        <a href="#">
+                            <img src="../assets/images/profileIcon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bodyContent">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active">Simulasi KPR</li>
+                    </ol>
+                </nav>
+
+               <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="card">
+                        <h5 class="titlePage">Kalkulator KPR</h5>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label for="jangkaWaktu" class="form-label">Jangka</label>
+                                        <input type="number" class="form-control" id="jangkaWaktu" placeholder="Masukan jangka waktu">
+                                        <div class="form-text">Maksimal 15 tahun</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label class="form-label">Besar Pinjaman</label>
+                                        <div class="input-group">
+                                            <label class="input-group-text">Rp</label>
+                                            <input type="number" class="form-control" placeholder="Masukkan besar pinjaman">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label for="akad" class="form-label">Akad</label>
+                                        <input type="date" class="form-control" id="akad" placeholder="Masukan akad">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="button button-primary">Hitung</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+               </div>
+
+               <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <h5 class="titlePage">Hasil Simulasi KPR</h5>
+                        <div class="wrapperTable">
+                            <table id="hasilKPR" class="tables" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th class="table-text">Angsuran Ke</th>
+                                        <th class="table-text">Periode</th>
+                                        <th class="table-text">Angsuran Pokok</th>
+                                        <th class="table-text">Angsuran Bunga</th>
+                                        <th class="table-text">Total Angsuran</th>
+                                        <th class="table-text">Sisa Pinjaman Pokok</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>Apr 2022</td>
+                                        <td>Rp 860.000</td>
+                                        <td>Rp 4.600.172</td>
+                                        <td>Rp 5.460.172</td>
+                                        <td>Rp 115.399.827</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>Apr 2022</td>
+                                        <td>Rp 860.000</td>
+                                        <td>Rp 4.600.172</td>
+                                        <td>Rp 5.460.172</td>
+                                        <td>Rp 115.399.827</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>Apr 2022</td>
+                                        <td>Rp 860.000</td>
+                                        <td>Rp 4.600.172</td>
+                                        <td>Rp 5.460.172</td>
+                                        <td>Rp 115.399.827</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>Apr 2022</td>
+                                        <td>Rp 860.000</td>
+                                        <td>Rp 4.600.172</td>
+                                        <td>Rp 5.460.172</td>
+                                        <td>Rp 115.399.827</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>Apr 2022</td>
+                                        <td>Rp 860.000</td>
+                                        <td>Rp 4.600.172</td>
+                                        <td>Rp 5.460.172</td>
+                                        <td>Rp 115.399.827</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>Apr 2022</td>
+                                        <td>Rp 860.000</td>
+                                        <td>Rp 4.600.172</td>
+                                        <td>Rp 5.460.172</td>
+                                        <td>Rp 115.399.827</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>Apr 2022</td>
+                                        <td>Rp 860.000</td>
+                                        <td>Rp 4.600.172</td>
+                                        <td>Rp 5.460.172</td>
+                                        <td>Rp 115.399.827</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--Vendor-->
+        <!--Jquery-->
+        <script src="../assets/vendor/jquery/jquery.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+        <!--Javascript Bootstrap-->
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--Data table-->
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+        <!--Chart Js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--App JS-->
+    <script src="../assets/js/app.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#hasilKPR').DataTable( {
+                "scrollX": true,
+                "bFilter":false,
+                "bInfo" :false,
+                "paging":false,
+            });
+        } );
+    </script>
+
+
+</body>
+</html>

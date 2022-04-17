@@ -154,7 +154,7 @@
                                                   <div class="row">
                                                       <div class="col-12">
                                                           <div class="form-input">
-                                                                <label for="tipeRumah" class="form-label">Tipe Rumah</label>
+                                                                <label for="tipeRumah" class="form-label">Nama Tipe Rumah</label>
                                                                 <input type="text" class="form-control" id="tipeRumah" placeholder="Masukan tipe rumah">
                                                           </div>
                                                       </div>
@@ -170,24 +170,22 @@
                                                               <input type="text" class="form-control" id="blok" placeholder="Masukan blok">
                                                         </div>
                                                     </div>
-                                                    <div class="col-6">
-                                                        <div class="form-input">
-                                                              <label for="Latitude" class="form-label">Latitude</label>
-                                                              <input type="number" class="form-control" id="Latitude" placeholder="Masukan Latitude">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="form-input">
-                                                              <label for="Longitude" class="form-label">Longitude</label>
-                                                              <input type="number" class="form-control" id="Longitude" placeholder="Masukan Longitude">
-                                                        </div>
-                                                    </div>
+                                                    
                                                       
                                                       <div class="col-12">
-                                                        <div class="form-input">
-                                                            <label for="nomorFax" class="form-label">Gambar</label>
-                                                            <input type="file" class="form-control" id="nomorFax" placeholder="Masukan nomor fax">
-                                                        </div>
+                                                        <div id="multiple-images-wrapper">
+                                                            <div class="form-input">
+                                                                <label for="file-image-upload" class="form-label">Foto Tipe RUmah</label>
+                                                                <input type="file" class="form-control" id="file-image-upload" multiple>
+                                                                <div class="wrapper-images-preview">
+                                                                    <div id="image-preview"></div>
+                                                                    <label for="file-image-upload" class="add-images-button">
+                                                                        <ion-icon name="add-outline"></ion-icon>
+                                                                    </label>
+                                                                </div>
+                                                                <p class="info">Maksimal 5 foto</p>
+                                                            </div>
+                                                          </div>
                                                       </div>
                                                       <div class="col-12">
                                                         <div class="form-input">
@@ -249,6 +247,12 @@
                                                       </div>
                                                       <div class="col-12">
                                                         <div class="form-input">
+                                                            <label for="tahunBangunan" class="form-label">Tahun Bangunan</label>
+                                                            <input type="number" class="form-control" id="tahunBangunan" placeholder="Masukkan tahun bangunan">
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-12">
+                                                        <div class="form-input">
                                                             <label for="alamat" class="form-label">Alamat</label>
                                                             <textarea name="alamat" id="alamat" cols="30" rows="5" placeholder="Masukkan alamat"></textarea>
                                                         </div>
@@ -259,22 +263,23 @@
                                                             <input type="text" class="form-control" id="kodepos" placeholder="Masukan kode pos">
                                                         </div>
                                                       </div>
-                                                      <div class="col-12">
-                                                        <div class="form-input">
-                                                            <label for="tahunBangunan" class="form-label">Tahun Bangunan</label>
-                                                            <input type="number" class="form-control" id="tahunBangunan" placeholder="Masukkan tahun bangunan">
+                                                      <div class="col-6">
+                                                            <div class="form-input">
+                                                                <label for="Latitude" class="form-label">Latitude</label>
+                                                                <input type="number" class="form-control" id="Latitude" placeholder="Masukan Latitude">
+                                                            </div>
                                                         </div>
-                                                      </div>
+                                                        <div class="col-6">
+                                                            <div class="form-input">
+                                                                <label for="Longitude" class="form-label">Longitude</label>
+                                                                <input type="number" class="form-control" id="Longitude" placeholder="Masukan Longitude">
+                                                            </div>
+                                                        </div>
+                                                      
                                                       <div class="col-12">
                                                         <div class="form-input">
                                                             <label for="keyword" class="form-label">Keyword</label>
                                                             <input type="text" class="form-control" id="keyword" placeholder="Masukkan keyword agar mudah ditemukan">
-                                                        </div>
-                                                      </div>
-                                                      <div class="col-12">
-                                                        <div class="form-input">
-                                                            <label for="catatan" class="form-label">Catatan</label>
-                                                            <textarea name="catatan" id="catatan" cols="30" rows="5" placeholder="Masukkan catatan"></textarea>
                                                         </div>
                                                       </div>
                                                       <div class="col-12">
@@ -347,9 +352,14 @@
         <!--Chart Js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--Ion Icon-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <!--App JS-->
     <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/multiple-images-upload.js"></script>
+
 
 
     <script>

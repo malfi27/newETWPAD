@@ -178,14 +178,17 @@
                                                       </div>
                                                       <div class="col-6">
                                                         <div class="form-input">
-                                                            <label for="harga" class="form-label">Harga</label>
-                                                            <input type="number" id="harga" class="form-control" placeholder="Masukkan harga">
+                                                            <label class="form-label">Harga</label>
+                                                            <div class="input-group">
+                                                                <label class="input-group-text">Rp</label>
+                                                                <input type="number" class="form-control" placeholder="Masukkan harga">
+                                                            </div>
                                                         </div>
                                                       </div>
                                                       <div class="col-6">
                                                         <div class="form-input">
-                                                            <label for="bookingfee" class="form-label">Booking Fee</label>
-                                                            <input type="text" id="bookingfee" class="form-control" placeholder="Masukkan booking fee">
+                                                            <label for="sertifikat" class="form-label">Sertifikat</label>
+                                                            <input type="text" id="sertifikat" class="form-control" placeholder="Masukkan jenis sertifikat">
                                                         </div>
                                                       </div>
                                                     <div class="col-6">
@@ -211,10 +214,19 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
-                                                        <div class="form-input">
-                                                              <label for="gambar" class="form-label">Gambar</label>
-                                                              <input type="file" class="form-control" id="gambar">
-                                                        </div>
+                                                        <div id="multiple-images-wrapper">
+                                                            <div class="form-input">
+                                                                <label for="file-image-upload" class="form-label">Foto Property</label>
+                                                                <input type="file" class="form-control" id="file-image-upload" multiple>
+                                                                <div class="wrapper-images-preview">
+                                                                    <div id="image-preview"></div>
+                                                                    <label for="file-image-upload" class="add-images-button">
+                                                                        <ion-icon name="add-outline"></ion-icon>
+                                                                    </label>
+                                                                </div>
+                                                                <p class="info">Maksimal 5 foto</p>
+                                                            </div>
+                                                          </div>
                                                     </div>
                                                     <div class="col-12">
                                                         <div class="form-input">
@@ -234,6 +246,30 @@
                                                               <input type="number" class="form-control" id="luasBangunan" placeholder="Masukan luas bangunan">
                                                         </div>
                                                     </div>
+                                                    <div class="col-6">
+                                                        <div class="form-input">
+                                                            <label for="kamarTidur" class="form-label">Kamar Tidur</label>
+                                                            <input type="number" class="form-control" id="kamarTidur" placeholder="Masukan Jumlah Kamar Tidur">
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-6">
+                                                        <div class="form-input">
+                                                            <label for="kamarMandi" class="form-label">Kamar Mandi</label>
+                                                            <input type="number" class="form-control" id="kamarMandi" placeholder="Masukan Jumlah Kamar Mandi">
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-6">
+                                                        <div class="form-input">
+                                                            <label for="tingkatRumah" class="form-label">Jumlah Tingkat Rumah</label>
+                                                            <input type="number" class="form-control" id="tingkatRumah" placeholder="Masukan Jumlah Tingkat Rumah">
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-6">
+                                                        <div class="form-input">
+                                                            <label for="dayaListrik" class="form-label">Daya Listrik</label>
+                                                            <input type="number" class="form-control" id="dayaListrik" placeholder="Masukan Jumlah Daya Listrik">
+                                                        </div>
+                                                      </div>
                                                     <div class="col-12">
                                                         <div class="form-input">
                                                               <label for="tahunBangunan" class="form-label">Tahun Bangunan</label>
@@ -380,9 +416,14 @@
         <!--Chart Js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--Ion Icon-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <!--App JS-->
     <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/multiple-images-upload.js"></script>
+
 
 
     <script>
