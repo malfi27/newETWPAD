@@ -55,14 +55,20 @@ body {
   cursor: pointer;
 }
 
-#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu .linkMenu img {
-  margin-right: 1rem;
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu .linkMenu svg {
+  margin-right: .7rem;
   width: 100%;
   max-width: 26px;
+  fill: #7B8082;
 }
 
 #app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu.active .linkMenu {
   background-color: #F5F5F5;
+  color: #558F4D;
+}
+
+#app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu.active .linkMenu svg {
+  fill: #558F4D;
 }
 
 #app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu.active .linkMenu::before {

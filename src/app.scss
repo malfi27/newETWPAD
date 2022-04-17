@@ -54,15 +54,20 @@ $text-color :#42494D;
                             color: rgba(27, 28, 49, .4);
                             font-weight: 500;
                             cursor: pointer;
-                            img {
-                                margin-right: 1rem;
+                            svg {
+                                margin-right: .7rem;
                                 width: 100%;
                                 max-width: 26px;
+                                fill: #7B8082;
                             }
                         }
                         &.active {
                             .linkMenu {
                                 background-color: #F5F5F5;
+                                color: $primary-color;
+                                svg {
+                                    fill: $primary-color;
+                                }
                                 &::before {
                                     content: '';
                                     display: block;
