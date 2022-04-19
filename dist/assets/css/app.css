@@ -837,12 +837,6 @@ nav .nav-tabs .nav-link.active {
   }
 }
 
-@media screen and (min-width: 1400px) {
-  .button {
-    font-size: 16px;
-  }
-}
-
 .form-input {
   margin-bottom: 20px;
 }
@@ -982,6 +976,10 @@ input[type="checkbox"]:checked {
   text-overflow: ellipsis;
   -webkit-line-clamp: 1;
   /* number of lines to show */
+}
+
+.bold {
+  font-weight: 600;
 }
 
 #multiple-images-wrapper .form-input {
