@@ -409,6 +409,7 @@ body {
 .wrapperTable .head-table h5 {
   font-weight: 700;
   font-size: 18px;
+  color: #42494D;
 }
 
 .wrapperTable .pagination {
@@ -478,6 +479,20 @@ body {
   width: fit-content;
 }
 
+.wrapperTable .tables tbody tr td .detailBank .namaBank {
+  font-weight: 500;
+  color: #000;
+}
+
+.wrapperTable .tables tbody tr td .detailBank .nomor-rekening {
+  background: #558F4D;
+  padding: .2rem .4rem;
+  border-radius: 5px;
+  margin: .2rem 0;
+  color: #fff;
+  width: fit-content;
+}
+
 .wrapperTable .tables tbody tr td .action {
   display: flex;
   align-items: center;
@@ -503,7 +518,7 @@ body {
 
 .wrapperTable .tables tbody tr td .status.primary-status {
   background-color: #d6ffde;
-  color: #03ac0e;
+  color: #04990e;
 }
 
 .wrapperTable .tables tbody tr td .status.danger-status {
@@ -652,12 +667,16 @@ nav .nav-tabs .nav-link.active {
 .card .header-card h5 {
   color: #42494D;
   font-weight: 600;
+  font-size: 18px;
   margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 576px) {
   .card {
     padding: 16px !important;
+  }
+  .card .header-card h5 {
+    font-size: 14px;
   }
   nav .nav-tabs {
     overflow-y: hidden;
@@ -673,7 +692,7 @@ nav .nav-tabs .nav-link.active {
 .button {
   border-radius: 8px;
   border: none;
-  font-weight: 700;
+  font-weight: 600;
   width: fit-content;
   vertical-align: middle;
   padding: 8px 16px;
@@ -739,6 +758,7 @@ nav .nav-tabs .nav-link.active {
 
 .button.button-outline-danger:hover {
   background-color: #E33B3B;
+  color: #fff;
 }
 
 .button.button-ghost {
