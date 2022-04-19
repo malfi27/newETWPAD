@@ -76,7 +76,7 @@
                             </a>
                         </li>
 
-                        <li class="sidebarMenu ">
+                        <li class="sidebarMenu active">
                             <a href="#" class="linkMenu">
                                 <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="4" cy="4.5" r="4"/>
@@ -85,7 +85,7 @@
                             </a>
                         </li>
 
-                        <li class="sidebarMenu active">
+                        <li class="sidebarMenu ">
                             <a href="#" class="linkMenu">
                                 <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="4" cy="4.5" r="4"/>
@@ -164,73 +164,172 @@
                     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="#">Home</a></li>
-                          <li class="breadcrumb-item active">Pengajuan</li>
+                          <li class="breadcrumb-item active">Si Prajurit</li>
                         </ol>
                     </nav>
                 </div>
-                <div class="card">
-                    <div class="wrapperTable">
-                        <div class="head-table">
-                            <h5>Pengajuan Ditkuad</h5>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button 
+                            class="nav-link active" 
+                            id="nav-index-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-index" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-index" 
+                            aria-selected="true">Index
+                        </button>
+                        <button 
+                            class="nav-link" 
+                            id="nav-searchSI-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-searchSI" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-searchSI" 
+                            aria-selected="false">Cari SI
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-index" role="tabpanel" aria-labelledby="nav-index-tab">
+                        <div class="card">
+                            <div class="wrapperTable">
+                                <div class="head-table">
+                                    <h5>Data Persetujuan</h5>
+                                </div>
+                                <div class="exportSection">
+                                    <p>Klik tombol berikut agar tabel di export menjadi format Excel</p>
+                                    <a href="" class="btnExport excel">
+                                        <img src="../assets/images/excelIcon.png" alt="">
+                                    </a>
+                                </div>
+                                <table id="dataPersetujuan" class="tables" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>
+                                                <div class="d-flex">
+                                                    <input class="form-check-input me-2" type="checkbox" id="all">
+                                                    <label for="all">All</label>
+                                                </div>
+                                            </th>
+                                            <th>Nomor Sprin</th>
+                                            <th>Nama/NRP</th>
+                                            <th>Nama Bank</th>
+                                            <th>Jumlah Tabungan</th>
+                                            <th>Tanggal</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>
+                                                <input class="form-check-input me-2" type="checkbox" id="all">
+                                            </td>
+                                            <td>196307031988022001</td>
+                                            <td>
+                                                <a href="#" class="detailUser">
+                                                    <p class="name">ANTONIUS DWI WARDANA</p>
+                                                    <div class="nomorNRP">2920064750672</div>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <div class="detailBank">
+                                                    <p class="namaBank">BRI</p>
+                                                    <p class="nomor-rekening">0139-01-081368-50-1</p>
+                                                </div>
+                                            </td>
+                                            <td>Rp.18.264.967,86</td>
+                                            <td>2021-09-14</td>
+                                            <td>
+                                                <div class="status primary-status">
+                                                    Proses Pengajuan
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="pt-5 detail-table-pengajuan">
+                                    <p>Jumlah Pembayaran : <span class="text-primary bold">1</span></p>
+                                    <p>Total Dana Pembayaran : <span class="text-primary bold">Rp.18.264.967,86</span></p>
+                                </div>
+                                <div class="d-flex justify-content-start pt-5">
+                                    <button class="button button-outline-primary me-2">Tambahkan Sprin</button>
+                                    <button class="button button-outline-danger">Hapus</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="exportSection">
-                            <p>Klik tombol berikut agar tabel di export menjadi format Excel</p>
-                            <a href="" class="btnExport excel">
-                                <img src="../assets/images/excelIcon.png" alt="">
-                            </a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-searchSI" role="tabpanel" aria-labelledby="nav-searchSI-tab">
+                        <div class="card mb-4">
+                            <div class="header-card">
+                                <h5>Cari Nomor Sprin</h5>
+                            </div>
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-input">
+                                            <label for="" class="form-label">Cari Nomor Sprin</label>
+                                            <input type="search" id="" class="form-control">
+                                            <div class="form-text">Enter untuk search</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <table id="dataPokokPrajurit" class="tables" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>
-                                        <div class="d-flex">
-                                            <input class="form-check-input me-2" type="checkbox" id="all">
-                                            <label for="all">All</label>
-                                        </div>
-                                    </th>
-                                    <th>Nama/NRP</th>
-                                    <th>Nama Bank</th>
-                                    <th>Jumlah Tabungan</th>
-                                    <th>Tanggal</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>
-                                        <input class="form-check-input me-2" type="checkbox" id="all">
-                                    </td>
-                                    <td>
-                                        <a href="#" class="detailUser">
-                                            <p class="name">ANTONIUS DWI WARDANA</p>
-                                            <div class="nomorNRP">2920064750672</div>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <div class="detailBank">
-                                            <p class="namaBank">BRI</p>
-                                            <p class="nomor-rekening">0139-01-081368-50-1</p>
-                                        </div>
-                                    </td>
-                                    <td>Rp.18.264.967,86</td>
-                                    <td>2021-09-14</td>
-                                    <td>
-                                        <div class="status primary-status">
-                                            Proses Pengajuan
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="pt-5 detail-table-pengajuan">
-                            <p>Jumlah Pembayaran : <span class="text-primary bold">1</span></p>
-                            <p>Total Dana Pembayaran : <span class="text-primary bold">Rp.18.264.967,86</span></p>
-                        </div>
-                        <div class="d-flex justify-content-start pt-5">
-                            <button class="button button-outline-primary me-2">Setujui</button>
-                            <button class="button button-outline-danger">Hapus</button>
+                        <div class="card">
+                            <div class="wrapperTable">
+                                <table id="cariSI" class="tables" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>
+                                                <div class="d-flex">
+                                                    <input class="form-check-input me-2" type="checkbox" id="all">
+                                                    <label for="all">All</label>
+                                                </div>
+                                            </th>
+                                            <th>Nomor Sprin</th>
+                                            <th>Nama/NRP</th>
+                                            <th>Nama Bank</th>
+                                            <th>Jumlah Tabungan</th>
+                                            <th>Tanggal</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>
+                                                <input class="form-check-input me-2" type="checkbox" id="all">
+                                            </td>
+                                            <td>196307031988022001</td>
+                                            <td>
+                                                <a href="#" class="detailUser">
+                                                    <p class="name">ANTONIUS DWI WARDANA</p>
+                                                    <div class="nomorNRP">2920064750672</div>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <div class="detailBank">
+                                                    <p class="namaBank">BRI</p>
+                                                    <p class="nomor-rekening">0139-01-081368-50-1</p>
+                                                </div>
+                                            </td>
+                                            <td>Rp.18.264.967,86</td>
+                                            <td>2021-09-14</td>
+                                            <td>
+                                                <div class="status primary-status">
+                                                    Proses Pengajuan
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -264,10 +363,16 @@
 
     <script>
         $(document).ready(function() {
-            $('#dataPokokPrajurit').DataTable( {
+            $('#dataPersetujuan').DataTable( {
                 "scrollX": true,
             });
         } );
+        $(document).ready(function() {
+            $('#cariSI').DataTable( {
+                "scrollX": true,
+            });
+        } );
+
 
         //Fixed header datatable in  Nav Tabs Respons
         function resize () {

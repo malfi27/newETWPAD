@@ -982,6 +982,12 @@ input[type="checkbox"]:checked {
   font-weight: 600;
 }
 
+@media screen and (max-width: 575px) {
+  .detail-table-pengajuan p {
+    font-size: 12px !important;
+  }
+}
+
 #multiple-images-wrapper .form-input {
   display: flex;
   flex-direction: column;
