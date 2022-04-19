@@ -83,7 +83,14 @@ $text-color :#42494D;
                         &.haveSubmenu {
                             .submenuWrapper {
                                 display: none;
-                                
+                                .submenu {
+                                    .linkMenu {
+                                        color: rgba(27, 28, 49, .4);
+                                        &.active {
+                                            color: $primary-color;
+                                        }
+                                    }
+                                }
                             }
                         }
                         &.submenuActive {
@@ -94,11 +101,11 @@ $text-color :#42494D;
 
                         .submenuWrapper {
                             list-style: none;
-                            padding-left: 4.2rem;
+                            padding-left: 4rem;
                             .submenu {
                                 padding: 0;
                                 .linkMenu {
-                                    padding: .4rem 0;
+                                    padding: .5rem 0;
                                     background-color: #fff;
                                     width: fit-content;
                                     position: relative;
@@ -331,12 +338,6 @@ $text-color :#42494D;
         }
         .bodyContent {
             padding: 1.5rem;
-
-            .titlePage {
-                color: #000;
-                margin-bottom: 1.4rem;
-                font-weight: 600;
-            }
         }
     }
 }
@@ -538,7 +539,6 @@ $text-color :#42494D;
                             width: fit-content;
                         }
                     }
-
                     .action {
                         display: flex;
                         align-items: center;
@@ -556,6 +556,20 @@ $text-color :#42494D;
                             }
                         }
                     }
+                    .status {
+                        padding: 4px 8px;
+                        font-weight: 500;
+                        border-radius: 4px;
+                        width: fit-content;
+                        &.primary-status {
+                            background-color: rgb(214, 255, 222);
+                            color: rgb(3, 172, 14);
+                        }
+                        &.danger-status {
+                            background-color: rgb(255, 234, 239);
+                            color: rgb(239, 20, 74);
+                        }
+                    }
                 }
             }
         }
@@ -564,10 +578,11 @@ $text-color :#42494D;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         p {
             color: #7b7b7b;
             font-weight: 500;
+            font-size: 14px;
         }
         .btnExport {
             padding: .5rem;
@@ -648,6 +663,7 @@ $text-color :#42494D;
             align-items: flex-end;
             p {
                 margin-bottom: 1rem;
+                font-size: 12px;
             }
         }
         .dataTables_length {
@@ -686,45 +702,27 @@ $text-color :#42494D;
         }
     }
 }
-/*Tabs*/
-.tabsMenu {
-    display: flex;
-    flex-wrap: wrap;
-    .tabsButton {
-        padding: .7rem 1.4rem;
-        border-radius: 30px;
-        text-decoration: none;
-        color: #3E3E3E;
-        width: 100%;
-        max-width: fit-content;
-        font-weight: 500;
-        margin: .2rem 0;
-        display: block;
-        &.tabsActive {
-            background-color: $primary-color;
-            color: #fff;
-        }
-    }
-}
 /*Nav Tabs Menu*/
 nav {
     .nav-tabs {
         border: none;
+        flex-wrap: nowrap;
+        padding: 1.5rem 0;
         .nav-link {
             color: #ABABAB;
-            font-weight: 700;
+            font-weight: 500;
             border: none;
-            padding: .7rem 1.4rem;
-            border-radius: 30px;
+            padding: .7rem 1rem;
+            border-radius: 0px;
             &.active {
-                background-color: $primary-color;
-                color: #fff;
+                background-color: transparent;
+                color: $primary-color;
                 border: none;
+                border-bottom: 2px solid $primary-color;
             }
         }
     }
 }
-
 /*Card*/
 .card {
     background-color: #FFF;
@@ -738,17 +736,17 @@ nav {
     .card {
         padding: 16px !important;
     }
-}
-
-//breadcrumb 
-.breadcrumb {
-    .breadcrumb-item {
-        &.active {
-            color: $primary-color;
+    nav {
+        .nav-tabs {
+            overflow-y: hidden;
+            overflow-x: auto;
+            .nav-link {
+                font-size: 12px;
+                padding: .5rem 1rem;
+            }
         }
     }
 }
-
 /*Component Button*/
 .button {
     border-radius: 8px;
@@ -864,7 +862,6 @@ nav {
       opacity: .65;
     }
 }
-
 //Responsive Button 
 @media screen and (min-width : 0px) {
     .button {
@@ -881,10 +878,6 @@ nav {
         font-size: 16px;
     }
 }
-
-
-
-
 //Focus Input
 .form-input {
     margin-bottom: 20px;
@@ -996,7 +989,6 @@ input[type="checkbox"]:checked{
         font-size: 12px;
     }
 }
-
 //modal 
 .modal {
     .modal-content {
@@ -1010,8 +1002,6 @@ input[type="checkbox"]:checked{
         }
     }
 }
-
-
 //text 
 .text-primary {
     color: $primary-color !important;
@@ -1079,6 +1069,54 @@ input[type="checkbox"]:checked{
             font-size: 12px;
             color: #B3B6B8;
             margin-top: 4px;
+        }
+    }
+}
+.head-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.4rem;
+    .titlePage {
+        color: $text-color;
+        font-weight: 700;
+    }
+}
+//breadcrumb 
+.breadcrumb {
+    margin: 0;
+    .breadcrumb-item {
+        a {
+            color: $primary-color;
+            font-weight: 500;
+        }
+        &.active {
+            color: $primary-color;
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width : 575px) {
+    .head-page {
+        flex-direction: column;
+        .titlePage {
+            font-size: 20px;
+            margin-bottom: 1rem;
+        }
+    }
+    .breadcrumb {
+        .breadcrumb-item {
+            a {
+                color: $primary-color;
+                font-weight: 600;
+                font-size: 12px;
+                display: block;
+                height: 100%;
+            }
+            &.active {
+                font-size: 12px;
+            }
         }
     }
 }

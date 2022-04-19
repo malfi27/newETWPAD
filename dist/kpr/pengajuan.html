@@ -53,7 +53,7 @@
                             </a>
                         </li>
 
-                        <li class="sidebarMenu haveSubmenu active">
+                        <li class="sidebarMenu haveSubmenu ">
                             <p class="linkMenu">
                                 <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="4" cy="4.5" r="4"/>
@@ -65,7 +65,7 @@
                                     <a href="#" class="linkMenu">Masdebet BRI</a>
                                     <a href="#" class="linkMenu">Data Manual</a>
                                     <a href="#" class="linkMenu">Masdebet BTN</a>
-                                    <a href="#" class="linkMenu active">Data Debitur</a>
+                                    <a href="#" class="linkMenu">Data Debitur</a>
                                     <a href="#" class="linkMenu">Outstanding</a>
                                     <a href="#" class="linkMenu">Penerimaan</a>
                                     <a href="#" class="linkMenu">Rekap Bulanan</a>
@@ -76,7 +76,7 @@
                             </ul>    
                         </li>
 
-                        <li class="sidebarMenu">
+                        <li class="sidebarMenu active">
                             <a href="#" class="linkMenu">
                                 <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="4" cy="4.5" r="4"/>
@@ -187,181 +187,63 @@
 
             <div class="bodyContent">
                 <div class="head-page">
-                    <h4 class="titlePage">Data Debitur</h4>
+                    <h4 class="titlePage">Konfirmasi Pengajuan</h4>
                     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="#">Home</a></li>
-                          <li class="breadcrumb-item active">Data KPR</li>
-                          <li class="breadcrumb-item active">Data Debitur</li>
+                          <li class="breadcrumb-item active">Pengajuan</li>
                         </ol>
                     </nav>
                 </div>
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button 
-                            class="nav-link active" 
-                            id="nav-dataDebitur-tab" 
-                            data-bs-toggle="tab" 
-                            data-bs-target="#nav-dataDebitur" 
-                            type="button" 
-                            role="tab" 
-                            aria-controls="nav-dataDebitur" 
-                            aria-selected="true">Data Debitur
-                        </button>
-                        <button 
-                            class="nav-link" 
-                            id="nav-debiturBaru-tab" 
-                            data-bs-toggle="tab" 
-                            data-bs-target="#nav-debiturBaru" 
-                            type="button" 
-                            role="tab" 
-                            aria-controls="nav-debiturBaru" 
-                            aria-selected="false">Debitur Baru
-                        </button>
-                        <button 
-                            class="nav-link" 
-                            id="nav-debiturLunas-tab" 
-                            data-bs-toggle="tab" 
-                            data-bs-target="#nav-debiturLunas" 
-                            type="button" 
-                            role="tab" 
-                            aria-controls="nav-debiturLunas" 
-                            aria-selected="false">Debitur Lunas
-                        </button>
-                        <button 
-                            class="nav-link" 
-                            id="nav-debiturMeninggal-tab" 
-                            data-bs-toggle="tab" 
-                            data-bs-target="#nav-debiturMeninggal" 
-                            type="button" 
-                            role="tab" 
-                            aria-controls="nav-debiturMeninggal" 
-                            aria-selected="false">Debitur Meninggal
-                        </button>
-                    </div>
-                </nav>
                 <div class="card">
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-dataDebitur" role="tabpanel" aria-labelledby="nav-dataDebitur-tab">
-                            <div class="wrapperTable">
-                                <div class="head-table">
-                                    <h5>Data Debitur</h5>
-                                </div>
-                                <div class="exportSection">
-                                    <p>Klik tombol berikut agar tabel di export menjadi format Excel</p>
-                                    <a href="" class="btnExport excel">
-                                        <img src="../assets/images/excelIcon.png" alt="">
-                                    </a>
-                                </div>
-                                <table id="dataDebitur" class="tables" style="width:100%">
-                                    <thead>
-                                        <tr>
-                                            <th class="table-text">No</th>
-                                            <th class="table-text">Update</th>
-                                            <th class="table-text">Nama/NRP</th>
-                                            <th class="table-text">NRP</th>
-                                            <th class="table-text">Pangkat</th>
-                                            <th class="table-text">Kesatuan</th>
-                                            <th class="table-text">Tahap</th>
-                                            <th class="table-text">Pinjaman</th>
-                                            <th class="table-text">Jangka Waktu </th>
-                                            <th class="table-text">TMT Angsuran</th>
-                                            <th class="table-text">Jumlah Angsuran</th>
-                                            <th class="table-text">Angsuran Ke</th>
-                                            <th class="table-text">Angsuran Masuk</th>
-                                            <th class="table-text">Tunggakan</th>
-                                            <th class="table-text">Jml Tunggakan</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1.</td>
-                                            <td>
-                                                <a href="#" class="btnUpdate">Update</a>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="detailUser">
-                                                    <p class="name">ANTONIUS DWI WARDANA</p>
-                                                    <div class="nomorNRP">2920064750672</div>
-                                                </a>
-                                            </td>
-                                            <td>KU KOREM 101/ANTASARI DAM VI/MLW</td>
-                                            <td>KUDAM VI/MLW</td>
-                                            <td>1</td>
-                                            <td>IDR. 64.350.000</td>
-                                            <td>180</td>
-                                            <td>2010-11-01</td>
-                                            <td>Rp. 553.000</td>
-                                            <td>129</td>
-                                            <td>129</td>
-                                            <td>129</td>
-                                            <td>Rp. 553.000</td>
-                                            <td>TM 1 BLN X ( Juni 2021)</td>
-                                        </tr>
-                                        
-                                    </tbody>
-                                </table>
-                            </div>
+                    <div class="wrapperTable">
+                        <div class="head-table">
+                            <h5>Pengajuan Tabel</h5>
                         </div>
-                        <div class="tab-pane fade" id="nav-debiturBaru" role="tabpanel" aria-labelledby="nav-debiturBaru-tab">
-                            <div class="wrapperTable">
-                                <div class="head-table">
-                                    <h5>Data Debitur Baru</h5>
-                                </div>
-                                <table id="debiturBaru" class="tables" style="width:100%">
-                                    <thead>
-                                        <tr>
-                                            <th class="table-text">No</th>
-                                            <th class="table-text">Update</th>
-                                            <th class="table-text">Nama/NRP</th>
-                                            <th class="table-text">NRP</th>
-                                            <th class="table-text">Pangkat</th>
-                                            <th class="table-text">Kesatuan</th>
-                                            <th class="table-text">Tahap</th>
-                                            <th class="table-text">Pinjaman</th>
-                                            <th class="table-text">Jangka Waktu </th>
-                                            <th class="table-text">TMT Angsuran</th>
-                                            <th class="table-text">Jumlah Angsuran</th>
-                                            <th class="table-text">Angsuran Ke</th>
-                                            <th class="table-text">Angsuran Masuk</th>
-                                            <th class="table-text">Tunggakan</th>
-                                            <th class="table-text">Jml Tunggakan</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1.</td>
-                                            <td>
-                                                <a href="#" class="btnUpdate">Update</a>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="detailUser">
-                                                    <p class="name">ANTONIUS DWI WARDANA</p>
-                                                    <div class="nomorNRP">2920064750672</div>
-                                                </a>
-                                            </td>
-                                            <td>KU KOREM 101/ANTASARI DAM VI/MLW</td>
-                                            <td>KUDAM VI/MLW</td>
-                                            <td>1</td>
-                                            <td>IDR. 64.350.000</td>
-                                            <td>180</td>
-                                            <td>2010-11-01</td>
-                                            <td>Rp. 553.000</td>
-                                            <td>129</td>
-                                            <td>129</td>
-                                            <td>129</td>
-                                            <td>Rp. 553.000</td>
-                                            <td>TM 1 BLN X ( Juni 2021)</td>
-                                        </tr>
-                                        
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="nav-debiturLunas" role="tabpanel" aria-labelledby="nav-debiturLunas-tab">
-                        </div>
-                        <div class="tab-pane fade" id="nav-debiturMeninggal" role="tabpanel" aria-labelledby="nav-debiturMeninggal-tab">
-                        </div>
+                        <table id="pengajuan" class="tables" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Update</th>
+                                    <th>Nama/NRP</th>
+                                    <th>Pangkat</th>
+                                    <th>Kesatuan</th>
+                                    <th>Pinjaman</th>
+                                    <th>Jangka Waktu</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>
+                                        <div class="status danger-status">Kosong</div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="detailUser">
+                                            <p class="name">ANTONIUS DWI WARDANA</p>
+                                            <div class="nomorNRP">2920064750672</div>
+                                        </a>
+                                    </td>
+                                    <td>Jendral</td>
+                                    <td>Kotama</td>
+                                    <td>Rp.1000.0000</td>
+                                    <td>12 Bulanan</td>
+                                    <td>
+                                        <div class="dropdown action">
+                                            <button type="button" id="actionButtonMenu" data-bs-toggle="dropdown" >
+                                                <img src="../assets/images/action-icon.svg" alt="">
+                                            </button>
+                                            <ul class="dropdown-menu action-menu" aria-labelledby="actionButtonMenu">
+                                                
+                                                <li><a class="dropdown-item action-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item action-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -394,16 +276,10 @@
 
     <script>
         $(document).ready(function() {
-            $('#dataDebitur').DataTable( {
+            $('#pengajuan').DataTable( {
                 "scrollX": true,
             });
         } );
-        $(document).ready(function() {
-            $('#debiturBaru').DataTable( {
-                "scrollX": true,
-            });
-        } );
-
 
         //Fixed header datatable in  Nav Tabs Respons
         function resize () {
