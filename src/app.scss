@@ -570,6 +570,10 @@ $text-color :#42494D;
                             color: rgb(239, 20, 74);
                         }
                     }
+                    &.null {
+                        color: rgb(239, 20, 74) !important;
+                        font-style: italic;
+                    }
                 }
             }
         }

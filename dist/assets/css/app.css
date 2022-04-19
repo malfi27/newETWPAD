@@ -511,6 +511,11 @@ body {
   color: #ef144a;
 }
 
+.wrapperTable .tables tbody tr td.null {
+  color: #ef144a !important;
+  font-style: italic;
+}
+
 .wrapperTable .exportSection {
   display: flex;
   align-items: center;
