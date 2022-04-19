@@ -643,6 +643,18 @@ nav .nav-tabs .nav-link.active {
   box-shadow: 0px 3px 9px rgba(162, 162, 162, 0.1);
 }
 
+.card .header-card {
+  padding: 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.card .header-card h5 {
+  color: #42494D;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
 @media screen and (max-width: 576px) {
   .card {
     padding: 16px !important;
