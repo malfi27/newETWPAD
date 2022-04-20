@@ -1,7 +1,8 @@
 /*Font Import from google font*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 *, ::before, ::after, p, h1, h2, h3, h4, h5, h6 {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   outline: none;
@@ -17,6 +18,7 @@ body {
 #app #sidebar .sidebarWrapper {
   background-color: #fff;
   padding: 2rem 0;
+  -webkit-transition: .7s ease;
   transition: .7s ease;
   border-right: 1px solid #D0D0D0;
   z-index: 100;
@@ -24,14 +26,19 @@ body {
 }
 
 #app #sidebar .sidebarWrapper .brandName {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 1.5rem;
 }
 
 #app #sidebar .sidebarWrapper .brandName img {
   width: 100%;
   max-width: 200px;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -45,8 +52,12 @@ body {
 }
 
 #app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu .linkMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: .5rem 1.5rem;
   text-decoration: none;
   position: relative;
@@ -110,6 +121,8 @@ body {
 #app #sidebar .sidebarWrapper .wrapperMenuSidebar .listMenuSidebar .sidebarMenu .submenuWrapper .submenu .linkMenu {
   padding: .5rem 0;
   background-color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: relative;
   margin: 0;
@@ -168,19 +181,33 @@ body {
 #app #mainContent .headContent {
   background: #fff;
   padding: 1.7rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: 1px solid #D0D0D0;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
 #app #mainContent .headContent .sidebarButton {
   padding: 2px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 2px solid #558F4D;
+  -webkit-transition: .5s;
   transition: .5s;
   border-radius: 4px;
   opacity: 1;
@@ -189,24 +216,33 @@ body {
 #app #mainContent .headContent .sidebarButton:hover {
   background-color: #558F4D;
   cursor: pointer;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
 #app #mainContent .headContent .sidebarButton:hover i {
   color: #fff;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
 #app #mainContent .headContent .sidebarButton i {
   font-size: 24px;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
 #app #mainContent .headContent .headControl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #app #mainContent .headContent .headControl .control {
@@ -220,9 +256,15 @@ body {
 }
 
 #app #mainContent .headContent .headControl .notification .notificationButton .valueNotification {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 12px;
   top: -8px;
   right: -2px;
@@ -261,8 +303,12 @@ body {
 }
 
 #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: .5rem 1rem;
   background-color: #fff;
 }
@@ -337,8 +383,13 @@ body {
 
 @media screen and (max-width: 475px) {
   #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .icon {
     margin-bottom: 1rem;
@@ -362,6 +413,7 @@ body {
 @media screen and (min-width: 1200px) {
   #app #mainContent {
     margin-left: 350px;
+    -webkit-transition: .7s ease;
     transition: .7s ease;
   }
 }
@@ -369,6 +421,7 @@ body {
 @media screen and (max-width: 1199px) {
   #app #mainContent {
     margin-left: 0px;
+    -webkit-transition: .7s ease;
     transition: .7s ease;
   }
 }
@@ -400,9 +453,15 @@ body {
 
 /*Table*/
 .wrapperTable .head-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 1rem;
 }
 
@@ -476,6 +535,8 @@ body {
   border-radius: 5px;
   margin: .2rem 0;
   color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -490,13 +551,21 @@ body {
   border-radius: 5px;
   margin: .2rem 0;
   color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 .wrapperTable .tables tbody tr td .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .wrapperTable .tables tbody tr td .action button {
@@ -513,6 +582,8 @@ body {
   padding: 4px 8px;
   font-weight: 500;
   border-radius: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -532,9 +603,15 @@ body {
 }
 
 .wrapperTable .exportSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 1rem;
 }
 
@@ -554,12 +631,19 @@ body {
 .wrapperTable .exportSection .btnExport img {
   width: 100%;
   max-width: 38px;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
 }
 
 .wrapperTable .exportSection .btnExport:hover img {
-  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
 }
 
 .wrapperTable .dataTables_length label .form-select {
@@ -572,7 +656,8 @@ body {
 
 .wrapperTable .dataTables_length label .form-select:focus {
   border: 2px solid #558F4D;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .wrapperTable .dataTables_filter label .form-control {
@@ -593,8 +678,13 @@ body {
     font-size: 12px;
   }
   .wrapperTable .exportSection {
-    flex-direction: column;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .wrapperTable .exportSection p {
     margin-bottom: 1rem;
@@ -629,7 +719,8 @@ body {
 /*Nav Tabs Menu*/
 nav .nav-tabs {
   border: none;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   padding: 1.5rem 0;
 }
 
@@ -652,15 +743,18 @@ nav .nav-tabs .nav-link.active {
 .card {
   background-color: #FFF;
   border-radius: 8px;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   padding: 20px;
   border: none;
-  box-shadow: 0px 3px 9px rgba(162, 162, 162, 0.1);
+  -webkit-box-shadow: 0px 3px 9px rgba(162, 162, 162, 0.1);
+          box-shadow: 0px 3px 9px rgba(162, 162, 162, 0.1);
 }
 
 .card .header-card {
   padding: 0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: transparent;
 }
 
@@ -693,6 +787,8 @@ nav .nav-tabs .nav-link.active {
   border-radius: 8px;
   border: none;
   font-weight: 600;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   vertical-align: middle;
   padding: 8px 16px;
@@ -704,33 +800,39 @@ nav .nav-tabs .nav-link.active {
 .button.button-primary {
   background-color: #558F4D;
   color: #FFF;
+  -webkit-transition: background-color .3s ease;
   transition: background-color .3s ease;
 }
 
 .button.button-primary:hover {
   background-color: #4E8746;
+  -webkit-transition: background-color .3s ease;
   transition: background-color .3s ease;
 }
 
 .button.button-danger {
   background-color: #E33B3B;
   color: #FFF;
+  -webkit-transition: background-color .15s ease-in-out;
   transition: background-color .15s ease-in-out;
 }
 
 .button.button-danger:hover {
   background-color: #E33B3B;
+  -webkit-transition: background-color .15s ease-in-out;
   transition: background-color .15s ease-in-out;
 }
 
 .button.button-outline {
   background-color: #FFF;
   border: 1px solid #558F4D;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .button.button-outline:hover {
   color: #FFF;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
@@ -740,12 +842,14 @@ nav .nav-tabs .nav-link.active {
   color: #558F4D;
   text-decoration: none;
   z-index: 2;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .button.button-outline-primary:hover {
   background-color: #558F4D;
   color: #FFF;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
@@ -753,6 +857,7 @@ nav .nav-tabs .nav-link.active {
   border: 1px solid #E33B3B;
   background-color: transparent;
   color: #E33B3B;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
@@ -764,11 +869,13 @@ nav .nav-tabs .nav-link.active {
 .button.button-ghost {
   color: #558F4D;
   background-color: transparent;
+  -webkit-transition: color .2s ease;
   transition: color .2s ease;
 }
 
 .button.button-ghost:hover {
   color: #28a26a;
+  -webkit-transition: color .2s ease;
   transition: color .2s ease;
 }
 
@@ -789,8 +896,12 @@ nav .nav-tabs .nav-link.active {
 
 .button.button-group {
   padding: 8px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button.button-group img {
@@ -873,7 +984,23 @@ nav .nav-tabs .nav-link.active {
   font-weight: 400;
   color: #42494D;
   width: 100%;
+  -webkit-transition: border .2s ease;
   transition: border .2s ease;
+}
+
+.form-control::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #B3B6B8;
+  font-weight: 400;
+}
+
+.form-control:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #B3B6B8;
+  font-weight: 400;
+}
+
+.form-control::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #B3B6B8;
+  font-weight: 400;
 }
 
 .form-control::placeholder, textarea::placeholder {
@@ -882,8 +1009,10 @@ nav .nav-tabs .nav-link.active {
 }
 
 .form-control:focus, textarea:focus {
+  -webkit-transition: border .2s ease;
   transition: border .2s ease;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 2px solid #558F4D;
 }
 
@@ -895,12 +1024,15 @@ nav .nav-tabs .nav-link.active {
   font-weight: 400;
   color: #42494D;
   width: 100%;
+  -webkit-transition: border .2s ease;
   transition: border .2s ease;
 }
 
 .form-select:focus {
+  -webkit-transition: border .2s ease;
   transition: border .2s ease;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 2px solid #558F4D;
 }
 
@@ -927,7 +1059,8 @@ input[type="color"]:focus,
 input[type="checkbox"]:focus,
 .uneditable-input:focus {
   border-color: #558F4D;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   outline: 1 none;
   border: 2px solid #558F4D;
 }
@@ -957,7 +1090,8 @@ input[type="checkbox"]:checked {
 }
 
 .modal .modal-content .modal-header .btn-close {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .modal .modal-content .modal-body {
@@ -976,6 +1110,7 @@ input[type="checkbox"]:checked {
   text-overflow: ellipsis;
   -webkit-line-clamp: 1;
   /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 
 .bold {
@@ -989,8 +1124,13 @@ input[type="checkbox"]:checked {
 }
 
 #multiple-images-wrapper .form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #multiple-images-wrapper .form-input .form-control {
@@ -998,6 +1138,8 @@ input[type="checkbox"]:checked {
 }
 
 #multiple-images-wrapper .form-input .wrapper-images-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 2px solid #b3b6b8;
   border-radius: 8px;
@@ -1006,6 +1148,8 @@ input[type="checkbox"]:checked {
 
 #multiple-images-wrapper .form-input .wrapper-images-preview #image-preview {
   border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1015,17 +1159,25 @@ input[type="checkbox"]:checked {
   max-height: 74px;
   margin-right: 5px;
   border-radius: 8px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #multiple-images-wrapper .form-input .wrapper-images-preview .add-images-button {
   border: 2px solid #eceded;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 74px;
   width: 74px;
   border-radius: 10px;
+  -webkit-transition: .2s ease;
   transition: .2s ease;
   cursor: pointer;
 }
@@ -1036,12 +1188,14 @@ input[type="checkbox"]:checked {
 
 #multiple-images-wrapper .form-input .wrapper-images-preview .add-images-button:hover ion-icon {
   color: #558F4D;
+  -webkit-transition: .2s ease;
   transition: .2s ease;
 }
 
 #multiple-images-wrapper .form-input .wrapper-images-preview .add-images-button ion-icon {
   font-size: 22px;
   color: #B3B6B8;
+  -webkit-transition: .2s ease;
   transition: .2s ease;
 }
 
@@ -1052,9 +1206,15 @@ input[type="checkbox"]:checked {
 }
 
 .head-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1.4rem;
 }
 
@@ -1079,7 +1239,10 @@ input[type="checkbox"]:checked {
 
 @media screen and (max-width: 575px) {
   .head-page {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .head-page .titlePage {
     font-size: 20px;
