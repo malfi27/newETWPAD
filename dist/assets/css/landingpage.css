@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+*, ::before, ::after, h1, h2, h3, h4, h5, h6, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.button {
+  padding: 8px 16px !important;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button.button-primary {
+  background-color: #558f4d;
+}
+
+.button.button-primary:hover {
+  background-color: #4e8447;
+}
+
+.button.button-outline-white {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.button.have-icon ion-icon {
+  margin-right: 8px;
+}
+
+#app .navbar {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem 0;
+  transition: .3s ease;
+}
+
+#app .navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+#app .navbar .navbar-brand img {
+  width: 100%;
+  max-width: 64px;
+  max-height: 64px;
+}
+
+#app .navbar .navbar-brand p {
+  font-family: 'Fjalla One', sans-serif;
+  color: #fff;
+  font-size: 32px;
+}
+
+#app .navbar .navbar-toggler {
+  padding: 0 !important;
+  border: none;
+  box-shadow: none;
+}
+
+#app .navbar .navbar-toggler ion-icon {
+  color: #fff;
+  font-size: 38px;
+}
+
+#app .navbar .navbar-collapse .navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#app .navbar .navbar-collapse .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+#app .navbar .navbar-collapse .navbar-nav .nav-link:first-child {
+  margin-right: 42px;
+}
+
+#app .navbar.on-scroled {
+  background-color: #3c4246;
+  border: none;
+  transition: .3s ease;
+}
+
+#app .first-line {
+  min-height: 100vh;
+  width: 100%;
+  background: url(/dist/assets/images/landingpage/backgroundTNI.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#app .first-line .wrapper-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 0;
+  padding-top: 144px;
+  min-height: 100vh;
+}
+
+#app .first-line .wrapper-content .brand-images {
+  margin-bottom: 20px;
+}
+
+#app .first-line .wrapper-content .brand-images img {
+  width: 100%;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+#app .first-line .wrapper-content .brand-name {
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+#app .first-line .wrapper-content .downloadApps {
+  text-align: center;
+  margin-bottom: 104px;
+}
+
+#app .first-line .wrapper-content .downloadApps p {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+#app .first-line .wrapper-content .downloadApps .button:first-child {
+  margin-right: 16px;
+}
+
+#app .first-line .wrapper-content .mockup img {
+  width: 100%;
+  max-width: 900px;
+}
+
+#app .second-line {
+  padding: 96px 0;
+  background-color: #F6F6F6;
+}
+
+#app .second-line .head-title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#app .second-line .head-title h1 {
+  color: #3c4246;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#app .second-line .head-title p {
+  color: #7b8082;
+  font-size: 20px;
+  width: 100%;
+  max-width: 776px;
+  font-weight: 400;
+  margin-bottom: 128px;
+}
+
+#app .second-line .preview-apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#app .second-line .preview-apps .images-preview {
+  margin-bottom: 34px;
+}
+
+#app .second-line .preview-apps .images-preview img {
+  width: 100%;
+  max-width: 240px;
+}
+
+#app .second-line .preview-apps h5 {
+  color: #3c4246;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+#app .second-line .preview-apps p {
+  color: #7b8082;
+  font-weight: 400;
+}
+
+#app .footer .first-footer {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #eceded;
+  padding: 1rem 0;
+}
+
+#app .footer .first-footer .brand-images {
+  margin-right: 40px;
+}
+
+#app .footer .first-footer .brand-images img {
+  width: 100%;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+#app .footer .first-footer .download-apps {
+  display: flex;
+  align-items: center;
+}
+
+#app .footer .first-footer .download-apps a {
+  color: #42494d;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+#app .footer .first-footer .download-apps a:first-child {
+  margin-right: 40px;
+}
+
+#app .footer .first-footer .download-apps a ion-icon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+#app .footer .second-footer {
+  padding: 1rem 0;
+}
+
+#app .footer .second-footer p {
+  font-weight: 700;
+  color: #42494d;
+}
+
+#app .footer .second-footer a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #42494d;
+}
+
+@media screen and (max-width: 575px) {
+  #app .second-line .wrapper-content .head-title h1 {
+    font-size: 28px;
+  }
+  #app .second-line .wrapper-content .head-title p {
+    font-size: 16px;
+  }
+  #app .second-line .wrapper-content .preview-apps h5 {
+    font-size: 18px;
+  }
+  #app .second-line .wrapper-content .preview-apps p {
+    font-size: 14px;
+  }
+  #app .footer .first-footer {
+    flex-direction: column;
+  }
+  #app .footer .first-footer .brand-images {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  #app .footer .second-footer p, #app .footer .second-footer a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #app .navbar .navbar-collapse {
+    background-color: #3c4246;
+  }
+  #app .navbar .navbar-collapse .navbar-nav .nav-link {
+    margin: 0 !important;
+    margin: .5rem 1rem !important;
+  }
+}

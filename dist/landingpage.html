@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landingpage - ETWPAD</title>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!--landing page css-->
+    <link rel="stylesheet" href="./assets/css/landingpage.css">
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="./assets/images/landingpage/brand-logo.png" alt="">
+                  <p>ETWPAD</p>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon name="menu-outline"></ion-icon>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="#">Fitur Aplikasi</a>
+                  <a class="nav-link button button-primary" href="#">Masuk</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+        <div class="first-line">
+            <div class="container">
+                <div class="wrapper-content">
+                    <div class="brand-images">
+                        <img src="./assets/images/landingpage/brand-logo.png" alt="">
+                    </div>
+                    <h1 class="brand-name">ETWPAD</h1>
+                    <div class="downloadApps">
+                        <p>Unduh Aplikasi</p>
+                        <div class="d-flex">
+                            <a href="#" class="button button-outline-white have-icon">
+                                <ion-icon name="logo-google-playstore"></ion-icon>
+                                Playstore
+                            </a>
+                            <a href="#" class="button button-outline-white have-icon">
+                                <ion-icon name="logo-apple"></ion-icon>
+                                App Store
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mockup">
+                        <img src="./assets/images/landingpage/mockup-landing.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-line">
+            <div class="container">
+                <div class="wrapper-content">
+                    <div class="head-title">
+                        <h1>Fitur Aplikasi</h1>
+                        <p>Aplikasi yang memungkinkan Anda untuk memantau iuran TWP setiap bulannya, kepemilikan perumahan pribadi dan memantau pengembalian tabungan.</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                            <div class="preview-apps">
+                                <div class="images-preview">
+                                    <img src="./assets/images/landingpage//fiture-apps1.png" alt="">
+                                </div>
+                                <h5>Tabungan Wajib Perumahan</h5>
+                                <p>Memudahkan pemantauan iuran Tabungan Wajib Perumahan Anda setiap bulannya</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                            <div class="preview-apps">
+                                <div class="images-preview">
+                                    <img src="./assets/images/landingpage//fiture-apps2.png" alt="">
+                                </div>
+                                <h5>Kredit Kepemilikan Rumah</h5>
+                                <p>Nikmati kemudahan melakukan pencarian, pemilihan dan pengajuan KPR untuk semua tipe rumah</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                            <div class="preview-apps">
+                                <div class="images-preview">
+                                    <img src="./assets/images/landingpage//fiture-apps3.png" alt="">
+                                </div>
+                                <h5>Pengembalian Tabungan</h5>
+                                <p>Nikmati kemudahan pemantauan tabungan BALTAB prajurit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="first-footer">
+                    <div class="brand-images">
+                        <img src="./assets/images/landingpage/brand-logo.png" alt="">
+                    </div>
+                    <div class="download-apps">
+                        <a href="#">
+                            <ion-icon name="logo-google-playstore"></ion-icon>
+                            Playstore
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-apple"></ion-icon>
+                            App Store
+                        </a>
+                    </div>
+                </div>
+                <div class="second-footer">
+                    <d class="d-flex align-items-center justify-content-between">
+                        <p>© ETWP 2022</p>
+                        <a href="#">Help Center</a>
+                    </d>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Vendor JS-->
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--Ion icon-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+           $(document).ready(function(){
+            $(window).bind('scroll', function() {
+                    if ($(window).scrollTop()) {
+                        $('nav').addClass('on-scroled');
+                    }
+                    else {
+                        $('nav').removeClass('on-scroled');
+                    }
+                });
+            });
+    </script>
+</body>
+</html>

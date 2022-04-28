@@ -1,8 +1,7 @@
 /*Font Import from google font*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 *, ::before, ::after, p, h1, h2, h3, h4, h5, h6 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   outline: none;
@@ -15,12 +14,8 @@
 }
 
 .dashboard-data .card .content-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .dashboard-data .card .content-card .icon img {
@@ -28,10 +23,8 @@
   height: 100%;
   max-width: 81px;
   max-height: 81px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: contain;
+  object-position: center;
 }
 
 .dashboard-data .card .content-card .info-card {
@@ -49,16 +42,9 @@
 }
 
 .before-adding-data .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .before-adding-data .card p {
