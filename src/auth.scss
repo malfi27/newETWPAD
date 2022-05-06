@@ -276,6 +276,28 @@ input[type="checkbox"]:checked{
         width: 100%;
         max-width: 470px;
         padding: 24px 74px;
+        position: relative;
+        .alert {
+            position: absolute;
+            left: 0;
+            top: 40px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: 14px;
+            border-radius: 8px;
+            font-weight: 300;
+            ion-icon {
+                margin-right: .5rem;
+                font-size: 20px;
+                font-weight: 700 !important;
+            }
+            &.alert-danger {
+                background-color: rgba(242, 69, 61, 1);
+                color: #fff;
+                border: none;
+            }
+        }
         .brand-logo {
             margin-bottom: 20px;
             img {
@@ -329,6 +351,9 @@ input[type="checkbox"]:checked{
     #auth {
         .auth-wrapper {
             padding: 24px 42px !important;
+            .alert {
+                font-size: 12px;
+            }
         }
     }
 }

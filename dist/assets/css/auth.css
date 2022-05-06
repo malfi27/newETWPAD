@@ -352,6 +352,35 @@ input[type="checkbox"]:checked {
   width: 100%;
   max-width: 470px;
   padding: 24px 74px;
+  position: relative;
+}
+
+#auth .auth-wrapper .alert {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 8px;
+  font-weight: 300;
+}
+
+#auth .auth-wrapper .alert ion-icon {
+  margin-right: .5rem;
+  font-size: 20px;
+  font-weight: 700 !important;
+}
+
+#auth .auth-wrapper .alert.alert-danger {
+  background-color: #f2453d;
+  color: #fff;
+  border: none;
 }
 
 #auth .auth-wrapper .brand-logo {
@@ -410,6 +439,9 @@ input[type="checkbox"]:checked {
 @media screen and (max-width: 574px) {
   #auth .auth-wrapper {
     padding: 24px 42px !important;
+  }
+  #auth .auth-wrapper .alert {
+    font-size: 12px;
   }
 }
 

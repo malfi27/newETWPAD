@@ -17,6 +17,10 @@
 
     <div id="auth">
         <div class="auth-wrapper">
+            <div class="alert alert-danger" role="alert">
+                <ion-icon name="alert-circle-outline"></ion-icon>
+                Email atau password salah
+            </div>
             <div class="brand-logo d-flex justify-content-center w-100 align-items-center">
                 <img src="../assets/images/brand-logo.png" alt="">
             </div>
@@ -43,13 +47,13 @@
                             <div class="requirement-wrapper">
                                 <p>Password Anda harus mengandung :</p>
                                 <div class="requirement">
-                                    <input class="form-check-input" type="checkbox" value="" id="digitpassword">
+                                    <input class="form-check-input" type="checkbox" value="" id="digitpassword" disabled>
                                     <label class="form-check-label" for="digitpassword">
                                       Minimal 8 digit
                                     </label>
                                 </div>
                                 <div class="requirement">
-                                    <input class="form-check-input" type="checkbox" value="" id="password-uppercase">
+                                    <input class="form-check-input" type="checkbox" value="" id="password-uppercase" disabled>
                                     <label class="form-check-label" for="password-uppercase">
                                       1 Digit huruf besar
                                     </label>
@@ -57,7 +61,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="button button-primary w-100 my-4">Masuk</button>
+                            <button class="button button-primary w-100 mt-4 mb-2">Masuk</button>
                         </div>
                         <div class="col-12">
                             <div class="d-flex justify-content-center">
@@ -73,6 +77,9 @@
     <!--Vendor-->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Ion icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <!--Js Toogle Button-->
         <script>
             const togglePassword = document.querySelector('#togglePassword');
