@@ -1,7 +1,8 @@
 /*Font Import from google font*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 *, ::before, ::after, p, h1, h2, h3, h4, h5, h6 {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   outline: none;
@@ -10,19 +11,30 @@
 
 /*Variable Color*/
 #app #mainContent .bodyContent .firstLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.7rem;
 }
 
 #app #mainContent .bodyContent .firstLine .personilData {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #app #mainContent .bodyContent .firstLine .personilData .personil {
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #app #mainContent .bodyContent .firstLine .personilData .personil.aktifPersonil {
@@ -47,20 +59,36 @@
 }
 
 #app #mainContent .bodyContent .firstLine .userDataWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 #app #mainContent .bodyContent .firstLine .userDataWrapper .firstRow .userData, #app #mainContent .bodyContent .firstLine .userDataWrapper .secondRow .userData {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   border-radius: 12px;
 }
@@ -116,14 +144,25 @@
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 10px;
   text-align: center;
 }
@@ -212,12 +251,18 @@
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #f5ecea;
   border-radius: 10px;
 }
@@ -241,8 +286,12 @@
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -298,9 +347,15 @@
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .secondLineKpr .debiturDataLine .debitur {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   padding: 1rem 1rem 1rem 1.5rem;
   border-radius: 0 10px 10px 0;
@@ -362,9 +417,16 @@
 }
 
 #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .thirdline .chartDataRekapBulanan {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1.4rem;
 }
 
@@ -443,7 +505,10 @@
 /*Responsive*/
 @media screen and (min-width: 0px) {
   #app #mainContent .bodyContent .firstLine {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #app #mainContent .bodyContent .firstLine .personilData {
     margin-bottom: 1.5rem;
@@ -484,7 +549,10 @@
     /*KPR*/
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData {
     padding: 2rem 1rem;
@@ -517,7 +585,10 @@
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan {
     padding: 1.5rem 1rem;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100%;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan:first-child {
@@ -547,9 +618,16 @@
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur {
     padding: 1.5rem 1rem;
     height: 50%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur:first-child {
     border-radius: 0px 10px 0 0;
@@ -618,10 +696,16 @@
 
 @media screen and (min-width: 1200px) {
   #app #mainContent .bodyContent .firstLine {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #app #mainContent .bodyContent .firstLine .personilData {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   #app #mainContent .bodyContent .firstLine .personilData .personil {
     width: 100%;
@@ -637,6 +721,8 @@
     font-size: 14px;
   }
   #app #mainContent .bodyContent .secondLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   #app #mainContent .bodyContent .secondLine .containerLine {
@@ -646,7 +732,10 @@
     margin-right: 1rem;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: 0 -.5rem;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerBaltab .wrapperDataBaltab .baltabData {
@@ -666,7 +755,10 @@
     font-size: 12px;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine {
     width: 100%;
@@ -674,7 +766,10 @@
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine .tunggakan {
     padding: 1.2rem;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     height: 100%;
     border-radius: 10px !important;
   }
@@ -703,9 +798,16 @@
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur {
     padding: 1.2rem 1.6rem !important;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     border-radius: 10px !important;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur:first-child {
@@ -740,11 +842,17 @@
 
 @media screen and (min-width: 1600px) {
   #app #mainContent .bodyContent .firstLine {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   #app #mainContent .bodyContent .firstLine .personilData {
     width: 70%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 0;
     margin-right: 1.5rem;
   }
@@ -795,7 +903,10 @@
     font-size: 14px;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .tunggakanLine {
     width: 100%;
@@ -823,6 +934,8 @@
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur {
     padding: 1.6rem 1.5rem !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   #app #mainContent .bodyContent .secondLine .containerLine .containerKPR .firstLineKPR .debiturLine .debitur .infoDebitur h5 {
@@ -864,3 +977,4 @@
     font-size: 16px !important;
   }
 }
+/*# sourceMappingURL=index.css.map */
