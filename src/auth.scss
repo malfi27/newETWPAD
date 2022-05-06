@@ -313,6 +313,13 @@ input[type="checkbox"]:checked{
             color: #0F0F0F;
             margin-bottom: 32px;
         }
+        .auth-paragraf {
+            color: rgba(123, 128, 130, 1);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 1rem;
+        }
         .form-auth {
             .form-password {
                 position: relative;
@@ -352,6 +359,9 @@ input[type="checkbox"]:checked{
         .auth-wrapper {
             padding: 24px 42px !important;
             .alert {
+                font-size: 12px;
+            }
+            .auth-paragraf {
                 font-size: 12px;
             }
         }
