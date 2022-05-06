@@ -412,4 +412,10 @@ input[type="checkbox"]:checked {
     padding: 24px 42px !important;
   }
 }
+
+@media screen and (max-width: 374px) {
+  #auth .auth-wrapper {
+    padding: 24px 26px !important;
+  }
+}
 /*# sourceMappingURL=auth.css.map */

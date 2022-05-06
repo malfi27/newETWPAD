@@ -332,3 +332,10 @@ input[type="checkbox"]:checked{
         }
     }
 }
+@media screen and (max-width : 374px) {
+    #auth {
+        .auth-wrapper {
+            padding: 24px 26px !important;
+        }
+    }
+}
