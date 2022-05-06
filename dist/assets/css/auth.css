@@ -430,11 +430,11 @@ input[type="checkbox"]:checked {
 }
 
 #auth .auth-wrapper .form-auth .form-password .form-control {
-  padding: 12px 34px 12px 16px !important;
+  padding: 12px 34px 12px 12px !important;
 }
 
 #auth .auth-wrapper .form-auth .form-password.invalid-password .form-control {
-  border: 2px solid #F2453D;
+  border: 1px solid #F2453D;
 }
 
 #auth .auth-wrapper .form-auth .requirement-wrapper p {
