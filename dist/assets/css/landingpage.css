@@ -175,12 +175,18 @@ body {
   margin-right: 16px;
 }
 
+#app .first-line .wrapper-content .mockup {
+  position: relative;
+}
+
 #app .first-line .wrapper-content .mockup img {
   width: 100%;
   max-width: 900px;
 }
 
 #app .second-line {
+  position: relative;
+  z-index: 2;
   padding: 96px 0;
   background-color: #F6F6F6;
 }

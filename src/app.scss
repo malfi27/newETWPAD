@@ -742,6 +742,24 @@ nav {
         }
     }
 }
+.tabsLinkMenu {
+    flex-wrap: nowrap;
+    padding: 1.5rem 0;
+    .tabs-link {
+        color: #ABABAB;
+        font-weight: 500;
+        border: none;
+        padding: .7rem 1rem;
+        border-radius: 0px;
+        text-decoration: none;
+        &.active {
+            background-color: transparent;
+            color: $primary-color;
+            border: none;
+            border-bottom: 2px solid $primary-color;
+        }
+    }
+}
 /*Card*/
 .card {
     background-color: #FFF;
@@ -779,6 +797,14 @@ nav {
                 font-size: 12px;
                 padding: .5rem 1rem;
             }
+        }
+    }
+    .tabsLinkMenu {
+        overflow-y: hidden;
+        overflow-x: auto;
+        .tabs-link {
+            font-size: 12px;
+            padding: .5rem 1rem;
         }
     }
 }
@@ -1127,6 +1153,7 @@ input[type="checkbox"]:checked{
 .breadcrumb {
     margin: 0;
     .breadcrumb-item {
+        font-size: 14px;
         a {
             color: $primary-color;
             font-weight: 500;
@@ -1147,16 +1174,16 @@ input[type="checkbox"]:checked{
         }
     }
     .breadcrumb {
+        width: 100%;
         .breadcrumb-item {
+            font-size: 10px;
             a {
                 color: $primary-color;
                 font-weight: 600;
-                font-size: 12px;
                 display: block;
                 height: 100%;
             }
             &.active {
-                font-size: 12px;
             }
         }
     }

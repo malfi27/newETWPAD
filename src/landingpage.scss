@@ -133,6 +133,7 @@ body {
                 }
             }
             .mockup {
+                position: relative;
                 img {
                     width: 100%;
                     max-width: 900px;
@@ -141,6 +142,8 @@ body {
         }
     }
     .second-line {
+        position: relative;
+        z-index: 2;
         padding: 96px 0;
         background-color: #F6F6F6;
         .head-title {

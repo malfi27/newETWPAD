@@ -739,6 +739,28 @@ nav .nav-tabs .nav-link.active {
   border-bottom: 2px solid #558F4D;
 }
 
+.tabsLinkMenu {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 1.5rem 0;
+}
+
+.tabsLinkMenu .tabs-link {
+  color: #ABABAB;
+  font-weight: 500;
+  border: none;
+  padding: .7rem 1rem;
+  border-radius: 0px;
+  text-decoration: none;
+}
+
+.tabsLinkMenu .tabs-link.active {
+  background-color: transparent;
+  color: #558F4D;
+  border: none;
+  border-bottom: 2px solid #558F4D;
+}
+
 /*Card*/
 .card {
   background-color: #FFF;
@@ -777,6 +799,14 @@ nav .nav-tabs .nav-link.active {
     overflow-x: auto;
   }
   nav .nav-tabs .nav-link {
+    font-size: 12px;
+    padding: .5rem 1rem;
+  }
+  .tabsLinkMenu {
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+  .tabsLinkMenu .tabs-link {
     font-size: 12px;
     padding: .5rem 1rem;
   }
@@ -1227,6 +1257,10 @@ input[type="checkbox"]:checked {
   margin: 0;
 }
 
+.breadcrumb .breadcrumb-item {
+  font-size: 14px;
+}
+
 .breadcrumb .breadcrumb-item a {
   color: #558F4D;
   font-weight: 500;
@@ -1248,15 +1282,17 @@ input[type="checkbox"]:checked {
     font-size: 20px;
     margin-bottom: 1rem;
   }
+  .breadcrumb {
+    width: 100%;
+  }
+  .breadcrumb .breadcrumb-item {
+    font-size: 10px;
+  }
   .breadcrumb .breadcrumb-item a {
     color: #558F4D;
     font-weight: 600;
-    font-size: 12px;
     display: block;
     height: 100%;
-  }
-  .breadcrumb .breadcrumb-item.active {
-    font-size: 12px;
   }
 }
 /*# sourceMappingURL=app.css.map */
