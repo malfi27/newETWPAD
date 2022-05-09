@@ -603,21 +603,23 @@ $text-color :#42494D;
             font-weight: 500;
             font-size: 14px;
         }
-        .btnExport {
-            padding: .5rem;
-            background-color: #fff;
-            border: 3px solid $primary-color;
-            border-radius: 10px;
-            img {
-                width: 100%;
-                max-width: 38px;
-                transition: transform .3s ease;
-
-            }
-            &:hover {
+        .file-download {
+            .btnExport {
+                padding: .5rem .3rem;
+                background-color: #fff;
+                border: 3px solid $primary-color;
+                border-radius: 10px;
                 img {
-                    transform: translateY(-5px);
+                    width: 100%;
+                    max-width: 38px;
                     transition: transform .3s ease;
+    
+                }
+                &:hover {
+                    img {
+                        transform: translateY(-5px);
+                        transition: transform .3s ease;
+                    }
                 }
             }
         }

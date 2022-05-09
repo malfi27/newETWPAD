@@ -621,14 +621,14 @@ body {
   font-size: 14px;
 }
 
-.wrapperTable .exportSection .btnExport {
-  padding: .5rem;
+.wrapperTable .exportSection .file-download .btnExport {
+  padding: .5rem .3rem;
   background-color: #fff;
   border: 3px solid #558F4D;
   border-radius: 10px;
 }
 
-.wrapperTable .exportSection .btnExport img {
+.wrapperTable .exportSection .file-download .btnExport img {
   width: 100%;
   max-width: 38px;
   -webkit-transition: -webkit-transform .3s ease;
@@ -637,7 +637,7 @@ body {
   transition: transform .3s ease, -webkit-transform .3s ease;
 }
 
-.wrapperTable .exportSection .btnExport:hover img {
+.wrapperTable .exportSection .file-download .btnExport:hover img {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   -webkit-transition: -webkit-transform .3s ease;
