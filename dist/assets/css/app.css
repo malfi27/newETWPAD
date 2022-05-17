@@ -823,6 +823,8 @@ nav .nav-tabs .nav-link.active {
   vertical-align: middle;
   padding: 8px 16px;
   text-align: center;
+  display: block;
+  text-decoration: none;
   /*Style Button*/
   /*Size Button*/
 }
