@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin ETTPAD</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/icons-1.7.2/font/bootstrap-icons.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
+
+    <!--App Css Layouting-->
+    <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body>
+    
+
+    <div id="app">
+
+        <div id="sidebar">
+            <div class="sidebarWrapper">
+                <div class="brandName">
+                    <img src="../assets/images/etwpadLogo_withTeks.png" alt="">
+                </div>
+
+                <div class="wrapperMenuSidebar">
+                    <ul class="listMenuSidebar">
+
+                        <li class="sidebarMenu">
+                            <a href="../index.html" class="linkMenu">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z"/>
+                                    </svg>
+                                Kembali ke menu
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                    
+                                Dashboard TWP
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu haveSubmenu">
+                            <p class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Data TWP
+                            </p>
+                            <ul class="submenuWrapper">
+                                <li class="submenu">
+                                    <a href="#" class="linkMenu">Data RH</a>
+                                    <a href="#" class="linkMenu">Data Pensiun</a>
+                                    <a href="#" class="linkMenu">Status Prajurit</a>
+                                </li>
+                            </ul>    
+                        </li>
+
+                        <li class="sidebarMenu haveSubmenu">
+                            <p class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Rekap
+                            </p>
+                            <ul class="submenuWrapper">
+                                <li class="submenu">
+                                    <a href="#" class="linkMenu">Tabungan</a>
+                                    <a href="#" class="linkMenu">Rekap Bulanan</a>
+                                    <a href="#" class="linkMenu">Rekap Perkotama</a>
+                                </li>
+                            </ul>    
+                        </li>
+
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Mutasi
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Monitoring
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainContent">
+            <div class="headContent">
+                <div class="sidebarButton">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="headControl">
+                    <div class="control dropdown notification">
+                        <button class="notificationButton" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/notificationIcon.svg" alt="">
+                          <div class="valueNotification">
+                              <p>9</p>
+                          </div>
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <h4 class="headText">Notifikasi</h4>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                  <div class="icon">
+                                      <img src="../assets/images/messageIcon.svg" alt="">
+                                  </div>
+                                  <div class="detailMassage">
+                                      <h5 class="labelMassage">Pengguna Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quos.</h5>
+                                      <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, optio.</p>
+                                      <p class="time">2 menit yang lalu</p>
+                                  </div>
+                              </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item read" href="#">
+                                    <div class="icon">
+                                        <img src="../assets/images/messageIcon.svg" alt="">
+                                    </div>
+                                    <div class="detailMassage">
+                                        <h5 class="labelMassage">Pengguna</h5>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem?</p>
+                                        <p class="time">2 menit yang lalu</p>
+                                    </div>
+                                </a>
+                              </li>
+                          
+                        </ul>
+
+                    </div>
+                    
+                    <div class="control setting">
+                        <a href="#">
+                            <img src="../assets/images/settingIcon.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="control profile">
+                        <a href="#">
+                            <img src="../assets/images/profileIcon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bodyContent">
+                <div class="head-page">
+                    <h4 class="titlePage">Detail Data Prajurit</h4>
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">ETWP</a></li>
+                          <li class="breadcrumb-item active">Detail Data</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-input">
+                                            <label for="namaPrajurit" class="form-label">Nama</label>
+                                            <input type="text" id="namaPrajurit" class="form-control" value="Wiaka Aditana" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-input">
+                                            <label for="nrpPrajurit" class="form-label">NRP</label>
+                                            <input type="text" id="nrpPrajurit" class="form-control" value="31160058140497" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-input">
+                                            <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
+                                            <input type="text" id="tanggalLahir" class="form-control" value="2003-12-01" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-input">
+                                            <label for="pangkat" class="form-label">Pangkat</label>
+                                            <input type="text" id="pangkat" class="form-control" value="PRATU" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-input">
+                                            <label for="corp" class="form-label">Corps</label>
+                                            <input type="text" id="corp" class="form-control" value="-" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-input">
+                                            <label for="kotama" class="form-label">Kotama</label>
+                                            <input type="text" id="kotama" class="form-control" value="KUDAM XVI/PTM" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-input">
+                                            <label for="kesatuan" class="form-label">Kesatuan</label>
+                                            <input type="text" id="kesatuan" class="form-control" value="BRIGIF 27/NUSA INA DAM XVI/PTM" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-input">
+                                            <label for="tnglPengangkatan" class="form-label">Tgl Pengangkatan</label>
+                                            <input type="text" id="tnglPengangkatan" class="form-control" value="5 Apr 2016" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-input">
+                                            <label for="tnglPengangakatanTamtama" class="form-label">Tgl Pengangkatan Tamtama</label>
+                                            <input type="text" id="tnglPengangakatanTamtama" class="form-control" value="5 Apr 2016" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-input">
+                                            <label for="tnglPengangkatanBintara" class="form-label">Tgl Pengangkatan Bintara</label>
+                                            <input type="text" id="tnglPengangkatanBintara" class="form-control" value="5 Apr 2016" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-input">
+                                            <label for="tnglPengangkatanPama" class="form-label">Tgl Pengangkatan Pama</label>
+                                            <input type="text" id="tnglPengangkatanPama" class="form-control" value="5 Apr 2016" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-input">
+                                            <label for="tnglPengangkatanPamen" class="form-label">Tgl Pengangkatan Pamen</label>
+                                            <input type="text" id="tnglPengangkatanPamen" class="form-control" value="5 Apr 2016" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-input">
+                                            <label for="tnglPengangkatanPati" class="form-label">Tgl Pengangkatan Pati</label>
+                                            <input type="text" id="tnglPengangkatanPati" class="form-control" value="5 Apr 2016" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-input">
+                                            <label for="tanggalPensiun" class="form-label">Tanggal Pensiun</label>
+                                            <input type="text" id="tanggalPensiun" class="form-control" value="5 Apr 2016" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-input">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" id="email" class="form-control" value="aditamawiara@gmail.com" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-input">
+                                            <label for="namaAnak" class="form-label">Nama Anak 1</label>
+                                            <input type="text" id="namaAnak" class="form-control" value="Natali Stevani" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-input">
+                                            <label for="namaAnak" class="form-label">Nama Anak 2</label>
+                                            <input type="text" id="namaAnak" class="form-control" value="Natali Stevani" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-input">
+                                            <label for="namaAnak" class="form-label">Nama Anak 3</label>
+                                            <input type="text" id="namaAnak" class="form-control" value="Natali Stevani" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-input">
+                                            <label for="alamat" class="form-label">Alamat</label>
+                                            <input type="text" id="alamat" class="form-control" value="Asmil Yonif 731/Kabaresi" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-input">
+                                            <label for="norekening" class="form-label">No Rekening</label>
+                                            <input type="number" id="norekening" class="form-control" value="123691231" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-input">
+                                            <label for="namaRekening" class="form-label">Nama Rekening</label>
+                                            <input type="text" id="namaRekening" class="form-control" value="Wiaka Aditama" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-input">
+                                            <label for="namaBank" class="form-label">Nama Bank</label>
+                                            <input type="text" id="namaBank" class="form-control" value="PT.BANK RAKYAT INDONESIA (Persero) Tbk. KC AMBON" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!--Vendor-->
+        <!--Jquery-->
+        <script src="../assets/vendor/jquery/jquery.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+        <!--Javascript Bootstrap-->
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--Data table-->
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+        <!--Chart Js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--App JS-->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>
