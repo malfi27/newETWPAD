@@ -1,6 +1,10 @@
 /*Font Import from google font*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+/*Variable Color*/
+$primary-color : #558F4D;
+$text-color :#42494D;
+
 *,::before,::after,p,h1,h2,h3,h4,h5,h6 {
     box-sizing: border-box;
     padding: 0;
@@ -12,12 +16,6 @@ body {
     background-color: #F6F6F6;
 }
   
-/*Variable Color*/
-$primary-color : #558F4D;
-$text-color :#42494D;
-
-
-
 /*Sidebar Style*/
 #app {
     #sidebar {
@@ -939,6 +937,12 @@ nav {
     }
 }
 //Focus Input
+.head-label {
+    color: $text-color;
+    margin: 1rem 0 1.5rem 0;
+    font-weight: 700;
+    font-size: 18px;
+}
 .form-input {
     margin-bottom: 20px;
     .input-group {
