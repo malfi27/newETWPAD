@@ -445,7 +445,35 @@ body {
 
 
 /*Component Class*/
-
+/*alert*/
+.alert {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: 300;
+    max-width: 500px;
+    transform: translate(50%,0%);
+    ion-icon {
+        margin-right: .5rem;
+        font-size: 20px;
+        font-weight: 700 !important;
+    }
+    &.alert-success {
+        background-color: #558F4D;
+        color: #fff;
+        border: none;
+    }
+    &.alert-danger {
+        background-color: rgba(242, 69, 61, 1);
+        color: #fff;
+        border: none;
+    }
+}
 /*Chart*/
 .wrapperChart {
     width: 100%;

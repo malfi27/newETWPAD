@@ -434,6 +434,44 @@ body {
 }
 
 /*Component Class*/
+/*alert*/
+.alert {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 8px;
+  font-weight: 300;
+  max-width: 500px;
+  -webkit-transform: translate(50%, 0%);
+          transform: translate(50%, 0%);
+}
+
+.alert ion-icon {
+  margin-right: .5rem;
+  font-size: 20px;
+  font-weight: 700 !important;
+}
+
+.alert.alert-success {
+  background-color: #558F4D;
+  color: #fff;
+  border: none;
+}
+
+.alert.alert-danger {
+  background-color: #f2453d;
+  color: #fff;
+  border: none;
+}
+
 /*Chart*/
 .wrapperChart {
   width: 100%;
