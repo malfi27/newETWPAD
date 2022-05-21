@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Bantuan - ETWPAD</title>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+
+    <!--Pusat bantuan css in welcome page-->
+    <link rel="stylesheet" href="./assets/css/welcome-pusat-bantuan.css">
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="./assets/images/brand-logo.png" alt="">
+                  <p>ETWPAD</p>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon name="menu-outline"></ion-icon>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="#">Fitur Aplikasi</a>
+                  <a class="nav-link button button-primary" href="#">Masuk</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center centered-y">
+                <div class="pusat-bantuan-menu">
+                    <h3>Pusat Bantuan</h3>
+                    <p>Hai Prajurit, Anda memerlukan beberapa bantuan?</p>
+
+                    <div class="menu-wrapper">
+                        <div class="menu">
+                            <div class="icon">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" rx="24" fill="#6FA068"/>
+                                    <path d="M30.6667 26.9167C29.6667 26.9167 28.5833 26.75 27.6667 26.4167H27.4167C27.1667 26.4167 27 26.5 26.8333 26.6667L25 28.5C22.6667 27.25 20.6667 25.3333 19.5 23L21.3333 21.1667C21.5833 20.9167 21.6667 20.5833 21.5 20.3333C21.25 19.4167 21.0833 18.3333 21.0833 17.3333C21.0833 16.9167 20.6667 16.5 20.25 16.5H17.3333C16.9167 16.5 16.5 16.9167 16.5 17.3333C16.5 25.1667 22.8333 31.5 30.6667 31.5C31.0833 31.5 31.5 31.0833 31.5 30.6667V27.75C31.5 27.3333 31.0833 26.9167 30.6667 26.9167ZM18.1667 18.1667H19.4167C19.5 18.9167 19.6667 19.6667 19.8333 20.3333L18.8333 21.3333C18.5 20.3333 18.25 19.25 18.1667 18.1667ZM29.8333 29.8333C28.75 29.75 27.6667 29.5 26.6667 29.1667L27.6667 28.1667C28.3333 28.3333 29.0833 28.5 29.8333 28.5V29.8333Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <a href="#" class="link-menu">
+                                <h4>Pusat Panggilan</h4>
+                                <p>Silahkan hubungi kami menggunakan Nomor Pusat Panggilan untuk mendapatkan bantuan langsung.</p>
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <div class="icon">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" rx="24" fill="#6FA068"/>
+                                    <path d="M27.0917 24.5917C27.9087 23.9489 28.505 23.0674 28.7977 22.0699C29.0904 21.0725 29.0649 20.0085 28.7248 19.0262C28.3847 18.0439 27.7469 17.192 26.9001 16.589C26.0532 15.9861 25.0395 15.6621 24 15.6621C22.9605 15.6621 21.9468 15.9861 21.0999 16.589C20.2531 17.192 19.6153 18.0439 19.2752 19.0262C18.9351 20.0085 18.9096 21.0725 19.2023 22.0699C19.495 23.0674 20.0913 23.9489 20.9083 24.5917C19.5084 25.1525 18.2869 26.0828 17.3741 27.2833C16.4612 28.4837 15.8913 29.9094 15.725 31.4083C15.713 31.5178 15.7226 31.6285 15.7534 31.7342C15.7841 31.8399 15.8354 31.9385 15.9043 32.0244C16.0433 32.1979 16.2457 32.309 16.4667 32.3333C16.6877 32.3576 16.9093 32.2932 17.0828 32.1541C17.2562 32.015 17.3674 31.8127 17.3917 31.5917C17.5747 29.9627 18.3514 28.4582 19.5735 27.3657C20.7956 26.2731 22.3774 25.6692 24.0167 25.6692C25.6559 25.6692 27.2377 26.2731 28.4598 27.3657C29.6819 28.4582 30.4587 29.9627 30.6417 31.5917C30.6643 31.7964 30.762 31.9855 30.9159 32.1225C31.0698 32.2595 31.269 32.3346 31.475 32.3333H31.5667C31.7851 32.3082 31.9848 32.1977 32.1221 32.026C32.2595 31.8543 32.3234 31.6353 32.3 31.4167C32.1329 29.9135 31.5599 28.4841 30.6424 27.2818C29.7249 26.0795 28.4974 25.1496 27.0917 24.5917ZM24 24C23.3407 24 22.6963 23.8045 22.1481 23.4382C21.5999 23.072 21.1727 22.5514 20.9204 21.9423C20.6681 21.3332 20.6021 20.663 20.7307 20.0164C20.8593 19.3698 21.1768 18.7758 21.643 18.3096C22.1091 17.8435 22.7031 17.526 23.3497 17.3974C23.9963 17.2688 24.6665 17.3348 25.2756 17.5871C25.8847 17.8394 26.4053 18.2666 26.7716 18.8148C27.1378 19.3629 27.3333 20.0074 27.3333 20.6667C27.3333 21.5507 26.9821 22.3986 26.357 23.0237C25.7319 23.6488 24.8841 24 24 24Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <a href="#" class="link-menu">
+                                <h4>Hubungi Kami</h4>
+                                <p>Silahkan hubungi kami melalui kontak kami atau dengan mengirim pesan.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Vendor JS-->
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--Ion icon-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
