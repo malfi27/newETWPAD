@@ -1070,6 +1070,10 @@ input[type="checkbox"]:checked{
 .modal {
     .modal-content {
         .modal-header {
+            .modal-title {
+                color: $text-color;
+                font-weight: 700;
+            }
             .btn-close {
                 box-shadow: none;
             }

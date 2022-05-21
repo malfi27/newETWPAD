@@ -1143,6 +1143,11 @@ input[type="checkbox"]:checked {
   }
 }
 
+.modal .modal-content .modal-header .modal-title {
+  color: #42494D;
+  font-weight: 700;
+}
+
 .modal .modal-content .modal-header .btn-close {
   -webkit-box-shadow: none;
           box-shadow: none;

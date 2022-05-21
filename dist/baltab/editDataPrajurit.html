@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin ETTPAD</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/icons-1.7.2/font/bootstrap-icons.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
+
+    <!--App Css Layouting-->
+    <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body>
+    
+
+    <div id="app">
+
+        <div id="sidebar">
+            <div class="sidebarWrapper">
+                <div class="brandName">
+                    <img src="../assets/images/etwpadLogo_withTeks.png" alt="">
+                </div>
+
+                <div class="wrapperMenuSidebar">
+                    <ul class="listMenuSidebar">
+
+                        <li class="sidebarMenu">
+                            <a href="../index.html" class="linkMenu">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z"/>
+                                    </svg>
+                                Kembali ke menu
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                    
+                                Dashboard TWP
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu haveSubmenu">
+                            <p class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Data TWP
+                            </p>
+                            <ul class="submenuWrapper">
+                                <li class="submenu">
+                                    <a href="#" class="linkMenu">Data RH</a>
+                                    <a href="#" class="linkMenu">Data Pensiun</a>
+                                    <a href="#" class="linkMenu">Status Prajurit</a>
+                                </li>
+                            </ul>    
+                        </li>
+
+                        <li class="sidebarMenu haveSubmenu">
+                            <p class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Rekap
+                            </p>
+                            <ul class="submenuWrapper">
+                                <li class="submenu">
+                                    <a href="#" class="linkMenu">Tabungan</a>
+                                    <a href="#" class="linkMenu">Rekap Bulanan</a>
+                                    <a href="#" class="linkMenu">Rekap Perkotama</a>
+                                </li>
+                            </ul>    
+                        </li>
+
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Mutasi
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Monitoring
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainContent">
+            <div class="headContent">
+                <div class="sidebarButton">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="headControl">
+                    <div class="control dropdown notification">
+                        <button class="notificationButton" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/notificationIcon.svg" alt="">
+                          <div class="valueNotification">
+                              <p>9</p>
+                          </div>
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <h4 class="headText">Notifikasi</h4>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                  <div class="icon">
+                                      <img src="../assets/images/messageIcon.svg" alt="">
+                                  </div>
+                                  <div class="detailMassage">
+                                      <h5 class="labelMassage">Pengguna Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quos.</h5>
+                                      <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, optio.</p>
+                                      <p class="time">2 menit yang lalu</p>
+                                  </div>
+                              </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item read" href="#">
+                                    <div class="icon">
+                                        <img src="../assets/images/messageIcon.svg" alt="">
+                                    </div>
+                                    <div class="detailMassage">
+                                        <h5 class="labelMassage">Pengguna</h5>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem?</p>
+                                        <p class="time">2 menit yang lalu</p>
+                                    </div>
+                                </a>
+                              </li>
+                          
+                        </ul>
+
+                    </div>
+                    
+                    <div class="control setting">
+                        <a href="#">
+                            <img src="../assets/images/settingIcon.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="control profile">
+                        <a href="#">
+                            <img src="../assets/images/profileIcon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bodyContent">
+                <div class="head-page">
+                    <h4 class="titlePage">Edit Data Prajurit</h4>
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">ETWP</a></li>
+                          <li class="breadcrumb-item active">Detail Data</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="head-label mt-0">Riwayat Hidup</h5>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-input">
+                                              <label for="namaPrajurit" class="form-label">Nama</label>
+                                              <input type="text" class="form-control" id="namaPrajurit" value="Wiaka Aditana">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                      <div class="form-input">
+                                          <label for="nrpPrajurit" class="form-label">NPR</label>
+                                          <input type="number" id="nrpPrajurit" class="form-control" value="31160058140497" disabled>
+                                      </div>
+                                    </div>
+                                    <div class="col-6">
+                                      <div class="form-input">
+                                          <label for="tglLahir" class="form-label">Tanggal Lahir</label>
+                                          <input type="date" id="tglLahir" class="form-control" value="2016-02-19">
+                                      </div>
+                                    </div>
+                                    <div class="col-6">
+                                      <div class="form-input">
+                                          <label for="pangkatPrajurit" class="form-label">Pangkat Prajurit</label>
+                                          <select class="form-select" id="pangkatPrajurit">
+                                              <option value="1">Sertu</option>
+                                              <option value="2">Pratu</option>
+                                              <option value="3">Two</option>
+                                              <option value="5">Three</option>
+                                          </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-6">
+                                      <div class="form-input">
+                                          <label for="tglPengangkatan" class="form-label">Tanggal Pengangkatan</label>
+                                          <input type="date" id="tglPengangkatan" class="form-control" value="2016-02-19">
+                                      </div>
+                                    </div>
+                                  <div class="col-6">
+                                      <div class="form-input">
+                                          <label for="corps" class="form-label">Corps</label>
+                                          <select class="form-select" id="corps">
+                                              <option value="1">INK</option>
+                                              <option value="2">KAV</option>
+                                              <option value="3">ARM</option>
+                                              <option value="5">Three</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="form-input">
+                                          <label for="kesatuan" class="form-label">Kesatuan</label>
+                                          <select class="form-select" id="kesatuan">
+                                              <option value="1">KOREM 083/BALADIKA JAYA DAM V/BRW</option>
+                                              <option value="2">KOREM 083/BALADIKA JAYA DAM V/BRW</option>
+                                              <option value="3">AKOREM 083/BALADIKA JAYA DAM V/BRWRM</option>
+                                              <option value="5">KOREM 083/BALADIKA JAYA DAM V/BRW</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="form-input">
+                                          <label for="kotama" class="form-label">Kotama</label>
+                                          <select class="form-select" id="kotama">
+                                              <option value="1">KOREM 083/BALADIKA JAYA DAM V/BRW</option>
+                                              <option value="2">KOREM 083/BALADIKA JAYA DAM V/BRW</option>
+                                              <option value="3">AKOREM 083/BALADIKA JAYA DAM V/BRWRM</option>
+                                              <option value="5">KOREM 083/BALADIKA JAYA DAM V/BRW</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <h5 class="head-label">Pangkat</h5>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="form-input">
+                                            <label for="tmtTamtama" class="form-label">TMT Tamtama</label>
+                                            <input type="date" class="form-control" id="tmtTamtama" value="1997-04-17">
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="form-input">
+                                            <label for="tmtBintara" class="form-label">TMT Bintara</label>
+                                            <input type="date" class="form-control" id="tmtBintara" value="1997-04-17">
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="form-input">
+                                            <label for="tmtPama" class="form-label">TMT Pama</label>
+                                            <input type="date" class="form-control" id="tmtPama" value="1997-04-17">
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="form-input">
+                                            <label for="tmtPamen" class="form-label">TMT Pamen</label>
+                                            <input type="date" class="form-control" id="tmtPamen" value="1997-04-17">
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="form-input">
+                                            <label for="tmtPati" class="form-label">TMT Pati</label>
+                                            <input type="date" class="form-control" id="tmtPati" value="1997-04-17">
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <h5 class="head-label">Riwayat</h5>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="form-input">
+                                            <label for="tmtPangkat" class="form-label">TMT Pangkat</label>
+                                            <input type="date" class="form-control" id="tmtPangkat" value="1997-04-17">
+                                      </div>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="form-input">
+                                            <label for="tmtPensiun" class="form-label">TMT Pensiun</label>
+                                            <input type="date" class="form-control" id="tmtPensiun" value="1997-04-17">
+                                      </div>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="form-input">
+                                            <label for="kdBansus" class="form-label">KD Bansus</label>
+                                            <input type="text" class="form-control" id="kdBansus" value="">
+                                      </div>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="form-input">
+                                            <label for="noDebitur" class="form-label">No Debitur</label>
+                                            <input type="number" class="form-control" id="noDebitur" value="">
+                                      </div>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="form-input">
+                                          <label for="corps" class="form-label">Corps</label>
+                                          <select class="form-select" id="corps">
+                                              <option value="1">INK</option>
+                                              <option value="2">KAV</option>
+                                              <option value="3">ARM</option>
+                                              <option value="4">Three</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="form-input">
+                                          <label for="kesatuan" class="form-label">Kesatuan</label>
+                                          <select class="form-select" id="kesatuan">
+                                              <option value="1">KUDAM XVI/PTM</option>
+                                              <option value="2">KUDAM XVI/PTM</option>
+                                              <option value="3">KUDAM XVI/PTM</option>
+                                              <option value="4">KUDAM XVI/PTM</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="form-input">
+                                          <label for="kategori" class="form-label">Kategori</label>
+                                          <select class="form-select" id="kategori">
+                                              <option value="1">Gagal Rekam</option>
+                                              <option value="2">two/option>
+                                              <option value="3">3</option>
+                                              <option value="4">4</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="form-input">
+                                          <label for="tmtKaterogir" class="form-label">TMT Kategori</label>
+                                          <input type="date" class="form-control" id="tmtKaterogir" value="1997-04-17">
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <h5 class="head-label">Info Rekening</h5>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="form-input">
+                                          <label for="nomorRekenig" class="form-label">Nomor Rekening</label>
+                                          <input type="number" class="form-control" id="nomorRekenig" value="8967182638131">
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="form-input">
+                                          <label for="namaBank" class="form-label">Nama Bank</label>
+                                          <input type="text" class="form-control" id="namaBank" value="PT. BANK CENTRAL ASIA">
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="form-input">
+                                          <label for="namaPemilikRekening" class="form-label">Nama Pemilik Rekening</label>
+                                          <input type="text" class="form-control" id="namaPemilikRekening" value="Wiaka Aditana">
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="d-flex justify-content-end">
+                                          <button class="button button-outline-danger me-2">Batal</button>
+                                          <button class="button button-primary">Simpan</button>
+                                      </div>
+                                  </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!--Vendor-->
+        <!--Jquery-->
+        <script src="../assets/vendor/jquery/jquery.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+        <!--Javascript Bootstrap-->
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--Data table-->
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+        <!--Chart Js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--App JS-->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>
