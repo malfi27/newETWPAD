@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader</title>
+
+    <link rel="stylesheet" href="./assets/css/prelaoder.css">
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="wrapper-loader">
+            <img src="./assets/images/brand-logo.png" alt="">
+            <P>Mohon Menunggu ...</P>
+        </div>
+    </div>
+
+
+    <script>
+        $(window).on('load', function(){
+            setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+        });
+        function removeLoader(){
+            $( ".preloader" ).fadeOut(500, function() {
+                $( ".preloader" ).remove();
+            })
+        }
+    </script>
+    
+</body>
+</html>

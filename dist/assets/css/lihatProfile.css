@@ -1,0 +1,147 @@
+.control-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 -1.2rem 0;
+}
+
+.control-profile h1 {
+  color: #42494D;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.control-profile .button-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-status h1 {
+  font-size: 16px;
+  color: #42494D;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card-status .info-status {
+  border: 1px solid #ECEDED;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.card-status .info-status p {
+  color: #42494D;
+  font-size: 14px;
+}
+
+.card-status .info-status p span {
+  font-weight: 700;
+}
+
+.card-status .wrapper-progress-status {
+  position: relative;
+}
+
+.card-status .wrapper-progress-status .progres {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card-status .wrapper-progress-status .progres:last-child .progress-step .line-progress {
+  display: none;
+}
+
+.card-status .wrapper-progress-status .progres .progress-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-status .wrapper-progress-status .progres .progress-step .round-progress {
+  padding: 10px;
+  background-color: #B3B6B8;
+  border-radius: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.card-status .wrapper-progress-status .progres .progress-step .line-progress {
+  height: 100%;
+  width: 2px;
+  background-color: #B3B6B8;
+  min-height: 40px;
+}
+
+.card-status .wrapper-progress-status .progres .name-progress {
+  color: #7B8082;
+  font-weight: 400;
+  margin-left: 1rem;
+  font-size: 14px;
+}
+
+.card-status .wrapper-progress-status .progres.progress-active .progress-step .round-progress {
+  background-color: #6FA068;
+}
+
+.card-status .wrapper-progress-status .progres.progress-active .progress-step .line-progress {
+  background-color: #AAC7A6;
+}
+
+.card-status .wrapper-progress-status .progres.progress-active .name-progress {
+  color: #42494D;
+}
+
+.illustration {
+  margin-bottom: 2rem;
+}
+
+.illustration img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .control-profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0;
+  }
+  .control-profile h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .control-profile h1 {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=lihatProfile.css.map */

@@ -1,0 +1,75 @@
+/*Font Import from google font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*Variable Color*/
+*, ::before, ::after, p, h1, h2, h3, h4, h5, h6 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.preloader {
+  position: relative;
+}
+
+.preloader .wrapper-loader {
+  min-height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-animation: animations 1s ease infinite alternate;
+          animation: animations 1s ease infinite alternate;
+}
+
+.preloader .wrapper-loader img {
+  width: 100%;
+  max-width: 142px;
+  margin-bottom: .5rem;
+}
+
+.preloader .wrapper-loader p {
+  font-weight: 600;
+  color: #42494D;
+}
+
+@-webkit-keyframes animations {
+  0% {
+    -webkit-transform: translateX(14px);
+            transform: translateX(14px);
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-14px);
+            transform: translateX(-14px);
+  }
+}
+
+@keyframes animations {
+  0% {
+    -webkit-transform: translateX(14px);
+            transform: translateX(14px);
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-14px);
+            transform: translateX(-14px);
+  }
+}
+/*# sourceMappingURL=prelaoder.css.map */

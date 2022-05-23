@@ -1,0 +1,113 @@
+.control-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 -1.2rem 0;
+    h1 {
+        color: #42494D;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+    }
+    .button-control {
+        display: flex;
+        align-items: center;
+    }
+}
+.card-status {
+    h1 {
+        font-size: 16px;
+        color: #42494D;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .info-status {
+        border: 1px solid #ECEDED;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 20px;
+        p {
+            color: #42494D;
+            font-size: 14px;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    .wrapper-progress-status {
+        position: relative;
+        .progres {
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            &:last-child {
+                .progress-step {
+                    .line-progress {
+                        display: none;
+                    }
+                }
+            }
+            .progress-step {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .round-progress {
+                    padding: 10px;
+                    background-color: #B3B6B8;
+                    border-radius: 50%;
+                    width: fit-content;
+                }
+                .line-progress {
+                    height: 100%;
+                    width: 2px;
+                    background-color: #B3B6B8;
+                    min-height: 40px;
+                }
+            }
+            .name-progress {
+                color: #7B8082;
+                font-weight: 400;
+                margin-left: 1rem;
+                font-size: 14px;
+            }
+            &.progress-active {
+                .progress-step {
+                    .round-progress {
+                        background-color: #6FA068;
+                    }
+                    .line-progress {
+                        background-color: #AAC7A6;
+                    }
+                }
+                .name-progress {
+                    color: #42494D;
+                }
+            }
+        }
+    }
+}
+.illustration {
+    margin-bottom: 2rem;
+    img {
+        width: 100%;
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .control-profile {
+        flex-direction: column;
+        margin: 1rem 0;
+        h1 {
+            margin-bottom: 1rem;
+        }
+    }
+}
+@media screen and (max-width : 576px) {
+    .control-profile {
+        h1 {
+            font-size: 18px;
+        }
+    }
+}

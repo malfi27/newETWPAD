@@ -438,7 +438,7 @@ body {
 .alert {
   position: absolute;
   left: 0;
-  top: 50px;
+  top: -40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,9 +449,6 @@ body {
   font-size: 14px;
   border-radius: 8px;
   font-weight: 300;
-  max-width: 500px;
-  -webkit-transform: translate(50%, 0%);
-          transform: translate(50%, 0%);
 }
 
 .alert ion-icon {
@@ -759,15 +756,17 @@ nav .nav-tabs {
   border: none;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 1.5rem 0;
+  border-bottom: 1px solid #B3B6B8;
+  margin: 1.5rem 0;
 }
 
 nav .nav-tabs .nav-link {
   color: #ABABAB;
   font-weight: 500;
   border: none;
-  padding: .7rem 1rem;
+  padding: 14px 24px;
   border-radius: 0px;
+  font-size: 14px;
 }
 
 nav .nav-tabs .nav-link.active {
@@ -1331,6 +1330,7 @@ input[type="checkbox"]:checked {
 .breadcrumb .breadcrumb-item a {
   color: #558F4D;
   font-weight: 500;
+  text-align: center;
 }
 
 .breadcrumb .breadcrumb-item.active {

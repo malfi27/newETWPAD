@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin ETTPAD</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/icons-1.7.2/font/bootstrap-icons.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
+
+    <!--App Css Layouting-->
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!--Lihat profile css-->
+    <link rel="stylesheet" href="../assets/css/lihatProfile.css">
+</head>
+<body>
+    
+
+    <div id="app">
+
+        <div id="sidebar">
+            <div class="sidebarWrapper">
+                <div class="brandName">
+                    <img src="../assets/images/etwpadLogo_withTeks.png" alt="">
+                </div>
+
+                <div class="wrapperMenuSidebar">
+                    <ul class="listMenuSidebar">
+
+                        <li class="sidebarMenu">
+                            <a href="../index.html" class="linkMenu">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z"/>
+                                    </svg>
+                                Kembali ke menu
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Dashboard Baltab
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Data Pokok Prajurit
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Pembayaran
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu active">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Profiling Data
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                SI Prajurit
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Pengajuan
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainContent">
+            <div class="headContent">
+                <div class="sidebarButton">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="headControl">
+                    <div class="control dropdown notification">
+                        <button class="notificationButton" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/notificationIcon.svg" alt="">
+                          <div class="valueNotification">
+                              <p>9</p>
+                          </div>
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <h4 class="headText">Notifikasi</h4>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                  <div class="icon">
+                                      <img src="../assets/images/messageIcon.svg" alt="">
+                                  </div>
+                                  <div class="detailMassage">
+                                      <h5 class="labelMassage">Pengguna Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quos.</h5>
+                                      <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, optio.</p>
+                                      <p class="time">2 menit yang lalu</p>
+                                  </div>
+                              </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item read" href="#">
+                                    <div class="icon">
+                                        <img src="../assets/images/messageIcon.svg" alt="">
+                                    </div>
+                                    <div class="detailMassage">
+                                        <h5 class="labelMassage">Pengguna</h5>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem?</p>
+                                        <p class="time">2 menit yang lalu</p>
+                                    </div>
+                                </a>
+                              </li>
+                          
+                        </ul>
+
+                    </div>
+                    
+                    <div class="control setting">
+                        <a href="#">
+                            <img src="../assets/images/settingIcon.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="control profile">
+                        <a href="#">
+                            <img src="../assets/images/profileIcon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bodyContent">
+                <div class="head-page">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">Data Pokok Prajurit</a></li>
+                          <li class="breadcrumb-item"><a href="#">Lihat Profile</a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="control-profile">
+                    <h1 class="name-user">Antonius Dwi Wardana</h1>
+                    <div class="button-control">
+                        <button class="button button-ghost me-1">Hapus</button>
+                        <button class="button button-outline-primary me-3">Edit</button>
+                        <button class="button button-primary">Ajukan</button>
+
+                    </div>
+                </div>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button 
+                            class="nav-link active" 
+                            id="nav-riwayatHidup-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-riwayatHidup" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-riwayatHidup" 
+                            aria-selected="true">Riwayat Hidup
+                        </button>
+                        <button 
+                            class="nav-link" 
+                            id="nav-pangkat-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-pangkat" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-pangkat" 
+                            aria-selected="false">Pangkat
+                        </button>
+                        <button 
+                            class="nav-link" 
+                            id="nav-tabungan-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-tabungan" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-tabungan" 
+                            aria-selected="false">Tabungan
+                        </button>
+                        <button 
+                            class="nav-link" 
+                            id="nav-statusPencairan-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-statusPencairan" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-statusPencairan" 
+                            aria-selected="false">Status Pencairan
+                        </button>
+                        <button 
+                            class="nav-link" 
+                            id="nav-pembayaran-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-pembayaran" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-pembayaran" 
+                            aria-selected="false">Pembayaran
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-riwayatHidup" role="tabpanel" aria-labelledby="nav-riwayatHidup-tab">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="card">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="nama" class="form-label">Nama</label>
+                                                <input type="text" id="nama" class="form-control" value="Antonius Dwi Wardana">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="nrp" class="form-label">NRP</label>
+                                                <input type="text" id="nrp" class="form-control" value="2920064750672">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
+                                                <input type="date" id="tanggalLahir" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-input">
+                                                <label for="tanggalPengangkatan" class="form-label">Tanggal Pengangkatan</label>
+                                                <input type="date" id="tanggalPengangkatan" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-input">
+                                                <label for="tanggalPensiun" class="form-label">Tanggal Pensiun</label>
+                                                <input type="date" id="tanggalPensiun" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-input">
+                                                <label for="pangkat" class="form-label">Pangkat</label>
+                                                <select name="" id="pangkat" class="form-select">
+                                                    <option value="0">KAPTEN</option>
+                                                    <option value="1">KAPTEN</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-input">
+                                                <label for="corp" class="form-label">Corp</label>
+                                                <select name="" id="corp" class="form-select">
+                                                    <option value="0">INF</option>
+                                                    <option value="1">INF</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="kesatuan" class="form-label">Kesatuan</label>
+                                                <select name="" id="kesatuan" class="form-select">
+                                                    <option value="0">KOREM 101/ANTASARI DAM VI/MLW</option>
+                                                    <option value="1">KOREM 101/ANTASARI DAM VI/MLW</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-pangkat" role="tabpanel" aria-labelledby="nav-pangkat-tab">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="card">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="tmtPangkat" class="form-label">TMT Pangkat</label>
+                                                <input type="date" id="tmtPangkat" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="tamtamaPNS" class="form-label">Tamtama / PNS Gol I</label>
+                                                <input type="date" id="tamtamaPNS" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="bintara" class="form-label">Bintara / PNS Gol II</label>
+                                                <input type="date" id="bintara" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="pama" class="form-label">Pama / PNS Gol III</label>
+                                                <input type="date" id="pama" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="pamen" class="form-label">Pamen / PNS Gol IV</label>
+                                                <input type="date" id="pamen" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="pati" class="form-label">Pati</label>
+                                                <input type="date" id="pati" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-tabungan" role="tabpanel" aria-labelledby="nav-tabungan-tab">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="wrapperTable table-responsive">
+                                        <div class="head-table">
+                                            <h5>Tabel Tabungan</h5>
+                                        </div>
+                                        <table id="tabelTabungan" class="tables table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>No</th>
+                                                    <th>Pangkat</th>
+                                                    <th>Periode</th>
+                                                    <th>Jumlah Bulan</th>
+                                                    <th>Nominal</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Bintara</td>
+                                                    <td>1992-02-01 s.d 2001-05-01</td>
+                                                    <td>110</td>
+                                                    <td>Rp 3.500</td>
+                                                    <td>Rp 388.500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Bintara</td>
+                                                    <td>1992-02-01 s.d 2001-05-01</td>
+                                                    <td>110</td>
+                                                    <td>Rp 3.500</td>
+                                                    <td>Rp 388.500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Bintara</td>
+                                                    <td>1992-02-01 s.d 2001-05-01</td>
+                                                    <td>110</td>
+                                                    <td>Rp 3.500</td>
+                                                    <td>Rp 388.500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Potongan</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Rp 15.216.000</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-statusPencairan" role="tabpanel" aria-labelledby="nav-statusPencairan-tab">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="card card-status">
+                                    <h1>Status Pencairan</h1>
+                                    <div class="info-status">
+                                        <p>Status pencairan BALTAB Anda sampai pada : <span>Pengajuan BALTAB</span></p>
+                                    </div>
+
+                                    <div class="wrapper-progress-status">
+                                        <div class="progres progress-active">
+                                            <div class="progress-step">
+                                                <div class="round-progress"></div>
+                                                <div class="line-progress"></div>
+                                            </div>
+                                            <p class="name-progress">Pengajuan BALTAB</p>
+                                        </div>
+                                        <div class="progres">
+                                            <div class="progress-step">
+                                                <div class="round-progress"></div>
+                                                <div class="line-progress"></div>
+                                            </div>
+                                            <p class="name-progress">DITKUAD</p>
+                                        </div>
+                                        <div class="progres">
+                                            <div class="progress-step">
+                                                <div class="round-progress"></div>
+                                                <div class="line-progress"></div>
+                                            </div>
+                                            <p class="name-progress">ASPERS KASAD</p>
+                                        </div>
+                                        <div class="progres">
+                                            <div class="progress-step">
+                                                <div class="round-progress"></div>
+                                                <div class="line-progress"></div>
+                                            </div>
+                                            <p class="name-progress">SI DITKUAD</p>
+                                        </div>
+                                        <div class="progres">
+                                            <div class="progress-step">
+                                                <div class="round-progress"></div>
+                                                <div class="line-progress"></div>
+                                            </div>
+                                            <p class="name-progress">Proses perbankan</p>
+                                        </div>
+                                        <div class="progres">
+                                            <div class="progress-step">
+                                                <div class="round-progress"></div>
+                                                <div class="line-progress"></div>
+                                            </div>
+                                            <p class="name-progress">Pencairan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-12">
+                                <div class="card d-flex flex-column align-items-center">
+                                    <div class="illustration">
+                                        <img src="../assets/images/illustration-tidakada-pencairan.png" alt="">
+                                    </div>
+                                    <p>Belum ada pencairan BALTAB</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-pembayaran" role="tabpanel" aria-labelledby="nav-pembayaran-tab">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="card">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="tmtPangkat" class="form-label">TMT Pangkat</label>
+                                                <input type="date" id="tmtPangkat" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="tamtamaPNS" class="form-label">Tamtama / PNS Gol I</label>
+                                                <input type="date" id="tamtamaPNS" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="bintara" class="form-label">Bintara / PNS Gol II</label>
+                                                <input type="date" id="bintara" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="pama" class="form-label">Pama / PNS Gol III</label>
+                                                <input type="date" id="pama" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="pamen" class="form-label">Pamen / PNS Gol IV</label>
+                                                <input type="date" id="pamen" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-input">
+                                                <label for="pati" class="form-label">Pati</label>
+                                                <input type="date" id="pati" class="form-control" value="1996-08-02">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!--Vendor-->
+        <!--Jquery-->
+        <script src="../assets/vendor/jquery/jquery.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+        <!--Javascript Bootstrap-->
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--Data table-->
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+        <!--Chart Js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--App JS-->
+    <script src="../assets/js/app.js"></script>
+
+
+    <script>
+        // $(document).ready(function() {
+        //     $('#dataPensiunLengkap').DataTable( {
+        //         "scrollX": true,
+        //     });
+        // } );
+        // $(document).ready(function() {
+        //     $('#dataTidakLengkap').DataTable( {
+        //         "scrollX": true,
+        //     });
+        // } );
+
+
+        //Fixed header datatable in  Nav Tabs Respons
+        function resize () {
+            $.fn.dataTable.tables( {visible: true, api: true} )
+                .columns.adjust()
+                .fixedHeader.adjust();
+            }
+            let observer = new MutationObserver(function(mutations) {
+            resize();s
+            });
+                document.querySelectorAll('div.wrapperTable').forEach( function (el) {
+                observer.observe(el, { attributes: true });
+            });
+
+            $('button[data-bs-toggle="tab"]').on( 'shown.bs.tab', resize );
+    </script>
+
+</body>
+</html>
