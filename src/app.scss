@@ -1069,6 +1069,14 @@ input[type="email"]:disabled {
     background: #fff;
     color: #B3B6B8;
 }
+input[type="date"]:disabled {
+    background: #fff;
+    color: #B3B6B8;
+}
+select:disabled {
+    background: #fff !important;
+    color: #B3B6B8 !important;
+}
 
 input[type="checkbox"]:checked{
   border: 1px solid $primary-color;
