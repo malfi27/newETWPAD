@@ -501,7 +501,7 @@ body {
         }
     }
     .pagination {
-        margin-top: 20rem;
+        margin-top: 2rem;
         .paginate_button {
             &.active {
                 .page-link {
@@ -597,13 +597,13 @@ body {
                         }
                     }
                     .status {
-                        padding: 4px 8px;
+                        padding: 6px 12px;
                         font-weight: 500;
-                        border-radius: 4px;
+                        border-radius: 999px;
                         width: fit-content;
                         &.primary-status {
-                            background-color: rgb(214, 255, 222);
-                            color: rgb(4, 153, 14);
+                            background-color: #EBF2EA;
+                            color: $primary-color;
                         }
                         &.danger-status {
                             background-color: rgb(255, 234, 239);

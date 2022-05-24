@@ -507,7 +507,7 @@ body {
 }
 
 .wrapperTable .pagination {
-  margin-top: 20rem;
+  margin-top: 2rem;
 }
 
 .wrapperTable .pagination .paginate_button.active .page-link {
@@ -614,17 +614,17 @@ body {
 }
 
 .wrapperTable .tables tbody tr td .status {
-  padding: 4px 8px;
+  padding: 6px 12px;
   font-weight: 500;
-  border-radius: 4px;
+  border-radius: 999px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
 .wrapperTable .tables tbody tr td .status.primary-status {
-  background-color: #d6ffde;
-  color: #04990e;
+  background-color: #EBF2EA;
+  color: #558F4D;
 }
 
 .wrapperTable .tables tbody tr td .status.danger-status {
