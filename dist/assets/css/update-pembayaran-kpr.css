@@ -10,6 +10,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.wrapperTable {
+  position: relative;
+}
+
 .wrapperTable .tables thead tr th {
   font-weight: 500;
 }

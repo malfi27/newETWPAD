@@ -1,0 +1,14 @@
+.pilihMenu button:after {
+  display: none;
+}
+
+.pilihMenu .dropdown-menu li .dropdown-item {
+  right: 0 !important;
+  font-size: 14px;
+}
+
+.pilihMenu .dropdown-menu li .dropdown-item:focus {
+  background-color: #fff;
+  color: #42494D;
+}
+/*# sourceMappingURL=etwp-datarh.css.map */

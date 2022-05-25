@@ -16,6 +16,9 @@
 
     <!--App Css Layouting-->
     <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!--Etwp data rh-->
+    <link rel="stylesheet" href="../assets/css/etwp-datarh.css">
 </head>
 <body>
     
@@ -176,6 +179,19 @@
                     </nav>
                 </div>
                 <div class="card">
+                    <div class="d-flex justify-content-end mb-3">
+                        <div class="dropdown pilihMenu">
+                            <button class="button button-outline-primary dropdown-toggle d-flex align-items-center" type="button" id="dropdownPilihMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                            <ion-icon class="me-2" name="chevron-down-outline"></ion-icon>
+                              Pilih Menu
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownPilihMenu">
+                              <li><a class="dropdown-item" href="#">Aktif</a></li>
+                              <li><a class="dropdown-item" href="#">Meninggal</a></li>
+                              <li><a class="dropdown-item" href="#">Pensiun</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="wrapperTable">
                         <div class="head-table">
                             <h5>Data Prajurit Aktif</h5>
@@ -263,6 +279,9 @@
         <!--Chart Js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--Ion icon-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <!--App JS-->
     <script src="../assets/js/app.js"></script>

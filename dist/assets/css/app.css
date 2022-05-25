@@ -311,10 +311,16 @@ body {
           align-items: center;
   padding: .5rem 1rem;
   background-color: #fff;
+  color: #42494D;
 }
 
 #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item:hover {
-  background-color: #ededed;
+  background-color: #ededed !important;
+}
+
+#app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item:focus {
+  color: #42494D;
+  background-color: #fff;
 }
 
 #app #mainContent .headContent .headControl .notification .dropdown-menu li .dropdown-item .icon img {
