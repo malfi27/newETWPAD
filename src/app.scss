@@ -609,6 +609,7 @@ body {
                         font-weight: 500;
                         border-radius: 999px;
                         width: fit-content;
+                        text-align: center;
                         &.primary-status {
                             background-color: #EBF2EA;
                             color: $primary-color;
@@ -621,6 +622,16 @@ body {
                     &.null {
                         color: rgb(239, 20, 74) !important;
                         font-style: italic;
+                    }
+                    .thumb {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            object-position: center;
+                            max-width: 100px;
+                            max-height: 100px;
+                        }
                     }
                 }
             }
