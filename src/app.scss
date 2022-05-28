@@ -597,6 +597,9 @@ body {
                                 .action-item {
                                     font-size: 14px;
                                     color: $text-color;
+                                    &:focus {
+                                        background-color: #fff;
+                                    }
                                 }
                             }
                         }
@@ -1140,6 +1143,14 @@ input[type="checkbox"]:checked{
 }
 .bold {
     font-weight: 600;
+}
+.text-background-primary {
+    background-color: $primary-color;
+    color: #fff;
+    text-align: center;
+    width: fit-content;
+    border-radius: 4px;
+    padding: .2rem .4rem;
 }
 
 @media screen and (max-width : 575px) {

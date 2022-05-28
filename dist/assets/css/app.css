@@ -619,6 +619,10 @@ body {
   color: #42494D;
 }
 
+.wrapperTable .tables tbody tr td .action .action-menu li .action-item:focus {
+  background-color: #fff;
+}
+
 .wrapperTable .tables tbody tr td .status {
   padding: 6px 12px;
   font-weight: 500;
@@ -1227,6 +1231,17 @@ input[type="checkbox"]:checked {
 
 .bold {
   font-weight: 600;
+}
+
+.text-background-primary {
+  background-color: #558F4D;
+  color: #fff;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  padding: .2rem .4rem;
 }
 
 @media screen and (max-width: 575px) {
