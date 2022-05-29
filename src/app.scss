@@ -455,7 +455,7 @@ body {
 .alert {
     position: absolute;
     left: 0;
-    top: -40px;
+    top: 0px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -591,6 +591,7 @@ body {
                         button {
                             background: transparent;
                             border: none;
+                            width: 100%;
                         }
                         .action-menu {
                             li {
@@ -631,6 +632,17 @@ body {
                             object-position: center;
                             max-width: 100px;
                             max-height: 100px;
+                        }
+                    }
+                    .avatar {
+                        img {
+                            width: 100%;
+                            object-fit: contain;
+                            border-radius: 50%;
+                            object-position: center;
+                            max-width: 50px;
+                            max-height: 50px;
+                            min-width: 40px;
                         }
                     }
                 }

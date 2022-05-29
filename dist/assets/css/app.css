@@ -444,7 +444,7 @@ body {
 .alert {
   position: absolute;
   left: 0;
-  top: -40px;
+  top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -612,6 +612,7 @@ body {
 .wrapperTable .tables tbody tr td .action button {
   background: transparent;
   border: none;
+  width: 100%;
 }
 
 .wrapperTable .tables tbody tr td .action .action-menu li .action-item {
@@ -657,6 +658,18 @@ body {
      object-position: center;
   max-width: 100px;
   max-height: 100px;
+}
+
+.wrapperTable .tables tbody tr td .avatar img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+  -o-object-position: center;
+     object-position: center;
+  max-width: 50px;
+  max-height: 50px;
+  min-width: 40px;
 }
 
 .wrapperTable .exportSection {

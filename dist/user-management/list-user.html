@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management ETWPAD</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/icons-1.7.2/font/bootstrap-icons.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
+
+    <!--App Css Layouting-->
+    <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body>
+    
+
+    <div id="app">
+
+        <div id="sidebar">
+            <div class="sidebarWrapper">
+                <div class="brandName">
+                    <img src="../assets/images/etwpadLogo_withTeks.png" alt="">
+                </div>
+
+                <div class="wrapperMenuSidebar">
+                    <ul class="listMenuSidebar">
+
+                        <li class="sidebarMenu">
+                            <a href="../index.html" class="linkMenu">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z"/>
+                                    </svg>
+                                Kembali ke menu
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu active">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                List User
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                List Perizinan
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Persetujuan User
+                            </a>   
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainContent">
+            <div class="headContent">
+                <div class="sidebarButton">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="headControl">
+                    <div class="control dropdown notification">
+                        <button class="notificationButton" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/notificationIcon.svg" alt="">
+                          <div class="valueNotification">
+                              <p>9</p>
+                          </div>
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <h4 class="headText">Notifikasi</h4>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                  <div class="icon">
+                                      <img src="../assets/images/messageIcon.svg" alt="">
+                                  </div>
+                                  <div class="detailMassage">
+                                      <h5 class="labelMassage">Pengguna Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quos.</h5>
+                                      <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, optio.</p>
+                                      <p class="time">2 menit yang lalu</p>
+                                  </div>
+                              </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item read" href="#">
+                                    <div class="icon">
+                                        <img src="../assets/images/messageIcon.svg" alt="">
+                                    </div>
+                                    <div class="detailMassage">
+                                        <h5 class="labelMassage">Pengguna</h5>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem?</p>
+                                        <p class="time">2 menit yang lalu</p>
+                                    </div>
+                                </a>
+                              </li>
+                          
+                        </ul>
+
+                    </div>
+                    
+                    <div class="control setting">
+                        <a href="#">
+                            <img src="../assets/images/settingIcon.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="control profile">
+                        <a href="#">
+                            <img src="../assets/images/profileIcon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bodyContent">
+                <div class="head-page">
+                    <h4 class="titlePage">List User</h4>
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active">User Management</li>
+                        </ol>
+                    </nav>
+                </div>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button 
+                            class="nav-link active" 
+                            id="nav-dataAdmin-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-dataAdmin" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-dataAdmin" 
+                            aria-selected="true">Data Admin
+                        </button>
+                        <button 
+                            class="nav-link" 
+                            id="nav-dataPengelola-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-dataPengelola" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-dataPengelola" 
+                            aria-selected="false">Data Pengelola
+                        </button>
+                        <button 
+                            class="nav-link" 
+                            id="nav-dataUser-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-dataUser" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-dataUser" 
+                            aria-selected="false">Data User
+                        </button>
+                        <button 
+                            class="nav-link" 
+                            id="nav-dataAkunting-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-dataAkunting" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-dataAkunting" 
+                            aria-selected="false">Data Akunting
+                        </button>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-dataAdmin" role="tabpanel" aria-labelledby="nav-dataAdmin-tab">
+                                <div class="card">
+                                    <div class="wrapperTable">
+                                        <div class="head-table">
+                                            <h5>List Admin</h5>
+                                            <a href="#" class="button button-outline-primary" data-bs-toggle="modal" data-bs-target="#tambahAdmin">Tambah Admin</a>
+                                        </div>
+                                        <table id="listAdmin" class="tables" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="table-text">No</th>
+                                                    <th class="table-text">Avatar</th>
+                                                    <th class="table-text">Nama / NRP</th>
+                                                    <th class="table-text">Email</th>
+                                                    <th class="table-text">Pangkat</th>
+                                                    <th class="table-text">Kesatuan</th>
+                                                    <th class="table-text">Kotama</th>
+                                                    <th class="table-text">Password</th>
+                                                    <th class="table-text">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/images/profileIcon.svg" alt="">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="detailUser">
+                                                            <p class="name">ANTONIUS DWI WARDANA</p>
+                                                            <div class="nomorNRP">2920064750672</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>adminetwp@gmail.com</td>
+                                                    <td class="null">Null</td>
+                                                    <td>BRIGIF 1/JS DAM JAYA</td>
+                                                    <td>PUSKU TNI</td>
+                                                    <td>
+                                                        <div class="text-background-primary">Dilindungi</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown action">
+                                                            <button type="button" id="actionButtonMenu" data-bs-toggle="dropdown" >
+                                                                <img src="../assets/images/action-icon.svg" alt="">
+                                                            </button>
+                                                            <ul class="dropdown-menu action-menu" aria-labelledby="actionButtonMenu">
+                                                                <li><a class="dropdown-item action-item" href="#">Edit</a></li>
+                                                                <li><a class="dropdown-item action-item" href="#">Hapus</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="nav-dataPengelola" role="tabpanel" aria-labelledby="nav-dataPengelola-tab">
+                                <div class="card">
+                                    <div class="wrapperTable">
+                                        <div class="head-table">
+                                            <h5>List Pengelola</h5>
+                                            <a href="#" class="button button-outline-primary" data-bs-toggle="modal" data-bs-target="#tambahPengelola">Tambah Pengelola</a>
+                                        </div>
+                                        <table id="listPengelola" class="tables" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="table-text">No</th>
+                                                    <th class="table-text">Avatar</th>
+                                                    <th class="table-text">Nama / NRP</th>
+                                                    <th class="table-text">Email</th>
+                                                    <th class="table-text">Password</th>
+                                                    <th class="table-text">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/images/profileIcon.svg" alt="">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="detailUser">
+                                                            <p class="name">ANTONIUS DWI WARDANA</p>
+                                                            <div class="nomorNRP">2920064750672</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>adminetwp@gmail.com</td>
+                                                    <td>
+                                                        <div class="text-background-primary">Dilindungi</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown action">
+                                                            <button type="button" id="actionButtonMenu" data-bs-toggle="dropdown" >
+                                                                <img src="../assets/images/action-icon.svg" alt="">
+                                                            </button>
+                                                            <ul class="dropdown-menu action-menu" aria-labelledby="actionButtonMenu">
+                                                                <li><a class="dropdown-item action-item" href="#">Edit</a></li>
+                                                                <li><a class="dropdown-item action-item" href="#">Hapus</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="nav-dataUser" role="tabpanel" aria-labelledby="nav-dataUser-tab">
+                                <div class="card">
+                                    <div class="wrapperTable">
+                                        <div class="head-table">
+                                            <h5>List User</h5>
+                                            <a href="#" class="button button-outline-primary" data-bs-toggle="modal" data-bs-target="#tambahUser">Tambah User</a>
+                                        </div>
+                                        <table id="listUser" class="tables" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="table-text">No</th>
+                                                    <th class="table-text">Avatar</th>
+                                                    <th class="table-text">Nama / NRP</th>
+                                                    <th class="table-text">Email</th>
+                                                    <th class="table-text">Pangkat</th>
+                                                    <th class="table-text">Kesatuan</th>
+                                                    <th class="table-text">Kotama</th>
+                                                    <th class="table-text">Password</th>
+                                                    <th class="table-text">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <div class="avatar">
+                                                            <img src="../assets/images/profileIcon.svg" alt="">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="detailUser">
+                                                            <p class="name">ANTONIUS DWI WARDANA</p>
+                                                            <div class="nomorNRP">2920064750672</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>adminetwp@gmail.com</td>
+                                                    <td class="null">Null</td>
+                                                    <td>BRIGIF 1/JS DAM JAYA</td>
+                                                    <td>PUSKU TNI</td>
+                                                    <td>
+                                                        <div class="text-background-primary">Dilindungi</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown action">
+                                                            <button type="button" id="actionButtonMenu" data-bs-toggle="dropdown" >
+                                                                <img src="../assets/images/action-icon.svg" alt="">
+                                                            </button>
+                                                            <ul class="dropdown-menu action-menu" aria-labelledby="actionButtonMenu">
+                                                                <li><a class="dropdown-item action-item" href="#">Edit</a></li>
+                                                                <li><a class="dropdown-item action-item" href="#">Hapus</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Modal tambah Admin-->
+    <div class="modal fade" id="tambahAdmin" tabindex="-1" aria-labelledby="tambahAdminLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tambahAdminLabel">Tambah Admin</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="nama" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="nama" placeholder="Masukan nama admin">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="nrp" class="form-label">NRP</label>
+                                <input type="number" class="form-control" id="nrp" placeholder="Masukan nrp">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Masukan email">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="pangkat" class="form-label">Pilih Pangkat</label>
+                                <select class="form-select" id="pangkat">
+                                    <option selected value="">Pilih Pangkat</option>
+                                    <option value="1">Prada</option>
+                                    <option value="2">Pratu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="kesatuan" class="form-label">Pilih Kesatuan</label>
+                                <select class="form-select" id="kesatuan">
+                                    <option selected value="">Pilih Kesatuan</option>
+                                    <option value="1">Prada</option>
+                                    <option value="2">Pratu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="kotama" class="form-label">Pilih Kotama</label>
+                                <select class="form-select" id="kotama">
+                                    <option selected value="">Pilih Kotama</option>
+                                    <option value="1">Prada</option>
+                                    <option value="2">Pratu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Masukan password yang akan digunakan">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="button button-primary">Tambahkan</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--Modal tambah pengelola-->
+    <div class="modal fade" id="tambahPengelola" tabindex="-1" aria-labelledby="tambahPengelolaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tambahAdminLabel">Tambah Pengelola</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="groubPengelola" class="form-label">Groub Pengelola</label>
+                                <select class="form-select" id="groubPengelola">
+                                    <option selected value="">Pilih Groub Pengelola</option>
+                                    <option value="1">Juyar</option>
+                                    <option value="2">BRI</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="nama" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="nama" placeholder="Masukan nama admin">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Masukan email">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Masukan password yang akan digunakan">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="button button-primary">Tambahkan</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--Modal tambah user-->
+    <div class="modal fade" id="tambahUser" tabindex="-1" aria-labelledby="tambahUserLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tambahUserLabel">Tambah User</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="nama" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="nama" placeholder="Masukan nama admin">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="nrp" class="form-label">NRP</label>
+                                <input type="number" class="form-control" id="nrp" placeholder="Masukan nrp">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Masukan email">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="pangkat" class="form-label">Pilih Pangkat</label>
+                                <select class="form-select" id="pangkat">
+                                    <option selected value="">Pilih Pangkat</option>
+                                    <option value="1">Prada</option>
+                                    <option value="2">Pratu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="kesatuan" class="form-label">Pilih Kesatuan</label>
+                                <select class="form-select" id="kesatuan">
+                                    <option selected value="">Pilih Kesatuan</option>
+                                    <option value="1">Prada</option>
+                                    <option value="2">Pratu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="kotama" class="form-label">Pilih Kotama</label>
+                                <select class="form-select" id="kotama">
+                                    <option selected value="">Pilih Kotama</option>
+                                    <option value="1">Prada</option>
+                                    <option value="2">Pratu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-input">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Masukan password yang akan digunakan">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="button button-primary">Tambahkan</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Vendor-->
+        <!--Jquery-->
+        <script src="../assets/vendor/jquery/jquery.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+        <!--Javascript Bootstrap-->
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--Data table-->
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <!--App JS-->
+    <script src="../assets/js/app.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#listAdmin').DataTable( {
+                "scrollX": true,
+            });
+        } );
+        $(document).ready(function() {
+            $('#listPengelola').DataTable( {
+                "scrollX": true,
+            });
+        } );
+        $(document).ready(function() {
+            $('#listUser').DataTable( {
+                "scrollX": true,
+            });
+        } );
+        
+    </script>
+</body>
+</html>
