@@ -13,6 +13,19 @@ $text-color :#42494D;
     font-family: 'Poppins', sans-serif;
 }
 .wrapper-retensi {
+    .wrapper-button-action {
+        a {
+            color: $text-color;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        a {
+            &.disabled {
+                pointer-events: none;
+                opacity: 40%;
+            }
+        }
+    }
     .retensi {
         &.filled {
             background-color: #fff;
@@ -41,17 +54,29 @@ $text-color :#42494D;
             color: #B3B6B8;
             margin-bottom: 12px;
         }
-        .wrapper-button-action {
-            a {
-                color: $text-color;
-                text-decoration: none;
-            }
-            a {
-                &.disabled {
-                    pointer-events: none;
-                    opacity: 40%;
-                }
-            }
+        
+    }
+    .retensi-link {
+        border: 1px solid #B3B6B8;
+        background-color: #F6F6F6;
+        padding: 1rem;
+        border-radius: 8px;
+        width: 100%;
+        font-size: 12px;
+        &.filled {
+            background-color: #fff;
+            color: $text-color;
         }
+        &.approved {
+            border-color: #88B182;
+            background-color: #EBF2EA;
+        }
+        &.rejected {
+            border-color: #E37475;
+            background-color: #FDE9E8;
+        }
+    }
+    .form-text {
+        margin-bottom: .5rem;
     }
 }

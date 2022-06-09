@@ -10,6 +10,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.wrapper-retensi .wrapper-button-action a {
+  color: #42494D;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.wrapper-retensi .wrapper-button-action a.disabled {
+  pointer-events: none;
+  opacity: 40%;
+}
+
 .wrapper-retensi .retensi {
   padding: 1.5rem 1rem;
   text-align: center;
@@ -46,13 +57,31 @@
   margin-bottom: 12px;
 }
 
-.wrapper-retensi .retensi .wrapper-button-action a {
-  color: #42494D;
-  text-decoration: none;
+.wrapper-retensi .retensi-link {
+  border: 1px solid #B3B6B8;
+  background-color: #F6F6F6;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 12px;
 }
 
-.wrapper-retensi .retensi .wrapper-button-action a.disabled {
-  pointer-events: none;
-  opacity: 40%;
+.wrapper-retensi .retensi-link.filled {
+  background-color: #fff;
+  color: #42494D;
+}
+
+.wrapper-retensi .retensi-link.approved {
+  border-color: #88B182;
+  background-color: #EBF2EA;
+}
+
+.wrapper-retensi .retensi-link.rejected {
+  border-color: #E37475;
+  background-color: #FDE9E8;
+}
+
+.wrapper-retensi .form-text {
+  margin-bottom: .5rem;
 }
 /*# sourceMappingURL=retensi.css.map */
