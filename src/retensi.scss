@@ -1,0 +1,57 @@
+/*Font Import from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*Variable Color*/
+$primary-color : #558F4D;
+$text-color :#42494D;
+
+*,::before,::after,p,h1,h2,h3,h4,h5,h6 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper-retensi {
+    .retensi {
+        &.filled {
+            background-color: #fff;
+        }
+        &.approved {
+            border-color: #88B182;
+            background-color: #EBF2EA;
+        }
+        &.rejected {
+            border-color: #E37475;
+            background-color: #FDE9E8;
+        }
+        padding: 1.5rem 1rem;
+        text-align: center;
+        border: 1px solid #B3B6B8;
+        border-radius: 8px;
+        font-size: 12px;
+        background-color: #F6F6F6;
+        .icon-retensi {
+            margin-bottom: 8px;
+        }
+        .name-file {
+            color: $text-color;
+        }
+        .description {
+            color: #B3B6B8;
+            margin-bottom: 12px;
+        }
+        .wrapper-button-action {
+            a {
+                color: $text-color;
+                text-decoration: none;
+            }
+            a {
+                &.disabled {
+                    pointer-events: none;
+                    opacity: 40%;
+                }
+            }
+        }
+    }
+}

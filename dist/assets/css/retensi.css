@@ -1,0 +1,58 @@
+/*Font Import from google font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/*Variable Color*/
+*, ::before, ::after, p, h1, h2, h3, h4, h5, h6 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper-retensi .retensi {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border: 1px solid #B3B6B8;
+  border-radius: 8px;
+  font-size: 12px;
+  background-color: #F6F6F6;
+}
+
+.wrapper-retensi .retensi.filled {
+  background-color: #fff;
+}
+
+.wrapper-retensi .retensi.approved {
+  border-color: #88B182;
+  background-color: #EBF2EA;
+}
+
+.wrapper-retensi .retensi.rejected {
+  border-color: #E37475;
+  background-color: #FDE9E8;
+}
+
+.wrapper-retensi .retensi .icon-retensi {
+  margin-bottom: 8px;
+}
+
+.wrapper-retensi .retensi .name-file {
+  color: #42494D;
+}
+
+.wrapper-retensi .retensi .description {
+  color: #B3B6B8;
+  margin-bottom: 12px;
+}
+
+.wrapper-retensi .retensi .wrapper-button-action a {
+  color: #42494D;
+  text-decoration: none;
+}
+
+.wrapper-retensi .retensi .wrapper-button-action a.disabled {
+  pointer-events: none;
+  opacity: 40%;
+}
+/*# sourceMappingURL=retensi.css.map */

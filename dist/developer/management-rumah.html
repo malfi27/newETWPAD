@@ -20,7 +20,6 @@
 </head>
 <body>
     
-
     <div id="app">
 
         <div id="sidebar">
@@ -133,11 +132,16 @@
             </div>
 
             <div class="bodyContent">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item active aria-current="page"">Management Rumah</li>
-                    </ol>
-                </nav>
+                <div class="head-page">
+                    <h4 class="titlePage">Management Rumah</h4>
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active">Management Rumah</li>
+                          <li class="breadcrumb-item active">Data Property</li>
+                        </ol>
+                    </nav>
+                </div>
 
                 <div class="card">
                     <div class="row">
@@ -318,7 +322,18 @@
                                             <td class="text-limit">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error molestias possimus sint repellat maxime exercitationem, magnam dolore eveniet itaque quo nemo quibusdam veritatis laboriosam dolorum a, vero aliquam voluptatum recusandae nihil cumque officiis fugit! Nobis dicta reprehenderit delectus laudantium natus blanditiis soluta dolorem iure, et ratione. Non illo delectus suscipit modi corporis, a dolor necessitatibus voluptatem consequuntur quibusdam, et voluptas, beatae eum laboriosam. Ratione, quibusdam id? Minus saepe officia deserunt, recusandae, facilis distinctio laborum quidem mollitia iusto blanditiis numquam eius enim architecto debitis placeat sint dolor magnam quos, aut magni accusamus unde! Expedita, doloremque ad! Eligendi dolor nostrum culpa sapiente.</td>
                                             <td>+6281122334455</td>
                                             <td class="text-limit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro magnam odio voluptatem nostrum qui doloremque. Dolor libero minus error doloremque iste inventore ab dolore. Ullam illum, pariatur hic vitae eligendi maxime impedit, vel laudantium dolores architecto, repellat ex modi debitis delectus quo enim. Earum architecto facere ipsum dolore consequuntur veniam natus adipisci dicta, fugiat nihil voluptatibus dolores quas similique itaque quisquam numquam sit, cumque, aut mollitia. Est modi quam unde neque necessitatibus cupiditate molestiae reprehenderit sed. Eaque obcaecati dolor, possimus omnis harum quae iste alias officia. Rerum nobis placeat laborum dolores molestiae aliquid unde provident laudantium obcaecati sed, beatae illo.</td>
-                                            <td>action</td>
+                                            <td>
+                                                <div class="dropdown action">
+                                                    <button type="button" id="actionButtonMenu" data-bs-toggle="dropdown" >
+                                                        <img src="../assets/images/action-icon.svg" alt="">
+                                                    </button>
+                                                    <ul class="dropdown-menu action-menu" aria-labelledby="actionButtonMenu">
+                                                        
+                                                        <li><a class="dropdown-item action-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item action-item" href="#">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
                                         </tr>
                                         
                                     </tbody>
