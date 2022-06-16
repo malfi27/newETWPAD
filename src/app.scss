@@ -832,11 +832,11 @@ nav {
         padding: 0;
         box-shadow: none;
         background-color: transparent;
+        margin-bottom: 1.5rem;
         h5 {
             color: $text-color;
             font-weight: 600;
             font-size: 18px;
-            margin-bottom: 1.5rem;
         }
     }
 }
@@ -962,6 +962,12 @@ nav {
             max-height: 14px;
             margin-right: 14px;
         }
+        svg {
+            width: 100%;
+            max-width: 14px;
+            max-height: 14px;
+            margin-right: 14px;
+        }
     }
     /*Size Button*/
     &.xs-button {
@@ -988,12 +994,12 @@ nav {
 //Responsive Button 
 @media screen and (min-width : 0px) {
     .button {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 @media screen and (min-width : 576px) {
     .button {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 //Focus Input

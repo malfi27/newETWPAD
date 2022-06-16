@@ -1,0 +1,39 @@
+/*Font Import from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*Variable Color*/
+$primary-color : #558F4D;
+$text-color :#42494D;
+
+.dropdown {
+    .dropdown-menu {
+        li {
+            .dropdown-item {
+                font-size: 14px;
+                color: $text-color;
+                &:focus {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 576px) {
+    .header-card {
+        flex-direction: column;
+        h5 {
+            margin-bottom: 12px;
+        }
+        .dropdown {
+            .dropdown-menu {
+                li {
+                    .dropdown-item {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
