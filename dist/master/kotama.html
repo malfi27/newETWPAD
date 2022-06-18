@@ -49,7 +49,7 @@
                             </a>
                         </li>
 
-                        <li class="sidebarMenu active">
+                        <li class="sidebarMenu ">
                             <a href="#" class="linkMenu">
                                 <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="4" cy="4.5" r="4"/>
@@ -58,7 +58,7 @@
                             </a>
                         </li>
 
-                        <li class="sidebarMenu ">
+                        <li class="sidebarMenu active">
                             <a href="#" class="linkMenu">
                                 <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="4" cy="4.5" r="4"/>
@@ -160,12 +160,12 @@
 
             <div class="bodyContent">
                 <div class="head-page">
-                    <h4 class="titlePage">Kategori</h4>
+                    <h4 class="titlePage">Kotama</h4>
                     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="#">Home</a></li>
                           <li class="breadcrumb-item active">Master</li>
-                          <li class="breadcrumb-item active">Kategori</li>
+                          <li class="breadcrumb-item active">Kotama</li>
                         </ol>
                     </nav>
                 </div>
@@ -174,27 +174,27 @@
                         <div class="card">
                             <div class="wrapperTable">
                                 <div class="head-table justify-content-end">
-                                    <button class="button button-primary" data-bs-toggle="modal" data-bs-target="#kategoriModal">Tambah Kategori</button>
+                                    <button class="button button-primary" data-bs-toggle="modal" data-bs-target="#kotamaModal">Tambah Kotama</button>
                                 </div>
-                                <table id="kategori" class="tables" style="width:100%">
+                                <table id="kotama" class="tables" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th class="table-text">Kode</th>
-                                            <th class="table-text">Kategori</th>
+                                            <th class="table-text">Kotama</th>
                                             <th class="table-text">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td style="width: 10%;">11</td>
-                                            <td style="width: 80%;">Gagal Rekam</td>
+                                            <td style="width: 80%;">PUSKU TNI</td>
                                             <td style="width: 10%;">
                                                 <div class="dropdown action">
                                                     <button type="button" id="actionButtonMenu" data-bs-toggle="dropdown" >
                                                         <img src="../assets/images/action-icon.svg" alt="">
                                                     </button>
                                                     <ul class="dropdown-menu action-menu" aria-labelledby="actionButtonMenu">
-                                                        <li><a class="dropdown-item action-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#editkategoriModal">Edit</a></li>
+                                                        <li><a class="dropdown-item action-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#editkotamaModal">Edit</a></li>
                                                         <li><a class="dropdown-item action-item" href="#">Hapus</a></li>
                                                     </ul>
                                                 </div>
@@ -213,13 +213,13 @@
     </div>
 
 
-    <!--Modal - Modal kategori-->
-        <!--Tambah kategori-->
-        <div class="modal fade" id="kategoriModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="kategoriModalLabel" aria-hidden="true">
+    <!--Modal - Modal kotama-->
+        <!--Tambah kotama-->
+        <div class="modal fade" id="kotamaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="kotamaModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="kategoriModalLabel">Tambah Kategori</h5>
+                  <h5 class="modal-title" id="kotamaModalLabel">Tambah Kotama</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -228,13 +228,13 @@
                           <div class="col-12">
                             <div class="form-input">
                                 <label for="kode" class="form-label">Kode</label>
-                                <input type="text" id="kode" class="form-control" placeholder="Masukkan kode kategori">
+                                <input type="text" id="kode" class="form-control" placeholder="Masukkan kode kotama">
                             </div>
                           </div>
                           <div class="col-12">
                             <div class="form-input">
-                                <label for="kategori" class="form-label">Kategori</label>
-                                <input type="text" id="kategori" class="form-control" placeholder="Masukkan nama kategori">
+                                <label for="kotama" class="form-label">Kotama</label>
+                                <input type="text" id="kotama" class="form-control" placeholder="Masukkan nama kotama">
                             </div>
                           </div>
                       </div>
@@ -248,12 +248,12 @@
             </div>
         </div>
 
-        <!--Edit kategori modal-->
-        <div class="modal fade" id="editkategoriModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editkategoriModalLabel" aria-hidden="true">
+        <!--Edit kotama modal-->
+        <div class="modal fade" id="editkotamaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editkotamaModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="editkategoriModalLabel">Edit Kategori</h5>
+                  <h5 class="modal-title" id="editkotamaModalLabel">Edit Kotama</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -262,13 +262,13 @@
                           <div class="col-12">
                             <div class="form-input">
                                 <label for="kode" class="form-label">Kode</label>
-                                <input type="text" id="kode" class="form-control" placeholder="Masukkan kode kategori" value="11">
+                                <input type="text" id="kode" class="form-control" placeholder="Masukkan kode kotama" value="11">
                             </div>
                           </div>
                           <div class="col-12">  
                             <div class="form-input">
-                                <label for="kategori" class="form-label">Kategori</label>
-                                <input type="text" id="kategori" class="form-control" placeholder="Masukkan nama kategori" value="PRATU">
+                                <label for="kotama" class="form-label">Kotama</label>
+                                <input type="text" id="kotama" class="form-control" placeholder="Masukkan nama kotama" value="PRATU">
                             </div>
                           </div>
                       </div>
@@ -307,7 +307,7 @@
 
     <script>
         $(document).ready(function() {
-            $('#kategori').DataTable( {
+            $('#kotama').DataTable( {
                 "scrollX": true,
                 "bFilter":false,
                 "bLengthChange": false,
