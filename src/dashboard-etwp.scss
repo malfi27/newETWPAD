@@ -1,0 +1,61 @@
+/*Font Import from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*Variable Color*/
+$primary-color : #558F4D;
+$text-color :#42494D;
+
+*,::before,::after,p,h1,h2,h3,h4,h5,h6 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-stastistik-card {
+    .blue {
+        color: #2196F3 !important;
+    }
+    .green {
+        color: #558F4D !important;
+    }
+    .orange {
+        color: #FB8C00 !important;
+    }
+    .card {
+        .statistic-name {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            p {
+                margin-left: 12px;
+                color: $text-color;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        .statistic-value {
+            font-weight: 700;
+            color: $text-color;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .statistic-date {
+            display: flex;
+            align-items: center;
+            .dotted {
+                margin: 0 6px;
+                height: 6px;
+                width: 6px;
+                background-color: #B3B6B8;
+                border-radius: 50%;
+            }
+            p,span {
+                font-size: 14px;
+                color: $text-color;
+                font-weight: 400;
+            }
+        }
+    }
+}

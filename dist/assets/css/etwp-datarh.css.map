@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAEQ,UAFE,CACN,MAAM,AACD,MAAM,CAAC;EACJ,OAAO,EAAE,IAAI;CAChB;;AAJT,AAQY,UARF,CAMN,cAAc,CACV,EAAE,CACE,cAAc,CAAC;EACX,KAAK,EAAE,YAAY;EACnB,SAAS,EAAE,IAAI;CAKlB;;AAfb,AAWgB,UAXN,CAMN,cAAc,CACV,EAAE,CACE,cAAc,AAGT,MAAM,CAAC;EACJ,gBAAgB,EAAE,IAAI;EACtB,KAAK,EAAE,OAAO;CACjB",
-    "sources": [
-        "../../../src/etwp-datarh.scss"
-    ],
-    "names": [],
-    "file": "etwp-datarh.css"
-}
