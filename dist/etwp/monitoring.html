@@ -16,6 +16,9 @@
 
     <!--App Css Layouting-->
     <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!--Monitoring css-->
+    <link rel="stylesheet" href="../assets/css/monitoring.css">
 </head>
 <body>
     
@@ -188,7 +191,7 @@
                                     <th class="table-text">Nrp</th>
                                     <th class="table-text">Nama</th>
                                     <th class="table-text">Tanggal Update</th>
-                                    <th class="table-text">Action</th>
+                                    <th class="table-text">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -207,8 +210,7 @@
                                                 <img src="../assets/images/action-icon.svg" alt="">
                                             </button>
                                             <ul class="dropdown-menu action-menu" aria-labelledby="actionButtonMenu">
-                                                <li><a class="dropdown-item action-item" href="#">Edit</a></li>
-                                                <li><a class="dropdown-item action-item" href="#">Lihat Profile</a></li>
+                                                <li><a class="dropdown-item action-item" href="#" data-bs-toggle="modal" data-bs-target="#lihatDetailModal">Lihat Detail</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -225,7 +227,152 @@
 
 
 
-
+<!--Modal-->
+<div class="modal fade" id="lihatDetailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lihatDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="lihatDetailModalLabel">196805201992112001</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container-detail-data">
+                <div class="container-track-update">
+                    <div class="wrapper-track-update">
+                        <div class="track-status"></div>
+                        <div class="track-line"></div>
+                        <div class="track-status newData"></div>
+                    </div>
+                </div>
+                <div class="wrapper-detail-data">
+                    <div class="card card-border mb-5">
+                        <h6 class="text bold mb-3">Data Lama</h6>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-input">
+                                        <label for="kotama" class="form-label">Kotama</label>
+                                        <input type="text" id="kotama" class="form-control" value="KUPUS I DITKUAD" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-input">
+                                        <label for="pangkat" class="form-label">Pangkat</label>
+                                        <input type="text" id="pangkat" class="form-control" value="III/b" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-input">
+                                        <label for="kesatuan" class="form-label">Kesatuan</label>
+                                        <input type="text" id="kesatuan" class="form-control" value="KUDAM XVI/PTM" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-input">
+                                        <label for="norekening" class="form-label">Nomor Rekening</label>
+                                        <input type="number" id="norekening" class="form-control" value="050401001573503" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label for="tmtTamtama" class="form-label">TMT Tamtama</label>
+                                        <input type="text" id="tmtTamtama" class="form-control" value="-" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label for="tmtBintara" class="form-label">TMT Bintara</label>
+                                        <input type="text" id="tmtBintara" class="form-control" value="1 Nov 1992" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label for="tmtPama" class="form-label">TMT Pama</label>
+                                        <input type="text" id="tmtPama" class="form-control" value="2 Jan 2015" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label for="tmtPamen" class="form-label">TMT Pamen</label>
+                                        <input type="text" id="tmtPamen" class="form-control" value="-" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label for="tmtPati" class="form-label">TMT Pati</label>
+                                        <input type="text" id="tmtPati" class="form-control" value="-" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card card-border">
+                        <h6 class="text bold mb-3">Data Baru</h6>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-input">
+                                        <label for="kotama" class="form-label">Kotama</label>
+                                        <input type="text" id="kotama" class="form-control" value="KUPUS I DITKUAD" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-input">
+                                        <label for="pangkat" class="form-label">Pangkat</label>
+                                        <input type="text" id="pangkat" class="form-control" value="III/b" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-input">
+                                        <label for="kesatuan" class="form-label">Kesatuan</label>
+                                        <input type="text" id="kesatuan" class="form-control" value="KUDAM XVI/PTM" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-input">
+                                        <label for="norekening" class="form-label">Nomor Rekening</label>
+                                        <input type="number" id="norekening" class="form-control" value="050401001573503" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label for="tmtTamtama" class="form-label">TMT Tamtama</label>
+                                        <input type="text" id="tmtTamtama" class="form-control" value="-" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label for="tmtBintara" class="form-label">TMT Bintara</label>
+                                        <input type="text" id="tmtBintara" class="form-control" value="1 Nov 1992" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label for="tmtPama" class="form-label">TMT Pama</label>
+                                        <input type="text" id="tmtPama" class="form-control" value="2 Jan 2015" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label for="tmtPamen" class="form-label">TMT Pamen</label>
+                                        <input type="text" id="tmtPamen" class="form-control" value="-" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-input">
+                                        <label for="tmtPati" class="form-label">TMT Pati</label>
+                                        <input type="text" id="tmtPati" class="form-control" value="-" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
 
 
     <!--Vendor-->

@@ -840,6 +840,9 @@ nav {
         }
     }
 }
+.card-border {
+    border: 1px solid #B3B6B8 !important;
+}
 @media screen and (max-width : 576px) {
     .card {
         padding: 16px !important;
@@ -1163,6 +1166,9 @@ input[type="checkbox"]:checked{
     }
 }
 //text 
+.text {
+    color: $text-color;
+}
 .text-primary {
     color: $primary-color !important;
     text-decoration: none;
@@ -1176,7 +1182,7 @@ input[type="checkbox"]:checked{
     -webkit-box-orient: vertical;
 }
 .bold {
-    font-weight: 600;
+    font-weight: 700;
 }
 .text-background-primary {
     background-color: $primary-color;

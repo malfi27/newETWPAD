@@ -1,0 +1,30 @@
+.container-detail-data {
+    display: flex;
+    .container-track-update {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+        .wrapper-track-update {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .track-status {
+                display: block;
+                height: 10px;
+                width: 10px;
+                border-radius: 50px;
+                background-color: #42494D;
+                box-shadow: 0px 0px 0px 4px #ECEDED;
+                &.newData {
+                    background-color: #558F4D;
+                    box-shadow: 0px 0px 0px 4px #CDDDCB;
+                }
+            }
+            .track-line {
+                height: 100%;
+                min-height: 700px;
+                border: 1px dashed #B3B6B8;
+            }
+        }
+    }
+}

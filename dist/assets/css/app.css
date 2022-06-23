@@ -859,6 +859,10 @@ nav .nav-tabs .nav-link.active {
   font-size: 18px;
 }
 
+.card-border {
+  border: 1px solid #B3B6B8 !important;
+}
+
 @media screen and (max-width: 576px) {
   .card {
     padding: 16px !important;
@@ -1252,6 +1256,10 @@ input[type="checkbox"]:checked {
   padding: 24px 1rem;
 }
 
+.text {
+  color: #42494D;
+}
+
 .text-primary {
   color: #558F4D !important;
   text-decoration: none;
@@ -1268,7 +1276,7 @@ input[type="checkbox"]:checked {
 }
 
 .bold {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .text-background-primary {
