@@ -51,6 +51,9 @@ body {
                             position: relative;
                             color: rgba(27, 28, 49, .4);
                             font-weight: 500;
+                            border: none;
+                            background-color: transparent;
+                            width: 100%;
                             cursor: pointer;
                             svg {
                                 margin-right: .7rem;
@@ -618,6 +621,10 @@ body {
                         &.danger-status {
                             background-color: rgb(255, 234, 239);
                             color: rgb(239, 20, 74);
+                        }
+                        &.warning-status {
+                            background-color: #FFE0B2;
+                            color: #FF9800;
                         }
                     }
                     &.null {

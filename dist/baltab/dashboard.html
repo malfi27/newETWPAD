@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Baltab - ETWPAD</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/icons-1.7.2/font/bootstrap-icons.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
+
+    <!--App Css Layouting-->
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!--Dashboard baltab css-->
+    <link rel="stylesheet" href="../assets/css/dashboard-baltab.css">
+</head>
+<body>
+    
+
+    <div id="app">
+
+        <div id="sidebar">
+            <div class="sidebarWrapper">
+                <div class="brandName">
+                    <img src="../assets/images/etwpadLogo_withTeks.png" alt="">
+                </div>
+
+                <div class="wrapperMenuSidebar">
+                    <ul class="listMenuSidebar">
+
+                        <li class="sidebarMenu">
+                            <a href="../index.html" class="linkMenu">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z"/>
+                                    </svg>
+                                Kembali ke menu
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu active">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Dashboard Baltab
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Data Pokok Prajurit
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Pembayaran
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Profiling Data
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                SI Prajurit
+                            </a>
+                        </li>
+
+                        <li class="sidebarMenu ">
+                            <a href="#" class="linkMenu">
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4.5" r="4"/>
+                                </svg>
+                                Pengajuan
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainContent">
+            <div class="headContent">
+                <div class="sidebarButton">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="headControl">
+                    <div class="control dropdown notification">
+                        <button class="notificationButton" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/notificationIcon.svg" alt="">
+                          <div class="valueNotification">
+                              <p>9</p>
+                          </div>
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <h4 class="headText">Notifikasi</h4>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                  <div class="icon">
+                                      <img src="../assets/images/messageIcon.svg" alt="">
+                                  </div>
+                                  <div class="detailMassage">
+                                      <h5 class="labelMassage">Pengguna Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quos.</h5>
+                                      <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, optio.</p>
+                                      <p class="time">2 menit yang lalu</p>
+                                  </div>
+                              </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item read" href="#">
+                                    <div class="icon">
+                                        <img src="../assets/images/messageIcon.svg" alt="">
+                                    </div>
+                                    <div class="detailMassage">
+                                        <h5 class="labelMassage">Pengguna</h5>
+                                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem?</p>
+                                        <p class="time">2 menit yang lalu</p>
+                                    </div>
+                                </a>
+                              </li>
+                          
+                        </ul>
+
+                    </div>
+                    
+                    <div class="control setting">
+                        <a href="#">
+                            <img src="../assets/images/settingIcon.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="control profile">
+                        <a href="#">
+                            <img src="../assets/images/profileIcon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bodyContent">
+                <div class="head-page">
+                    <h4 class="titlePage">Dashboard BALTAB</h4>
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active">Dashboard Baltab</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="baltab-last-statistic mb-3">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                            <div class="card">
+                                <div class="header-card">
+                                    <h5>Pengajuan BALTAB</h5>
+                                    <p>2 data memerlukan persetujuan</p>
+                                </div>
+                                <div class="wrapperTable table-responsive">
+                                    <table class="tables">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 10%;">
+                                                    <img class="icon-profile" src="../assets/images/profileIcon.svg" alt="">
+                                                </td>
+                                                <td style="width: 45%;">Sanusi</td>
+                                                <td style="width: 25%;">12345678</td>
+                                                <td style="width: 20%;">
+                                                    <button class="button button-primary">Setujui</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 15%;">
+                                                    <img class="icon-profile" src="../assets/images/profileIcon.svg" alt="">
+                                                </td>
+                                                <td style="width: 40%;">Antonius Wardhana</td>
+                                                <td style="width: 25%;">12345678</td>
+                                                <td style="width: 20%;">
+                                                    <button class="button button-primary">Setujui</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                                <!--Info ini akan muncul apabila tidak ada data yang ditampilkan-->
+                                <!-- <div class="d-flex justify-content-center">
+                                    <p class="info">
+                                        Belum ada pengajuan BALTAB yang meminta persetujuan
+                                    </p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <div class="header-card">
+                                    <h5>Data SI</h5>
+                                    <p>2 data memerlukan persetujuan</p>
+                                </div>
+                                <!-- <div class="wrapperTable table-responsive">
+                                    <table class="tables">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 40%;">12345678</td>
+                                                <td style="width: 40%;">
+                                                    <div class="status warning-status">Menunggu</div>
+                                                </td>
+                                                <td style="width: 20%;">
+                                                    <button class="button button-primary">Setujui</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 40%;">12345678</td>
+                                                <td style="width: 40%;">
+                                                    <div class="status warning-status">Menunggu</div>
+                                                </td>
+                                                <td style="width: 20%;">
+                                                    <button class="button button-primary">Setujui</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> -->
+                                 <!--Info ini akan muncul apabila tidak ada data yang ditampilkan-->
+                                 <div class="d-flex justify-content-center">
+                                    <p class="info">
+                                        Belum ada pengajuan BALTAB yang meminta persetujuan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="header-card">
+                                <h5>Rekap BALTAB</h5>
+                            </div>
+                            <div class="wrapperChart">
+                                <canvas id="rekapBaltab"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!--Vendor-->
+        <!--Jquery-->
+        <script src="../assets/vendor/jquery/jquery.min.js"></script>
+        <!--Javascript Bootstrap-->
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--Data table-->
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+        <!--Chart Js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--App JS-->
+    <script src="../assets/js/app.js"></script>
+
+
+    <script>
+        $(function(){
+
+//get the line chart canvas
+var ctx = $("#rekapBaltab");
+
+//line chart data
+var data = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agust", "Sept", "Okt", "Nov", "Des"],
+    datasets: [
+    {
+      label: "Proses Pencairan",
+      data: [21000, 24000, 23000, 22000, 23000],
+      backgroundColor: "#2196F3",
+      borderColor: "#2196F3",
+      fill: false,
+      lineTension: 0,
+      radius: 5
+    },
+    {
+      label: "Pengajuan",
+      data: [22000, 21000, 22000, 23000, 22000],
+      backgroundColor: "#558F4D",
+      borderColor: "#558F4D",
+      fill: false,
+      lineTension: 0,
+      radius: 5
+    },
+    {
+      label: "Menunggu Persetujuan",
+      data: [23000, 20000, 23000, 18000, 19000],
+      backgroundColor: "#FF9800",
+      borderColor: "#FF9800",
+      fill: false,
+      lineTension: 0,
+      radius: 5
+    },
+  ]
+};
+
+//options
+var options = {
+  responsive: true,
+  plugins : {
+        title: {
+        display: false,
+    },
+    legend: {
+        display: false,
+        position: "bottom",
+        labels: {
+        fontColor: "#333",
+        fontSize: 16,
+        }
+    }
+  }
+};
+
+    //create Chart class object
+    var chart = new Chart(ctx, {
+    type: "line",
+    data: data,
+    options: options
+    });
+});
+    </script>
+
+</body>
+</html>

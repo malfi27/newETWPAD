@@ -63,6 +63,9 @@ body {
   position: relative;
   color: rgba(27, 28, 49, 0.4);
   font-weight: 500;
+  border: none;
+  background-color: transparent;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -642,6 +645,11 @@ body {
 .wrapperTable .tables tbody tr td .status.danger-status {
   background-color: #ffeaef;
   color: #ef144a;
+}
+
+.wrapperTable .tables tbody tr td .status.warning-status {
+  background-color: #FFE0B2;
+  color: #FF9800;
 }
 
 .wrapperTable .tables tbody tr td.null {
