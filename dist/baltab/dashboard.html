@@ -297,68 +297,68 @@
     <script>
         $(function(){
 
-//get the line chart canvas
-var ctx = $("#rekapBaltab");
+        //get the line chart canvas
+        var ctx = $("#rekapBaltab");
 
-//line chart data
-var data = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agust", "Sept", "Okt", "Nov", "Des"],
-    datasets: [
-    {
-      label: "Proses Pencairan",
-      data: [21000, 24000, 23000, 22000, 23000],
-      backgroundColor: "#2196F3",
-      borderColor: "#2196F3",
-      fill: false,
-      lineTension: 0,
-      radius: 5
-    },
-    {
-      label: "Pengajuan",
-      data: [22000, 21000, 22000, 23000, 22000],
-      backgroundColor: "#558F4D",
-      borderColor: "#558F4D",
-      fill: false,
-      lineTension: 0,
-      radius: 5
-    },
-    {
-      label: "Menunggu Persetujuan",
-      data: [23000, 20000, 23000, 18000, 19000],
-      backgroundColor: "#FF9800",
-      borderColor: "#FF9800",
-      fill: false,
-      lineTension: 0,
-      radius: 5
-    },
-  ]
-};
+        //line chart data
+        var data = {
+            labels: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agust", "Sept", "Okt", "Nov", "Des"],
+            datasets: [
+            {
+            label: "Proses Pencairan",
+            data: [21000, 24000, 23000, 22000, 23000],
+            backgroundColor: "#2196F3",
+            borderColor: "#2196F3",
+            fill: false,
+            lineTension: 0,
+            radius: 5
+            },
+            {
+            label: "Pengajuan",
+            data: [22000, 21000, 22000, 23000, 22000],
+            backgroundColor: "#558F4D",
+            borderColor: "#558F4D",
+            fill: false,
+            lineTension: 0,
+            radius: 5
+            },
+            {
+            label: "Menunggu Persetujuan",
+            data: [23000, 20000, 23000, 18000, 19000],
+            backgroundColor: "#FF9800",
+            borderColor: "#FF9800",
+            fill: false,
+            lineTension: 0,
+            radius: 5
+            },
+        ]
+        };
 
-//options
-var options = {
-  responsive: true,
-  plugins : {
-        title: {
-        display: false,
-    },
-    legend: {
-        display: false,
-        position: "bottom",
-        labels: {
-        fontColor: "#333",
-        fontSize: 16,
+        //options
+        var options = {
+        responsive: true,
+        plugins : {
+                title: {
+                display: false,
+            },
+            legend: {
+                display: false,
+                position: "bottom",
+                labels: {
+                fontColor: "#333",
+                fontSize: 16,
+                }
+            }
         }
-    }
-  }
-};
+        };
 
-    //create Chart class object
-    var chart = new Chart(ctx, {
-    type: "line",
-    data: data,
-    options: options
-    });
-});
+            //create Chart class object
+            var chart = new Chart(ctx, {
+            type: "line",
+            data: data,
+            options: options
+            });
+        });
     </script>
 
 </body>
